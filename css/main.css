@@ -1,5 +1,5 @@
-.col-md-3{
-	background-color: #F3F3F3;	
+.bg{
+	background-color: #F3F3F3;
 }
 
 .blockInfo{
@@ -8,20 +8,40 @@
     font-size: 17px; 
 }
 
+.logo{
+	 margin-bottom: 10px !important;
+ }
+
 #ico {
-	margin-bottom:20px; 
+	margin:0 0 20px 0 !important;
 	display:flex;
+	justify-content: space-around;
 }
 
-#ico a img{
-	margin:5px;
+a:hover, a {
+	text-decoration: none !important;
 }
 
-#nav {
+#nav  {
 	display:flex;
 	justify-content: space-between;
-	background-color:#DBDBDB; 
+	height: 40px;
+	background-color:#DBDBDB;
+	padding: initial;
 }
+
+#nav div{
+	display: flex;
+	align-items: center;
+	border-left: 1px solid white;
+	width: 100%;
+	border-radius: 10px;
+}
+
+#nav img {
+	margin-left:6px;
+}
+
 
 .container-fluid a{
 	margin:0 10px; 
@@ -29,9 +49,8 @@
 
 .no-margin {margin: 0 !important}
 
-.col-md-9 {
-padding-right: 0;
-padding-left: 0;
+.px-0{
+	padding-left: 0 !important;
 }
 
 li{
@@ -125,19 +144,6 @@ ul li {
 #demo20 {
 		    margin-left: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*.no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
