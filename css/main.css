@@ -1,0 +1,40 @@
+.col-md-3{
+	background-color: #F3F3F3;	
+}
+
+.blockInfo{
+    background-color: #DDDDDD;
+    margin-top:20px;
+    font-size: 17px; 
+}
+
+#ico {
+	margin-bottom:20px; 
+	display:flex;
+}
+
+#ico a img{
+	margin:5px;
+}
+
+#nav {
+	display:flex;
+	justify-content: space-between;
+	background-color:#DBDBDB; 
+}
+
+.container-fluid a{
+	margin:0 10px; 
+}
+
+.no-margin {margin: 0 !important}
+
+.col-md-9 {
+padding-right: 0;
+padding-left: 0;
+}
+
+/*.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}*/
