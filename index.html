@@ -8,16 +8,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	<script src="javascript/myscript.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
   <div class="container-fluid">
   	<div class="row">
-  		<div class="col-md-3 bg no-margin">
+  		<div class="col-4 col-md-3 bg no-margin">
   			<div class="split left">
-				<img alt="Logo" class="img-responsive logo" src="images/logo.png">
+				<img alt="Logo" width="370px" height="90px" class="img-responsive logo" src="images/logo.png" style="margin:-30px auto;display:block;">
   				<div id="ico">
 			      <a href="#">
 			        <img alt="Brand" class="img-responsive" src="images/home.png" width="20px" height="20px">
@@ -35,7 +34,7 @@
 			        <img alt="Go-jump" class="img-responsive" src="images/go-jump.png" width="20px" height="20px">
 			      </a>			      			      			      
   				</div>
-  				<select style="margin: auto;display: block;border: 1px solid #3AE2CE; background-color: aliceblue;border-radius: 5px; width: 150px;">
+  				<select style="margin: auto;display: block;border: 1px solid #3AE2CE; background-color: aliceblue;border-radius: 5px; width: 180px;">
 					<option value="rt">(Recent tables)... </option>
 					<option value="">............</option>
 					<option value="">..............</option>
@@ -179,7 +178,7 @@
 												<li>
 												   	<a href="#demo20" data-toggle="collapse">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
 													   	<div id="demo20" class="collapse">
-															<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
+															<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
 													    </div>
 											    </li>
 										    </ul>
@@ -195,12 +194,50 @@
 
   		</div>
 
-  		<div class="col-md-9 px-0 no-margin">
-  			<div class="container-fluid" style="background-color:#888888;">
+  		<div class="col-8 col-md-9 px-0 no-margin">
+  			<div class="container-fluid" style="background-color:#888888;display:flex;">
+				<button style="margin-right: 5px;margin-left: -15px;"><img src="images/arrow_left.png" alt="Arrow" width="11px" height="11px"></button>
   				<h6 style="color:white;"><i class="fa fa-desktop" style="color:blue;"></i> Server:localhost:</h6>
   			</div>
-  			<div class="container-fluid radio-group"  id="nav">
-				<div class="forChangeCol"  onclick="changeBg(this)"><img src="images/structure.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Structure</h5></a></div>
+
+<!--			Template navbar-->
+<!--			<div class="navbar nav">-->
+<!--		    	<ul>-->
+<!--					<li class="nav-item">-->
+<!--						<div class="forChangeCol"><img src="images/structure.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Structure</h5></a></div>-->
+<!--					</li>-->
+<!--					<li class="nav-item">-->
+<!--						<div class="forChangeCol"><img src="images/sql.png" alt="doc" width="20px" height="20px"><a href="#"><h5>SQL</h5></a></div>-->
+<!--					</li>-->
+<!--					<li class="nav-item">-->
+<!--						<div class="forChangeCol"><img src="images/loupe.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Search</h5></a></div>-->
+<!--					</li>-->
+<!--					<li class="nav-item">-->
+<!--						<div class="forChangeCol"><img src="images/query.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Query</h5></a></div>-->
+<!--					</li>-->
+<!--					<li class="nav-item">-->
+<!--						<div class="forChangeCol"><img src="images/export.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Export</h5></a></div>-->
+<!--					</li>-->
+<!--					<li class="nav-item">-->
+<!--						<div class="forChangeCol"><img src="images/import.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Import</h5></a></div>-->
+<!--					</li>-->
+<!--					<li class="nav-item">-->
+<!--						<div class="forChangeCol"><img src="images/wrench2.png" alt="doc" width="22px" height="22px"><a href="#"><h5>Operations</h5></a></div>-->
+<!--					</li>-->
+<!--					<li class="nav-item">-->
+<!--						<div class="forChangeCol"><img src="images/routines.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Routines</h5></a></div>-->
+<!--					</li>-->
+<!--					<li class="nav-item">-->
+<!--						<div class="forChangeCol"><img src="images/events.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Events</h5></a></div>-->
+<!--					</li>-->
+<!--					<li class="nav-item">-->
+<!--						<div class="forChangeCol"><img src="images/triggers.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Triggers</h5></a></div>-->
+<!--					</li>-->
+<!--				</ul>-->
+<!--			</div>-->
+
+  			<div class="container-fluid nav">
+				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/structure.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Structure</h5></a></div>
 				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/sql.png" alt="doc" width="20px" height="20px"><a href="#"><h5>SQL</h5></a></div>
 				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/loupe.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Search</h5></a></div>
 				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/query.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Query</h5></a></div>
@@ -215,7 +252,7 @@
   	</div>
   </div>
 
-
+  <script src="javascript/myscript.js"></script>
 </body>
 
 </html>
