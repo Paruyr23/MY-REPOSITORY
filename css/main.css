@@ -2,6 +2,10 @@
 	background-color: #F3F3F3;	
 }
 
+a:hover {
+text-decoration: none ;
+}
+
 .blockInfo{
     background-color: #DDDDDD;
     margin-top:20px;
@@ -27,12 +31,12 @@
 	margin:0 10px; 
 }
 
-.no-margin {margin: 0 !important}
+.px-0{
+	padding-left:0 !important;
+	padding-right:0 !important;  
+} 
 
-.col-md-9 {
-padding-right: 0;
-padding-left: 0;
-}
+.no-margin {margin: 0 !important}
 
 li{
 	list-style-type: none;
