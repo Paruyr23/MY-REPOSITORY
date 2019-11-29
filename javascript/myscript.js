@@ -1,3 +1,3 @@
-function changeBg(){
-    document.getElementsByClassName("forChangeCol"[0]).style.color = "red";
+function changeBg(divObj){
+        divObj.style.selected["background-color"]="white";
 }

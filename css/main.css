@@ -6,6 +6,7 @@ a:hover {
 text-decoration: none ;
 }
 
+
 .blockInfo{
     background-color: #DDDDDD;
     margin-top:20px;
@@ -39,7 +40,6 @@ a:hover, a {
 	align-items: center;
 	border-left: 1px solid white;
 	width: 100%;
-	border-radius: 10px;
 }
 
 #nav img {
@@ -58,11 +58,6 @@ a:hover, a {
 
 
 .no-margin {margin: 0 !important}
-
-.px-0{
-	padding-left: 0 !important;
-}
-
 
 li{
 	list-style-type: none;
