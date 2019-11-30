@@ -1,15 +1,10 @@
 window.onload = function () {
-        var colElements = document.querySelectorAll('.switch');
-
-        colElements.onclick = function() {
-                navElements . forEach ( function ( navElement ) {
-                        if (this.innerHTML == '+') this.innerHTML = '-';
-                        else this.innerHTML = '+';
-                        return false;
-                })
-
-                }
-        }
+        document.addEventListener('DOMContentLoaded', function () {
+                if ()
+                        document.querySelector('.switch').textContent = "+";
+                else
+                        document.querySelector('.switch').textContent = "-";
+        });
 
 
 

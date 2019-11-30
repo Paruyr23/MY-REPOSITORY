@@ -2,6 +2,10 @@
 	background-color: #F3F3F3;
 }
 
+.forChangeCol.selected {
+	background-color: white;
+}
+
 a:hover {
 text-decoration: none ;
 }
