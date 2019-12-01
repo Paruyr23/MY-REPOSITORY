@@ -9,6 +9,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="javascript/myscript.js"></script>
 </head>
 
 <body>
@@ -42,7 +43,7 @@
 				</select>
 				<div class="blockInfo">
 					<ul>
-						<a href="#demo" data-toggle="collapse" class="switch">+</a><img src="images/files.png" alt="doc" width="20px" height="20px"> Collapse
+						<a href="#demo" data-toggle="collapse" class="demo" onclick="collapse('demo')">+</a><img src="images/files.png" alt="doc" width="20px" height="20px"> Collapse
 						<div id="demo" class="collapse">
 							<ul>
 								<li>
@@ -50,140 +51,140 @@
 									<div id="demo1" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo11" data-toggle="collapse"  class="switch" >+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
-													<div id="demo11" class="collapse">
-														<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
-													</div>
+												<a href="#demo11" data-toggle="collapse"  class="demo11" onclick="collapse('demo11')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+												<div id="demo11" class="collapse">
+													<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
+												</div>
 											</li>
 										</ul>
 									</div>
 								</li>
 								<br>
 								<li>
-									<a href="#demo2" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
+									<a href="#demo2" data-toggle="collapse" class="demo2" onclick="collapse('demo2')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
 									<div id="demo2" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo12" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
-													<div id="demo12" class="collapse">
-														<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
-													</div>
+												<a href="#demo12" data-toggle="collapse" class="demo12" onclick="collapse('demo12')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+												<div id="demo12" class="collapse">
+													<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+                                <br>
+								<li>
+								<a href="#demo3" data-toggle="collapse" class="demo3" onclick="collapse('demo3')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
+								<div id="demo3" class="collapse">
+									<ul>
+										<li>
+											<a href="#demo13" data-toggle="collapse" class="demo13" onclick="collapse('demo13')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+												<div id="demo13" class="collapse">
+													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
+												</div>
 											</li>
 										</ul>
 									</div>
 								</li>
 								<br>
 								<li>
-									<a href="#demo3" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
-									<div id="demo3" class="collapse">
-										<ul>
-											<li>
-												<a href="#demo13" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
-													<div id="demo13" class="collapse">
-														<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
-													</div>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<br>
-								<li>
-									<a href="#demo4" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
+									<a href="#demo4" data-toggle="collapse" class="demo4" onclick="collapse('demo4')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
 									<div id="demo4" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo14" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
-													<div id="demo14" class="collapse">
-														<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
-													</div>
+												<a href="#demo14" data-toggle="collapse" class="demo14" onclick="collapse('demo14')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+												<div id="demo14" class="collapse">
+													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
+												</div>
 											</li>
 										</ul>
 									</div>
 								</li>
 								<br>
 								<li>
-									<a href="#demo5" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
+									<a href="#demo5" data-toggle="collapse" class="demo5" onclick="collapse('demo5')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
 									<div id="demo5" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo15" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
-													<div id="demo15" class="collapse">
-														<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
-													</div>
+												<a href="#demo15" data-toggle="collapse" class="demo15" onclick="collapse('demo15')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+												<div id="demo15" class="collapse">
+													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
+												</div>
 											</li>
 										</ul>
 									</div>
 								</li>
 								<br>
 								<li>
-									<a href="#demo6" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
+									<a href="#demo6" data-toggle="collapse" class="demo6" onclick="collapse('demo6')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
 									<div id="demo6" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo16" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
-													<div id="demo16" class="collapse">
-														<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
-													</div>
+												<a href="#demo16" data-toggle="collapse" class="demo16" onclick="collapse('demo16')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+												<div id="demo16" class="collapse">
+													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
+												</div>
 											</li>
 										</ul>
 									</div>
 								</li>
 								<br>
 								<li>
-									<a href="#demo7" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
+									<a href="#demo7" data-toggle="collapse" class="demo7" onclick="collapse('demo7')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
 									<div id="demo7" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo17" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
-													<div id="demo17" class="collapse">
-														<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
-													</div>
+												<a href="#demo17" data-toggle="collapse" class="demo17" onclick="collapse('demo17')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+												<div id="demo17" class="collapse">
+													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
+												</div>
 											</li>
 										</ul>
 									</div>
 								</li>
 								<br>
 								<li>
-									<a href="#demo8" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
+									<a href="#demo8" data-toggle="collapse" class="demo8" onclick="collapse('demo8')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
 									<div id="demo8" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo18" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
-													<div id="demo18" class="collapse">
-														<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
-													</div>
+												<a href="#demo18" data-toggle="collapse" class="demo18" onclick="collapse('demo18')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+												<div id="demo18" class="collapse">
+													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
+												</div>
 											</li>
 										</ul>
 									</div>
 								</li>
 								<br>
 								<li>
-									<a href="#demo9" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
+									<a href="#demo9" data-toggle="collapse" class="demo9" onclick="collapse('demo9')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
 									<div id="demo9" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo19" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
-													<div id="demo19" class="collapse">
-														<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
-													</div>
+												<a href="#demo19" data-toggle="collapse" class="demo19" onclick="collapse('demo19')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+												<div id="demo19" class="collapse">
+													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
+												</div>
 											</li>
 										</ul>
 									</div>
 								</li>
 								<br>
 								<li>
-								<a href="#demo10" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
-								<div id="demo10" class="collapse">
-									<ul>
-										<li>
-											<a href="#demo20" data-toggle="collapse" class="switch">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+									<a href="#demo10" data-toggle="collapse" class="demo10" onclick="collapse('demo10')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
+									<div id="demo10" class="collapse">
+										<ul>
+											<li>
+												<a href="#demo20" data-toggle="collapse" class="demo20" onclick="collapse('demo20')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
 												<div id="demo20" class="collapse">
 													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
 												</div>
 											</li>
 										</ul>
 									</div>
-									</li>
+								</li>
 								<br>
 							</ul>
 						</div>
@@ -237,22 +238,22 @@
 <!--			</div>-->
 
   			<div class="container-fluid nav">
-				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/structure.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Structure</h5></a></div>
-				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/sql.png" alt="doc" width="20px" height="20px"><a href="#"><h5>SQL</h5></a></div>
-				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/loupe.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Search</h5></a></div>
-				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/query.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Query</h5></a></div>
-				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/export.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Export</h5></a></div>
-				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/import.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Import</h5></a></div>
-				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/wrench2.png" alt="doc" width="22px" height="22px"><a href="#"><h5>Operations</h5></a></div>
-				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/routines.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Routines</h5></a></div>
-				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/events.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Events</h5></a></div>
-				<div class="forChangeCol" onclick="changeBg(this)"><img src="images/triggers.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Triggers</h5></a></div>
+				<div id="id" class="forChangeCol" onclick="changeBg(forChangeCol)"><img src="images/structure.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Structure</h5></a></div>
+				<div class="forChangeCol2" onclick="changeBg(forChangeCol2)"><img src="images/sql.png" alt="doc" width="20px" height="20px"><a href="#"><h5>SQL</h5></a></div>
+				<div class="forChangeCol3" onclick="changeBg(forChangeCol3)"><img src="images/loupe.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Search</h5></a></div>
+				<div class="forChangeCol4" onclick="changeBg(forChangeCol4)"><img src="images/query.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Query</h5></a></div>
+				<div class="forChangeCol5" onclick="changeBg(forChangeCol5)"><img src="images/export.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Export</h5></a></div>
+				<div class="forChangeCol6" onclick="changeBg(forChangeCol6)"><img src="images/import.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Import</h5></a></div>
+				<div class="forChangeCol7" onclick="changeBg(forChangeCol7)"><img src="images/wrench2.png" alt="doc" width="22px" height="22px"><a href="#"><h5>Operations</h5></a></div>
+				<div class="forChangeCol8" onclick="changeBg(forChangeCol8)"><img src="images/routines.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Routines</h5></a></div>
+				<div class="forChangeCol9" onclick="changeBg(forChangeCol9)"><img src="images/events.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Events</h5></a></div>
+				<div class="forChangeCol10" onclick="changeBg(forChangeCol10)"><img src="images/triggers.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Triggers</h5></a></div>
   			</div>
   		</div>
   	</div>
   </div>
 
-  <script src="javascript/myscript.js"></script>
+
 </body>
 
 </html>
