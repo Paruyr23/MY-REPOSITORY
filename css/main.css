@@ -161,6 +161,42 @@ ul li {
 #demo20 {
 		    margin-left: 30px;
 }
+
+.home{
+	display: flex;
+	justify-content: space-between;
+}
+
+.blocks{
+	border: 1px solid silver;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+table{
+	width: -webkit-fill-available;;
+}
+
+.about{
+	margin-top: -10px;
+	background-color: #F3F3F3;
+}
+.info h2{
+	background-color: #B5B5B5;
+	-webkit-margin-top-collapse: discard;
+	color:white;
+}
+
+.about p{
+	margin: 10px 0 0px;
+}
+.th{
+	background-color: #D8D8D8;
+}
+
+tr th {
+	border-left: 1px solid white;
+}
 /*.no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
