@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 .bg{
 	background-color: #F3F3F3;
 }
@@ -47,8 +51,6 @@ a:hover, a {
 }
 
 .nav div{
-	display: flex;
-	align-items: center;
 	border-left: 1px solid white;
 	width: 100%;
 }
