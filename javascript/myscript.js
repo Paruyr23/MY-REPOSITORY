@@ -9,15 +9,31 @@ function collapse (element) {
     link[0].innerHTML = "+";
 }
 
-function showFun(){
-        if (document.querySelector('.table').style.display == "none") {
-            document.querySelector('.table').style.display = "inline-table"
-            document.querySelector('.home').style.display = "none"
-        } else {
-            document.querySelector('.table').style.display = "none"
-            document.querySelector('.home').style.display = "block"
-        }
+function showFun(Name){
+    if (document.querySelector("[data-name=" + Name + "]").style.display == "none") {
+        document.querySelector("[data-name=" + Name + "]").style.display = "inline-table";
+        document.querySelector('.home').style.display = "none";
+        document.querySelector('.forChangeCol').style.backgroundColor = "white";
+    }
 }
+
+
+// function resetFun(Name,Name2,Name3,Name4,Name5,Name6){
+//     if (document.querySelector("[data-name=" + Name||Name2||Name3||Name4||Name5||Name6 + "]").style.display == "inline-table") {
+//         document.querySelector("[data-name=" + Name||Name2||Name3||Name4||Name5||Name6 + "]").style.display = "none";
+//     }
+// }
+//
+
+function openMain(name,name2,name3,name4,name5,name6){
+    if(document.querySelector("[data-name=" + name||name2||name3||name4||name5||name6 + "]").style.display == "inline-table"){
+        document.querySelector("[data-name=" + name||name2||name3||name4||name5||name6 + "]").style.display = "none";
+        document.querySelector('.home').style.display = "block";
+        document.querySelector('.forChangeCol').style.backgroundColor = "#DBDBDB";
+    }
+}
+
+
 
 
 // function changeBg(class) {
@@ -25,28 +41,6 @@ function showFun(){
 // }
 // let selectedDiv;
 //
-// function changeBg() {
-//     const color = document.getElementsByClassName(block);
-//     block.onclick = function(event) {
-//         let target = event.target; // где был клик?
-//
-//         if (target.tagName != 'div'){
-//             console.log(111);
-//         } //return; // не на block? тогда не интересует
-//
-//         // highlight(target);// подсветить block
-//     };
-// };
-//
-//
-// function highlight(a) {
-//     // console.log(111);
-//     if (selectedDiv) { // убрать существующую подсветку, если есть
-//         selectedDiv.classList.remove('highlight');
-//     }
-//     selectedDiv = div;
-//     selectedDiv.classList.add('highlight'); // подсветить новый td
-// }
 
 
 // ;(function($D){

@@ -17,7 +17,7 @@
   	<div class="row">
   		<div class="col-4 col-md-3 bg no-margin">
   			<div class="split left">
-				<img alt="Logo" width="370px" height="90px" class="img-responsive logo" src="images/logo.png" style="margin:-30px auto;display:block;">
+				<img alt="Logo" width="370px" height="90px" class="img-responsive logo" src="images/logo.png"  style="margin:-30px auto;display:block;cursor: pointer;" onclick="openMain('table','table2','table3','table4','table5','table6')">
   				<div id="ico">
 			      <a href="#">
 			        <img alt="Brand" class="img-responsive" src="images/home.png" width="20px" height="20px">
@@ -47,13 +47,13 @@
 						<div id="demo" class="collapse">
 							<ul>
 								<li>
-									<a href="#demo1" data-toggle="collapse">Simple collapsible</a>
+									<a href="#demo1" data-toggle="collapse" class="demo1" onclick="collapse('demo1')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px">Collapse
 									<div id="demo1" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo11" data-toggle="collapse"  class="demo11" onclick="collapse('demo11')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" class="block-1" onclick="showFun()">Lorem ipsum dolor</a>
+												<a href="#demo11" data-toggle="collapse"  class="demo11" onclick="collapse('demo11')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" class="block-1" onclick="showFun('table')">Lorem ipsum dolor</a>
 												<div id="demo11" class="collapse">
-													<img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#">lorem ipsum</a>
+													<img src="images/document.png" alt="doc" width="20px" height="20px">lorem ipsum
 												</div>
 											</li>
 										</ul>
@@ -65,7 +65,7 @@
 									<div id="demo2" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo12" data-toggle="collapse" class="demo12" onclick="collapse('demo12')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+												<a href="#demo12" data-toggle="collapse" class="demo12" onclick="collapse('demo12')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun('table')">Lorem ipsum dolor</a>
 												<div id="demo12" class="collapse">
 													<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
 												</div>
@@ -79,7 +79,7 @@
 								<div id="demo3" class="collapse">
 									<ul>
 										<li>
-											<a href="#demo13" data-toggle="collapse" class="demo13" onclick="collapse('demo13')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+											<a href="#demo13" data-toggle="collapse" class="demo13" onclick="collapse('demo13')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun('table')">Lorem ipsum dolor</a>
 												<div id="demo13" class="collapse">
 													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
 												</div>
@@ -93,7 +93,7 @@
 									<div id="demo4" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo14" data-toggle="collapse" class="demo14" onclick="collapse('demo14')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+												<a href="#demo14" data-toggle="collapse" class="demo14" onclick="collapse('demo14')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun('table')">Lorem ipsum dolor</a>
 												<div id="demo14" class="collapse">
 													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
 												</div>
@@ -107,7 +107,7 @@
 									<div id="demo5" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo15" data-toggle="collapse" class="demo15" onclick="collapse('demo15')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+												<a href="#demo15" data-toggle="collapse" class="demo15" onclick="collapse('demo15')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun('table')">Lorem ipsum dolor</a>
 												<div id="demo15" class="collapse">
 													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
 												</div>
@@ -121,7 +121,7 @@
 									<div id="demo6" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo16" data-toggle="collapse" class="demo16" onclick="collapse('demo16')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
+												<a href="#demo16" data-toggle="collapse" class="demo16" onclick="collapse('demo16')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun('table')">Lorem ipsum dolor</a>
 												<div id="demo16" class="collapse">
 													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
 												</div>
@@ -129,63 +129,63 @@
 										</ul>
 									</div>
 								</li>
-								<br>
-								<li>
-									<a href="#demo7" data-toggle="collapse" class="demo7" onclick="collapse('demo7')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
-									<div id="demo7" class="collapse">
-										<ul>
-											<li>
-												<a href="#demo17" data-toggle="collapse" class="demo17" onclick="collapse('demo17')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
-												<div id="demo17" class="collapse">
-													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
-												</div>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<br>
-								<li>
-									<a href="#demo8" data-toggle="collapse" class="demo8" onclick="collapse('demo8')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
-									<div id="demo8" class="collapse">
-										<ul>
-											<li>
-												<a href="#demo18" data-toggle="collapse" class="demo18" onclick="collapse('demo18')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
-												<div id="demo18" class="collapse">
-													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
-												</div>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<br>
-								<li>
-									<a href="#demo9" data-toggle="collapse" class="demo9" onclick="collapse('demo9')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
-									<div id="demo9" class="collapse">
-										<ul>
-											<li>
-												<a href="#demo19" data-toggle="collapse" class="demo19" onclick="collapse('demo19')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
-												<div id="demo19" class="collapse">
-													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
-												</div>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<br>
-								<li>
-									<a href="#demo10" data-toggle="collapse" class="demo10" onclick="collapse('demo10')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse
-									<div id="demo10" class="collapse">
-										<ul>
-											<li>
-												<a href="#demo20" data-toggle="collapse" class="demo20" onclick="collapse('demo20')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor
-												<div id="demo20" class="collapse">
-													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
-												</div>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<br>
+<!--								<br>-->
+<!--								<li>-->
+<!--									<a href="#demo7" data-toggle="collapse" class="demo7" onclick="collapse('demo7')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse-->
+<!--									<div id="demo7" class="collapse">-->
+<!--										<ul>-->
+<!--											<li>-->
+<!--												<a href="#demo17" data-toggle="collapse" class="demo17" onclick="collapse('demo17')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor-->
+<!--												<div id="demo17" class="collapse">-->
+<!--													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum-->
+<!--												</div>-->
+<!--											</li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</li>-->
+<!--								<br>-->
+<!--								<li>-->
+<!--									<a href="#demo8" data-toggle="collapse" class="demo8" onclick="collapse('demo8')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse-->
+<!--									<div id="demo8" class="collapse">-->
+<!--										<ul>-->
+<!--											<li>-->
+<!--												<a href="#demo18" data-toggle="collapse" class="demo18" onclick="collapse('demo18')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor-->
+<!--												<div id="demo18" class="collapse">-->
+<!--													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum-->
+<!--												</div>-->
+<!--											</li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</li>-->
+<!--								<br>-->
+<!--								<li>-->
+<!--									<a href="#demo9" data-toggle="collapse" class="demo9" onclick="collapse('demo9')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse-->
+<!--									<div id="demo9" class="collapse">-->
+<!--										<ul>-->
+<!--											<li>-->
+<!--												<a href="#demo19" data-toggle="collapse" class="demo19" onclick="collapse('demo19')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor-->
+<!--												<div id="demo19" class="collapse">-->
+<!--													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum-->
+<!--												</div>-->
+<!--											</li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</li>-->
+<!--								<br>-->
+<!--								<li>-->
+<!--									<a href="#demo10" data-toggle="collapse" class="demo10" onclick="collapse('demo10')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Collapse-->
+<!--									<div id="demo10" class="collapse">-->
+<!--										<ul>-->
+<!--											<li>-->
+<!--												<a href="#demo20" data-toggle="collapse" class="demo20" onclick="collapse('demo20')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"> Lorem ipsum dolor-->
+<!--												<div id="demo20" class="collapse">-->
+<!--													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum-->
+<!--												</div>-->
+<!--											</li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</li>-->
+<!--								<br>-->
 							</ul>
 						</div>
 					</li>
@@ -251,151 +251,573 @@
   			</div>
 
 			<div class="container-fluid info">
+<!--1-->	<table class="table" data-name="table" style="display: none">
+				<tr class="th">
+					<th>Table</th>
+					<th>Action</th>
+					<th>Rows</th>
+					<th>Type</th>
+					<th>Collation</th>
+					<th>Size</th>
+					<th>Overhead</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox">Lorem_links</td>
+					<td>50.2orem_lorem ipsum</td>
+					<td>40.63</td>
+					<td>45.23</td>
+					<td>50.2</td>
+					<td>40.63</td>
+					<td>45.23</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox">20.3links</td>
+					<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
+					<td>40.63</td>
+					<td>45.23</td>
+					<td>50.2</td>
+					<td>40.63</td>
+					<td>45.23</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox">Lorem_terms</td>
+					<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
+					<td>40.63</td>
+					<td>45505050.23</td>
+					<td>50.2</td>
+					<td>40.63</td>
+					<td>45.23</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox">20.3links</td>
+					<td>50.2orem_lorem ipsumorem_lorem ipsumore505050m_lorem ipsumorem_lorem ipsum</td>
+					<td>40.63</td>
+					<td>45.23</td>
+					<td>50.502</td>
+					<td>40.63</td>
+					<td>45.23</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox">Lorem_terms</td>
+					<td>50.2orem_lore5050m ipsumorem_lorem ipsum</td>
+					<td>40.63</td>
+					<td>45.23</td>
+					<td>50.2</td>
+					<td>40.63</td>
+					<td>45.23</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox">Lorem_20.3links</td>
+					<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
+					<td>405050.23</td>
+					<td>50.2</td>
+					<td>40.63</td>
+					<td>45.23</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox">Lorem_terms</td>
+					<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
+					<td>40.63</td>
+					<td>45.505023</td>
+					<td>50.2</td>
+					<td>40.63</td>
+					<td>45.23</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox">Lorem50_20.3links</td>
+					<td>50.2or5050em_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
+					<td>40.63</td>
+					<td>45.23</td>
+					<td>50.2</td>
+					<td>40.63</td>
+					<td>45.23</td>
+				</tr>
+				</table>
+<!--&lt;!&ndash;2&ndash;&gt;		<table class="table" data-name="table2" style="display: none">-->
+<!--					<tr class="th">-->
+<!--						<th>Table</th>-->
+<!--						<th>Action</th>-->
+<!--						<th>Rows</th>-->
+<!--						<th>Type</th>-->
+<!--						<th>Collation</th>-->
+<!--						<th>Size</th>-->
+<!--						<th>Overhead</th>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox"_ipsum</td>-->
+<!--						<td>Lorem_lorem ipsum orem_lorem ipsumorem_lorem ipsumorem_lorem ipsum </td>-->
+<!--						<td>Lorem_lorem lorem i[sum</td>-->
+<!--						<td>Lorem_lorem ipsum lorem</td>-->
+<!--						<td>Lorem_lorem ipsum ....</td>-->
+<!--						<td>Lorem_lorem ipsum jjjj</td>-->
+<!--						<td>Lorem_lorem ipsum ,,,,</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">IPSUM</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_30.5</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
 
-					<table class="table" style="display: none">
-						<tr class="th">
-							<th>Table</th>
-							<th>Action</th>
-							<th>Rows</th>
-							<th>Type</th>
-							<th>Collation</th>
-							<th>Size</th>
-							<th>Overhead</th>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_ipsum</td>
-							<td>Lorem_lorem ipsum orem_lorem ipsumorem_lorem ipsumorem_lorem ipsum </td>
-							<td>Lorem_lorem lorem i[sum</td>
-							<td>Lorem_lorem ipsum lorem</td>
-							<td>Lorem_lorem ipsum ....</td>
-							<td>Lorem_lorem ipsum jjjj</td>
-							<td>Lorem_lorem ipsum ,,,,</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_20.3</td>
-							<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-							<td>40.63</td>
-							<td>45.23</td>
-							<td>50.2</td>
-							<td>40.63</td>
-							<td>45.23</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_30.5</td>
-							<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
-							<td>40.63</td>
-							<td>45.23</td>
-							<td>50.2</td>
-							<td>40.63</td>
-							<td>45.23</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_lorem ipsum</td>
-							<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-							<td>40.63</td>
-							<td>45.23</td>
-							<td>50.2</td>
-							<td>40.63</td>
-							<td>45.23</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_ipsum lorem</td>
-							<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
-							<td>40.63</td>
-							<td>45.23</td>
-							<td>50.2</td>
-							<td>40.63</td>
-							<td>45.23</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_links</td>
-							<td>50.2orem_lorem ipsum</td>
-							<td>40.63</td>
-							<td>45.23</td>
-							<td>50.2</td>
-							<td>40.63</td>
-							<td>45.23</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_20.3links</td>
-							<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-							<td>40.63</td>
-							<td>45.23</td>
-							<td>50.2</td>
-							<td>40.63</td>
-							<td>45.23</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_terms</td>
-							<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
-							<td>40.63</td>
-							<td>45.23</td>
-							<td>50.2</td>
-							<td>40.63</td>
-							<td>45.23</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_20.3links</td>
-							<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-							<td>40.63</td>
-							<td>45.23</td>
-							<td>50.2</td>
-							<td>40.63</td>
-							<td>45.23</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_terms</td>
-							<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
-							<td>40.63</td>
-							<td>45.23</td>
-							<td>50.2</td>
-							<td>40.63</td>
-							<td>45.23</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_20.3links</td>
-							<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-							<td>40.63</td>
-							<td>45.23</td>
-							<td>50.2</td>
-							<td>40.63</td>
-							<td>45.23</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_terms</td>
-							<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
-							<td>40.63</td>
-							<td>45.23</td>
-							<td>50.2</td>
-							<td>40.63</td>
-							<td>45.23</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_20.3links</td>
-							<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-							<td>40.63</td>
-							<td>45.23</td>
-							<td>50.2</td>
-							<td>40.63</td>
-							<td>45.23</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">Lorem_terms</td>
-							<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
-							<td>40.63</td>
-							<td>45.23</td>
-							<td>50.2</td>
-							<td>40.63</td>
-							<td>45.23</td>
-						</tr>
-					</table>
+<!--						<td><input type="checkbox">Lorem_20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--				</table>-->
+<!--&lt;!&ndash;3&ndash;&gt;		<table class="table" data-name="table3" style="display: none">-->
+<!--					<tr class="th">-->
+<!--						<th>Table</th>-->
+<!--						<th>Action</th>-->
+<!--						<th>Rows</th>-->
+<!--						<th>Type</th>-->
+<!--						<th>Collation</th>-->
+<!--						<th>Size</th>-->
+<!--						<th>Overhead</th>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_links</td>-->
+<!--						<td>50.2orem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--				</table>-->
+<!--&lt;!&ndash;4&ndash;&gt;		<table class="table" data-name="table4" style="display: none">-->
+<!--					<tr class="th">-->
+<!--						<th>Table</th>-->
+<!--						<th>Action</th>-->
+<!--						<th>Rows</th>-->
+<!--						<th>Type</th>-->
+<!--						<th>Collation</th>-->
+<!--						<th>Size</th>-->
+<!--						<th>Overhead</th>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_ipsum</td>-->
+<!--						<td>Lorem_lorem ipsum orem_lorem ipsumorem_lorem ipsumorem_lorem ipsum </td>-->
+<!--						<td>Lorem_lorem lorem i[sum</td>-->
+<!--						<td>Lorem_lorem ipsum lorem</td>-->
+<!--						<td>Lorem_lorem ipsum ....</td>-->
+<!--						<td>Lorem_lorem ipsum jjjj</td>-->
+<!--						<td>Lorem_lorem ipsum ,,,,</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_20.3</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_30.5</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_lorem ipsum</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_ipsum lorem</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_links</td>-->
+<!--						<td>50.2orem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--				</table>-->
+<!--&lt;!&ndash;5&ndash;&gt;		<table class="table" data-name="table5" style="display: none">-->
+<!--					<tr class="th">-->
+<!--						<th>Table</th>-->
+<!--						<th>Action</th>-->
+<!--						<th>Rows</th>-->
+<!--						<th>Type</th>-->
+<!--						<th>Collation</th>-->
+<!--						<th>Size</th>-->
+<!--						<th>Overhead</th>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_ipsum</td>-->
+<!--						<td>Lorem_lorem ipsum orem_lorem ipsumorem_lorem ipsumorem_lorem ipsum </td>-->
+<!--						<td>Lorem_lorem lorem i[sum</td>-->
+<!--						<td>Lorem_lorem ipsum lorem</td>-->
+<!--						<td>Lorem_lorem ipsum ....</td>-->
+<!--						<td>Lorem_lorem ipsum jjjj</td>-->
+<!--						<td>Lorem_lorem ipsum ,,,,</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">45.2345.2345.2345.2345.2345.2345.23</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lore45.2345.2345.23m_ipsum lorem</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.245.233</td>-->
+<!--						<td>50.45.22</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_links</td>-->
+<!--						<td>50.2orem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>5045.23.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lo45.23rem ipsum45.2345.23orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">20.3links</td>-->
+<!--						<td>50.2orem45.2345.23_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lo45.23rem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--				</table>-->
+<!--&lt;!&ndash;6&ndash;&gt;		<table class="table" data-name="table6" style="display: none">-->
+<!--					<tr class="th">-->
+<!--						<th>Table</th>-->
+<!--						<th>Action</th>-->
+<!--						<th>Rows</th>-->
+<!--						<th>Type</th>-->
+<!--						<th>Collation</th>-->
+<!--						<th>Size</th>-->
+<!--						<th>Overhead</th>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lore45.23m_ipsum lorem</td>-->
+<!--						<td>50.2orem_lorem 45.23ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.45.2323</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_lin45.2345.2345.23ks</td>-->
+<!--						<td>50.2orem_lore45.23m ipsum</td>-->
+<!--						<td>4045.23.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">20.3l45.2345.23inks</td>-->
+<!--						<td>50.2orem_lorem ipsumorem45.23_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem45.2345.23_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>5050.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_20.3links</td>-->
+<!--						<td>50.2o50rem_lorem ipsumorem_lorem50 ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lor5050em_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--				</table>-->
 				<div class="home">
 					<div class="col-5 col-md-6 information1">
 					<div  class="blocks">
 						<div><h2>General Settings</h2></div>
 						<div class="about">
 							<a href="#">Change Password</a>
-							<p>Current Server:</p>
+							<p style="float: left; margin: 1px 5px 12px 7px;display: flex;align-items: flex-end;"><img alt="server" class="img-responsive" src="images/server.png" width="16px" height="16px">Current Server:</p>
 							<select name="MySQL">
 								<option>MySQL</option>
 								<option>.....</option>
@@ -406,14 +828,14 @@
 					<div class="blocks">
 						<div><h2>Appearance Settings</h2></div>
 						<div class="about">
-							<p>Language:</p>
-							<select name="language">
+							<p style="float: left;margin: 15px 5px 12px 15px;display:flex; align-items:center; clear:both;"><img alt="server" class="img-responsive" src="images/translation.png" width="15px" height="14px">Language:</p>
+							<select name="language" style="margin-top: 15px;">
 								<option>English</option>
 								<option>Russian</option>
 								<option>Armenian</option>
 							</select>
-							<p>Theme:</p>
-							<select name="theme">
+							<p style="float: left;margin: 10px 5px 12px 15px;display:flex; align-items:center; clear:both;"><img alt="server" class="img-responsive" src="images/theme1.png" width="16px" height="16px">Theme:</p>
+							<select name="theme" style="float: left;margin-top: 10px;">
 								<option>pmahomme</option>
 								<option>....</option>
 								<option>.....</option>
@@ -423,12 +845,10 @@
 				</div>
 					<div class="col-7 col-md-6 information2">
 						<div class="blocks">
+							<div class="background"><h2>MySQL</h2></div>
 							<div class="about">
-								<div><h2>MySQL</h2></div>
-								<div class="mysql">
-									<p>Font size</p>
-									<a href="#">More Settings</a>
-								</div>
+								<p>Font size</p>
+								<a href="#">More Settings</a>
 							</div>
 						</div>
 						<div class="blocks">
@@ -441,9 +861,9 @@
 								<p>Lorem ipsum</p>
 							</div>
 						</div>
-						<div class="blocks">
+						<div class="blocks" >
 							<div><h2>phpMyAdmin</h2></div>
-							<div class="about">
+							<div class="about lastBlock">
 								<p>Version information</p>
 								<p>Git version</p>
 								<a>Documentation</a>

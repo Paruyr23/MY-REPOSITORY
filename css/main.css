@@ -171,15 +171,17 @@ ul li {
 	border: 1px solid silver;
 	border-radius: 5px;
 	margin-top: 20px;
+
 }
 
 table{
-	width: -webkit-fill-available;;
+	width:-webkit-fill-available;
 }
 
 .about{
 	margin-top: -10px;
 	background-color: #F3F3F3;
+	display: flow-root;
 }
 .info h2{
 	background-color: #B5B5B5;
@@ -187,8 +189,20 @@ table{
 	color:white;
 }
 
+.blocks h2{
+	margin: 10px 22px;
+	padding-top: .1em;
+	padding-bottom: .1em;
+	font-size: 1.5em;
+	text-shadow: 0 1px 0 #777;
+}
+
+.blocks div:first-child {
+	background-color: #B5B5B5;
+}
+
 .about p{
-	margin: 10px 0 0px;
+	margin: 15px 23px 5px;
 }
 .th{
 	background-color: #D8D8D8;
@@ -196,6 +210,36 @@ table{
 
 tr th {
 	border-left: 1px solid white;
+}
+
+.information2 p{
+	display: list-item;
+}
+
+.lastBlock{
+display: grid;
+}
+
+.lastBlock a{
+	display: list-item;
+	margin: 7px 0 4px 24px;
+}
+
+.about a{
+	display: list-item;
+	margin: 8px 0 8px 23px;
+	clear: both;
+}
+
+.p {
+	float: left;
+	margin: 1px 5px 12px 7px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.about img {
+margin-right: 5px;
 }
 /*.no-gutter > [class*='col-'] {
     padding-right:0;
