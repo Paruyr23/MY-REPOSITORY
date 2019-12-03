@@ -17,7 +17,7 @@
   	<div class="row">
   		<div class="col-4 col-md-3 bg no-margin">
   			<div class="split left">
-				<img alt="Logo" width="370px" height="90px" class="img-responsive logo" src="images/logo.png"  style="margin:-30px auto;display:block;cursor: pointer;" onclick="openMain('table','table2','table3','table4','table5','table6')">
+				<img alt="Logo" width="370px" height="90px" class="img-responsive logo" src="images/logo.png"  style="margin:-30px auto;display:block;cursor: pointer;" onclick="showFun(0)">
   				<div id="ico">
 			      <a href="#">
 			        <img alt="Brand" class="img-responsive" src="images/home.png" width="20px" height="20px">
@@ -51,7 +51,7 @@
 									<div id="demo1" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo11" data-toggle="collapse"  class="demo11" onclick="collapse('demo11')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" class="block-1" onclick="showFun('table')">Lorem ipsum dolor</a>
+												<a href="#demo11" data-toggle="collapse"  class="demo11" onclick="collapse('demo11')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" class="block-1" onclick="showFun(1)">Lorem ipsum dolor</a>
 												<div id="demo11" class="collapse">
 													<img src="images/document.png" alt="doc" width="20px" height="20px">lorem ipsum
 												</div>
@@ -65,7 +65,7 @@
 									<div id="demo2" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo12" data-toggle="collapse" class="demo12" onclick="collapse('demo12')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun('table')">Lorem ipsum dolor</a>
+												<a href="#demo12" data-toggle="collapse" class="demo12" onclick="collapse('demo12')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun(2)">Lorem ipsum dolor</a>
 												<div id="demo12" class="collapse">
 													<img src="images/document.png" alt="doc" width="20px" height="20px"> lorem ipsum
 												</div>
@@ -79,7 +79,7 @@
 								<div id="demo3" class="collapse">
 									<ul>
 										<li>
-											<a href="#demo13" data-toggle="collapse" class="demo13" onclick="collapse('demo13')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun('table')">Lorem ipsum dolor</a>
+											<a href="#demo13" data-toggle="collapse" class="demo13" onclick="collapse('demo13')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun(3)">Lorem ipsum dolor</a>
 												<div id="demo13" class="collapse">
 													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
 												</div>
@@ -93,7 +93,7 @@
 									<div id="demo4" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo14" data-toggle="collapse" class="demo14" onclick="collapse('demo14')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun('table')">Lorem ipsum dolor</a>
+												<a href="#demo14" data-toggle="collapse" class="demo14" onclick="collapse('demo14')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun(4)">Lorem ipsum dolor</a>
 												<div id="demo14" class="collapse">
 													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
 												</div>
@@ -107,7 +107,7 @@
 									<div id="demo5" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo15" data-toggle="collapse" class="demo15" onclick="collapse('demo15')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun('table')">Lorem ipsum dolor</a>
+												<a href="#demo15" data-toggle="collapse" class="demo15" onclick="collapse('demo15')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun(5)">Lorem ipsum dolor</a>
 												<div id="demo15" class="collapse">
 													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
 												</div>
@@ -121,7 +121,7 @@
 									<div id="demo6" class="collapse">
 										<ul>
 											<li>
-												<a href="#demo16" data-toggle="collapse" class="demo16" onclick="collapse('demo16')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun('table')">Lorem ipsum dolor</a>
+												<a href="#demo16" data-toggle="collapse" class="demo16" onclick="collapse('demo16')">+</a><img src="images/document.png" alt="doc" width="20px" height="20px"><a href="#" onclick="showFun(6)">Lorem ipsum dolor</a>
 												<div id="demo16" class="collapse">
 													<img src="images/document.png" alt="doc" width="23px" height="20px"> lorem ipsum
 												</div>
@@ -237,102 +237,102 @@
 <!--				</ul>-->
 <!--			</div>-->
 
-  			<div class="container-fluid nav">
-				<div class="forChangeCol" ><img src="images/structure.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Structure</h5></a></div>
-				<div class="forChangeCol2"><img src="images/sql.png" alt="doc" width="20px" height="20px"><a href="#"><h5>SQL</h5></a></div>
-				<div class="forChangeCol3"><img src="images/loupe.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Search</h5></a></div>
-				<div class="forChangeCol4"><img src="images/query.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Query</h5></a></div>
-				<div class="forChangeCol5"><img src="images/export.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Export</h5></a></div>
-				<div class="forChangeCol6"><img src="images/import.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Import</h5></a></div>
-				<div class="forChangeCol7"><img src="images/wrench2.png" alt="doc" width="22px" height="22px"><a href="#"><h5>Operations</h5></a></div>
-				<div class="forChangeCol8"><img src="images/routines.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Routines</h5></a></div>
-				<div class="forChangeCol9"><img src="images/events.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Events</h5></a></div>
-				<div class="forChangeCol10"><img src="images/triggers.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Triggers</h5></a></div>
+  			<div class="container-fluid nav" id="header">
+<!--				<div class="forChangeCol" ><img src="images/structure.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Structure</h5></a></div>-->
+<!--				<div class="forChangeCol2"><img src="images/sql.png" alt="doc" width="20px" height="20px"><a href="#"><h5>SQL</h5></a></div>-->
+<!--				<div class="forChangeCol3"><img src="images/loupe.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Search</h5></a></div>-->
+<!--				<div class="forChangeCol4"><img src="images/query.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Query</h5></a></div>-->
+<!--				<div class="forChangeCol5"><img src="images/export.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Export</h5></a></div>-->
+<!--				<div class="forChangeCol6"><img src="images/import.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Import</h5></a></div>-->
+<!--				<div class="forChangeCol7"><img src="images/wrench2.png" alt="doc" width="22px" height="22px"><a href="#"><h5>Operations</h5></a></div>-->
+<!--				<div class="forChangeCol8"><img src="images/routines.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Routines</h5></a></div>-->
+<!--				<div class="forChangeCol9"><img src="images/events.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Events</h5></a></div>-->
+<!--				<div class="forChangeCol10"><img src="images/triggers.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Triggers</h5></a></div>-->
   			</div>
 
-			<div class="container-fluid info">
-<!--1-->	<table class="table" data-name="table" style="display: none">
-				<tr class="th">
-					<th>Table</th>
-					<th>Action</th>
-					<th>Rows</th>
-					<th>Type</th>
-					<th>Collation</th>
-					<th>Size</th>
-					<th>Overhead</th>
-				</tr>
-				<tr>
-					<td><input type="checkbox">Lorem_links</td>
-					<td>50.2orem_lorem ipsum</td>
-					<td>40.63</td>
-					<td>45.23</td>
-					<td>50.2</td>
-					<td>40.63</td>
-					<td>45.23</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox">20.3links</td>
-					<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-					<td>40.63</td>
-					<td>45.23</td>
-					<td>50.2</td>
-					<td>40.63</td>
-					<td>45.23</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox">Lorem_terms</td>
-					<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
-					<td>40.63</td>
-					<td>45505050.23</td>
-					<td>50.2</td>
-					<td>40.63</td>
-					<td>45.23</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox">20.3links</td>
-					<td>50.2orem_lorem ipsumorem_lorem ipsumore505050m_lorem ipsumorem_lorem ipsum</td>
-					<td>40.63</td>
-					<td>45.23</td>
-					<td>50.502</td>
-					<td>40.63</td>
-					<td>45.23</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox">Lorem_terms</td>
-					<td>50.2orem_lore5050m ipsumorem_lorem ipsum</td>
-					<td>40.63</td>
-					<td>45.23</td>
-					<td>50.2</td>
-					<td>40.63</td>
-					<td>45.23</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox">Lorem_20.3links</td>
-					<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-					<td>405050.23</td>
-					<td>50.2</td>
-					<td>40.63</td>
-					<td>45.23</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox">Lorem_terms</td>
-					<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
-					<td>40.63</td>
-					<td>45.505023</td>
-					<td>50.2</td>
-					<td>40.63</td>
-					<td>45.23</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox">Lorem50_20.3links</td>
-					<td>50.2or5050em_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-					<td>40.63</td>
-					<td>45.23</td>
-					<td>50.2</td>
-					<td>40.63</td>
-					<td>45.23</td>
-				</tr>
-				</table>
+			<div class="container-fluid info" id="info">
+<!--	&lt;!&ndash;1&ndash;&gt;	<table class="table" data-name="table" style="display: none">-->
+<!--					<tr class="th">-->
+<!--						<th>Table</th>-->
+<!--						<th>Action</th>-->
+<!--						<th>Rows</th>-->
+<!--						<th>Type</th>-->
+<!--						<th>Collation</th>-->
+<!--						<th>Size</th>-->
+<!--						<th>Overhead</th>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_links</td>-->
+<!--						<td>50.2orem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45505050.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumore505050m_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.502</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lore5050m ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_20.3links</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>405050.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem_terms</td>-->
+<!--						<td>50.2orem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.505023</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><input type="checkbox">Lorem50_20.3links</td>-->
+<!--						<td>50.2or5050em_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--						<td>50.2</td>-->
+<!--						<td>40.63</td>-->
+<!--						<td>45.23</td>-->
+<!--					</tr>-->
+<!--					</table>-->
 <!--&lt;!&ndash;2&ndash;&gt;		<table class="table" data-name="table2" style="display: none">-->
 <!--					<tr class="th">-->
 <!--						<th>Table</th>-->
@@ -811,71 +811,7 @@
 <!--						<td>45.23</td>-->
 <!--					</tr>-->
 <!--				</table>-->
-				<div class="home">
-					<div class="col-5 col-md-6 information1">
-					<div  class="blocks">
-						<div><h2>General Settings</h2></div>
-						<div class="about">
-							<a href="#">Change Password</a>
-							<p style="float: left; margin: 1px 5px 12px 7px;display: flex;align-items: flex-end;"><img alt="server" class="img-responsive" src="images/server.png" width="16px" height="16px">Current Server:</p>
-							<select name="MySQL">
-								<option>MySQL</option>
-								<option>.....</option>
-								<option>......</option>
-							</select>
-						</div>
-					</div>
-					<div class="blocks">
-						<div><h2>Appearance Settings</h2></div>
-						<div class="about">
-							<p style="float: left;margin: 15px 5px 12px 15px;display:flex; align-items:center; clear:both;"><img alt="server" class="img-responsive" src="images/translation.png" width="15px" height="14px">Language:</p>
-							<select name="language" style="margin-top: 15px;">
-								<option>English</option>
-								<option>Russian</option>
-								<option>Armenian</option>
-							</select>
-							<p style="float: left;margin: 10px 5px 12px 15px;display:flex; align-items:center; clear:both;"><img alt="server" class="img-responsive" src="images/theme1.png" width="16px" height="16px">Theme:</p>
-							<select name="theme" style="float: left;margin-top: 10px;">
-								<option>pmahomme</option>
-								<option>....</option>
-								<option>.....</option>
-							</select>
-						</div>
-					</div>
-				</div>
-					<div class="col-7 col-md-6 information2">
-						<div class="blocks">
-							<div class="background"><h2>MySQL</h2></div>
-							<div class="about">
-								<p>Font size</p>
-								<a href="#">More Settings</a>
-							</div>
-						</div>
-						<div class="blocks">
-							<div><h2>Web server</h2></div>
-							<div class="about">
-								<p>nginx/1.2.1</p>
-								<p>Database client version:libmysql-5.5.40</p>
-								<p>Lorem ipsum Lorem ipsum Lorem ipsum</p>
-								<p>Lorem ipsumLorem ipsum/p>
-								<p>Lorem ipsum</p>
-							</div>
-						</div>
-						<div class="blocks" >
-							<div><h2>phpMyAdmin</h2></div>
-							<div class="about lastBlock">
-								<p>Version information</p>
-								<p>Git version</p>
-								<a>Documentation</a>
-								<a>Wiki</a>
-								<a>Official Homepage</a>
-								<a>Contribute</a>
-								<a>Get support</a>
-								<a>List of changes</a>
-							</div>
-						</div>
-					</div>
-				</div>
+
 			</div>
   		</div>
   	</div>
