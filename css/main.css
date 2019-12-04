@@ -174,8 +174,8 @@ ul li {
 
 }
 
-table{
-	width:-webkit-fill-available;
+tr:nth-child(2n + 1) {
+	background-color: #DDDDDD;
 }
 
 .about{
@@ -205,7 +205,12 @@ table{
 	margin: 15px 23px 5px;
 }
 .th{
-	background-color: #D8D8D8;
+	background-color: #f1f1f1 !important;
+}
+
+.th2 {
+	height: 37px !important;
+	background-color: #EAEAEB !important;
 }
 
 tr th {
@@ -241,6 +246,12 @@ display: grid;
 .about img {
 margin-right: 5px;
 }
+
+/*#header img{*/
+/*	width: 20px;*/
+/*	height:20px;*/
+/*}*/
+
 /*.no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;

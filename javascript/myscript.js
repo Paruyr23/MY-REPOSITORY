@@ -84,8 +84,7 @@ function showFun(arg){
     if (arg ===1){
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
         document.getElementById('info').innerHTML = `
-<h1>table1</h1>
-        <table class="table" data-name="table">
+       <table class="table" data-name="table2">
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
 \t\t\t\t\t\t<th>Action</th>
@@ -96,8 +95,31 @@ function showFun(arg){
 \t\t\t\t\t\t<th>Overhead</th>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem_links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsum</td>
+\t\t\t\t\t\t<td><input type="checkbox">_ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>Lorem_lorem lorem i[sum</td>
+\t\t\t\t\t\t<td>Lorem_lorem ipsum lorem</td>
+\t\t\t\t\t\t<td>Lorem_lorem ipsum ....</td>
+\t\t\t\t\t\t<td>Lorem_lorem ipsum jjjj</td>
+\t\t\t\t\t\t<td>Lorem_lorem ipsum ,,,,</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">IPSUM</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
@@ -105,8 +127,31 @@ function showFun(arg){
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_30.5</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3links</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
@@ -115,25 +160,14 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45505050.23</td>
-\t\t\t\t\t\t<td>50.2</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t</tr>
-\t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumore505050m_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t\t<td>50.502</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t</tr>
-\t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lore5050m ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
@@ -142,38 +176,85 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>405050.23</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3links</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.505023</td>
+\t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem50_20.3links</td>
-\t\t\t\t\t\t<td>50.2or5050em_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
-\t\t\t\t\t</table>
+\t\t\t\t\t\t<tr class="th2">
+\t\t\t\t\t\t<th>Tables</th>
+\t\t\t\t\t\t<th>Sum</th>
+\t\t\t\t\t\t<th>1.211313</th>
+\t\t\t\t\t\t<th>InnoDB</th>
+\t\t\t\t\t\t<th>Lorem</th>
+\t\t\t\t\t\t<th>size</th>
+\t\t\t\t\t\t<th>7.44</th>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t</table>
         `
     }
     if (arg===2) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
         document.getElementById('info').innerHTML = `
-<h1>table2</h1>
-        <table class="table" data-name="table" >
+<table class="table" data-name="table3">
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
 \t\t\t\t\t\t<th>Action</th>
@@ -185,43 +266,14 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsum</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t\t<td>50.2</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t</tr>
-\t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t\t<td>50.2</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t</tr>
-\t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45505050.23</td>
-\t\t\t\t\t\t<td>50.2</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t</tr>
-\t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumore505050m_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t\t<td>50.502</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t</tr>
-\t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lore5050m ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
@@ -230,39 +282,117 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>405050.23</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.505023</td>
+\t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem50_20.3links</td>
-\t\t\t\t\t\t<td>50.2or5050em_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3links</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
-\t\t\t\t\t</table>
-        `
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3links</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t\t<tr class="th2">
+\t\t\t\t\t\t<th>Tables</th>
+\t\t\t\t\t\t<th>Sum</th>
+\t\t\t\t\t\t<th>1.211313</th>
+\t\t\t\t\t\t<th>InnoDB</th>
+\t\t\t\t\t\t<th>Lorem</th>
+\t\t\t\t\t\t<th>size</th>
+\t\t\t\t\t\t<th>7.44</th>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t</table>`
     }
 
     if (arg===3) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
         document.getElementById('info').innerHTML = `
-<h1>table3</h1>
-        <table class="table" data-name="table" >
+<table class="table" data-name="table4">
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
 \t\t\t\t\t\t<th>Action</th>
@@ -273,44 +403,95 @@ function showFun(arg){
 \t\t\t\t\t\t<th>Overhead</th>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>Lorem_lorem lorem i[sum</td>
+\t\t\t\t\t\t<td>Lorem_lorem ipsum lorem</td>
+\t\t\t\t\t\t<td>Lorem_lorem ipsum ....</td>
+\t\t\t\t\t\t<td>Lorem_lorem ipsum jjjj</td>
+\t\t\t\t\t\t<td>Lorem_lorem ipsum ,,,,</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_30.5</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_ipsum lorem</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsum</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t\t<td>50.2</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t</tr>
-\t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t\t<td>50.2</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t</tr>
-\t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45505050.23</td>
-\t\t\t\t\t\t<td>50.2</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t</tr>
-\t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumore505050m_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t\t<td>50.502</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t</tr>
-\t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lore5050m ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
@@ -319,38 +500,150 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>405050.23</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.505023</td>
+\t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem50_20.3links</td>
-\t\t\t\t\t\t<td>50.2or5050em_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3links</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
-\t\t\t\t\t</table>
-        `}
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3links</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3links</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t\t<tr class="th2">
+\t\t\t\t\t\t<th>Tables</th>
+\t\t\t\t\t\t<th>Sum</th>
+\t\t\t\t\t\t<th>1.211313</th>
+\t\t\t\t\t\t<th>InnoDB</th>
+\t\t\t\t\t\t<th>Lorem</th>
+\t\t\t\t\t\t<th>size</th>
+\t\t\t\t\t\t<th>7.44</th>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t</table>
+`
+    }
 
     if (arg===4) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
         document.getElementById('info').innerHTML = `
-<h1>table4</h1>
-        <table class="table" data-name="table" >
+<table class="table" data-name="table5" >
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
 \t\t\t\t\t\t<th>Action</th>
@@ -361,17 +654,79 @@ function showFun(arg){
 \t\t\t\t\t\t<th>Overhead</th>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>Lorem_lorem lorem i[sum</td>
+\t\t\t\t\t\t<td>Lorem_lorem ipsum lorem</td>
+\t\t\t\t\t\t<td>Lorem_lorem ipsum ....</td>
+\t\t\t\t\t\t<td>Lorem_lorem ipsum jjjj</td>
+\t\t\t\t\t\t<td>Lorem_lorem ipsum ,,,,</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">45.2345.2345.2345.245.23</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lore45.2345.2345.23m_ipsum lorem</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.245.233</td>
+\t\t\t\t\t\t<td>50.45.22</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>5045.23.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
@@ -380,25 +735,46 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45505050.23</td>
+\t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumore505050m_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t\t<td>50.502</td>
+\t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lore5050m ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
@@ -407,38 +783,37 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>405050.23</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t\t<tr class="th2">
+\t\t\t\t\t\t<th>Tables</th>
+\t\t\t\t\t\t<th>Sum</th>
+\t\t\t\t\t\t<th>1.211313</th>
+\t\t\t\t\t\t<th>InnoDB</th>
+\t\t\t\t\t\t<th>Lorem</th>
+\t\t\t\t\t\t<th>size</th>
+\t\t\t\t\t\t<th>7.44</th>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.505023</td>
-\t\t\t\t\t\t<td>50.2</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t</tr>
-\t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem50_20.3links</td>
-\t\t\t\t\t\t<td>50.2or5050em_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t\t<td>50.2</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t</tr>
-\t\t\t\t\t</table>
-        `
+\t\t\t\t</table>
+`
     }
     if (arg===5) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
         document.getElementById('info').innerHTML = `
-<h1>table5</h1>
-        <table class="table" data-name="table" >
+\t\t\t\t\t<table class="table" data-name="table" >
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
 \t\t\t\t\t\t<th>Action</th>
@@ -450,7 +825,14 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
@@ -459,7 +841,14 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
@@ -468,7 +857,14 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45505050.23</td>
 \t\t\t\t\t\t<td>50.2</td>
@@ -477,7 +873,14 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumore505050m_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.502</td>
@@ -486,7 +889,14 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lore5050m ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
@@ -495,7 +905,14 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>405050.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
@@ -503,7 +920,14 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.505023</td>
 \t\t\t\t\t\t<td>50.2</td>
@@ -512,21 +936,37 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem50_20.3links</td>
-\t\t\t\t\t\t<td>50.2or5050em_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
+\t\t\t\t\t\t<tr class="th2">
+\t\t\t\t\t\t<th>Tables</th>
+\t\t\t\t\t\t<th>Sum</th>
+\t\t\t\t\t\t<th>1.211313</th>
+\t\t\t\t\t\t<th>InnoDB</th>
+\t\t\t\t\t\t<th>Lorem</th>
+\t\t\t\t\t\t<th>size</th>
+\t\t\t\t\t\t<th>7.44</th>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
 \t\t\t\t\t</table>
         `
     }
     if (arg===6) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
-        document.getElementById('info').innerHTML = `
-<h1>table6</h1>
-        <table class="table" data-name="table" >
+        document.getElementById('info').innerHTML = ` 
+ <table class="table">
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
 \t\t\t\t\t\t<th>Action</th>
@@ -537,17 +977,47 @@ function showFun(arg){
 \t\t\t\t\t\t<th>Overhead</th>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem_links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsum</td>
+\t\t\t\t\t\t<td><input type="checkbox">Lore45.23m_ipsum lorem</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.45.2323</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t<td><input type="checkbox">Lorem_lin45.2345.2345.23ks</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>4045.23.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td><input type="checkbox">20.3l45.2345.23inks</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
@@ -556,59 +1026,96 @@ function showFun(arg){
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45505050.23</td>
+\t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumore505050m_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t\t<td>50.502</td>
+\t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lore5050m ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t\t<td>50.2</td>
+\t\t\t\t\t\t<td>5050.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
 \t\t\t\t\t\t<td><input type="checkbox">Lorem_20.3links</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>405050.23</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
+\t\t\t\t\t\t<td>40.63</td>
+\t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem_terms</td>
-\t\t\t\t\t\t<td>50.2orem_lorem ipsumorem_lorem ipsum</td>
+\t\t\t\t\t\t<td><input type="checkbox">Lor5050em_terms</td>
+\t\t\t\t\t\t<td>LOrem Ipsum LOrem Ipsum LOrem Ipsum 
+<img src="images/star.png" width="17px" height="17px">
+<img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+<img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a> 
+<img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+<img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+<img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+<img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a></td>
 \t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.505023</td>
+\t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t\t<td>50.2</td>
 \t\t\t\t\t\t<td>40.63</td>
 \t\t\t\t\t\t<td>45.23</td>
+\t\t\t\t\t</tr>
+\t\t\t\t\t\t<tr class="th2">
+\t\t\t\t\t\t<th>Tables</th>
+\t\t\t\t\t\t<th>Sum</th>
+\t\t\t\t\t\t<th>1.211313</th>
+\t\t\t\t\t\t<th>InnoDB</th>
+\t\t\t\t\t\t<th>Lorem</th>
+\t\t\t\t\t\t<th>size</th>
+\t\t\t\t\t\t<th>7.44</th>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr>
-\t\t\t\t\t\t<td><input type="checkbox">Lorem50_20.3links</td>
-\t\t\t\t\t\t<td>50.2or5050em_lorem ipsumorem_lorem ipsumorem_lorem ipsumorem_lorem ipsum</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t\t<td>50.2</td>
-\t\t\t\t\t\t<td>40.63</td>
-\t\t\t\t\t\t<td>45.23</td>
-\t\t\t\t\t</tr>
-\t\t\t\t\t</table>
-        `
+\t\t\t\t</table>
+`
     }
 
 
@@ -627,19 +1134,89 @@ function showFun(arg){
 // }
 //
 
-function openMain(name,name2,name3,name4,name5,name6){
-    if(document.querySelector("[data-name=" + name||name2||name3||name4||name5||name6 + "]").style.display == "inline-table"){
-        document.querySelector("[data-name=" + name||name2||name3||name4||name5||name6 + "]").style.display = "none";
-        document.querySelector('.home').style.display = "block";
-        document.querySelector('.forChangeCol').style.backgroundColor = "#DBDBDB";
-    }
-}
+// function openMain(name,name2,name3,name4,name5,name6){
+//     if(document.querySelector("[data-name=" + name||name2||name3||name4||name5||name6 + "]").style.display == "inline-table"){
+//         document.querySelector("[data-name=" + name||name2||name3||name4||name5||name6 + "]").style.display = "none";
+//         document.querySelector('.home').style.display = "block";
+//         document.querySelector('.forChangeCol').style.backgroundColor = "#DBDBDB";
+//     }
+// }
 
 // <div class="forChangeCol" ><img src="images/structure.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Structure</h5></a></div>
+// <div class="forChangeCol2"><img src="images/sql.png" alt="doc" width="20px" height="20px"><a href="#"><h5>SQL</h5></a></div>
+// <div class="forChangeCol3"><img src="images/loupe.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Search</h5></a></div>
+// <div class="forChangeCol4"><img src="images/query.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Query</h5></a></div>
+// <div class="forChangeCol5"><img src="" alt="doc" width="20px" height="20px"><a href="#"><h5>Export</h5></a></div>
+// <div class="forChangeCol6"><img src="images/import.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Import</h5></a></div>
+// <div class="forChangeCol7"><img src="images/wrench2.png" alt="doc" width="22px" height="22px"><a href="#"><h5>Operations</h5></a></div>
+// <div class="forChangeCol8"><img src="images/routines.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Routines</h5></a></div>
+// <div class="forChangeCol9"><img src="images/events.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Events</h5></a></div>
+// <div class="forChangeCol10"><img src="images/triggers.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Triggers</h5></a></div>
+
+var data = [
+    {
+        name:'Structure',
+        src:"images/structure.png"
+    },
+    {
+        name:'SQL',
+        src:"images/sql.png"
+    },
+    {
+        name:'Search',
+        src:"images/loupe.png"
+    },
+    {
+        name:'Query',
+        src:"images/query.png"
+    },
+    {
+        name:'Export',
+        src:"images/export.png"
+    },
+    {
+        name:'Import',
+        src:"images/import.png"
+    },
+    {
+        name:'Operations',
+        src:"images/wrench2.png"
+    },
+    {
+        name:'Routines',
+        src:"images/routines.png"
+    },
+    {
+        name:'Events',
+        src:"images/events.png"
+    },
+    {
+        name:'Triggers',
+        src:"images/triggers.png"
+    },
+];
 
 
 
-
+window.addEventListener('load', function(){
+    var cont = document.querySelector('#header');
+    for(var i = 0;i < data.length;i++){
+        var divs = document.createElement('div');
+        var a = document.createElement('a');
+        var images = document.createElement('img')
+        var h5 = document.createElement(`h5`);
+        divs.setAttribute(`class`,`forChangeCol`);
+        images.setAttribute('src', `${data[i].src}`);
+        images.setAttribute('width','21px');
+        images.setAttribute('height','21px');
+        a.setAttribute('href','#');
+        h5.innerHTML = `${data[i].name}`
+        a.appendChild(h5)
+        divs.appendChild(images);
+        divs.appendChild(a);
+        cont.appendChild(divs);
+    }
+});
 
 // function changeBg(class) {
 //     $('class').css('background-color', 'white');
