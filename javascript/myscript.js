@@ -10,11 +10,10 @@ function collapse (element) {
 }
 
 function showFun(arg) {
-    var selectedDiv = document.getElementById('info');
     if (arg === 0) {
         document.querySelector('.forChangeCol').style.backgroundColor = "#DBDBDB";
-        selectedDiv.innerHTML = `
-            \t\t\t\t<div class="home">
+        document.getElementById('info').innerHTML = `
+\t\t\t\t\t<div class="home">
 \t\t\t\t\t<div class="col-5 col-md-6 information1">
 \t\t\t\t\t<div  class="blocks">
 \t\t\t\t\t\t<div><h2>General Settings</h2></div>
@@ -85,7 +84,7 @@ function showFun(arg) {
     if (arg === 1) {
 
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
-        selectedDiv.innerHTML = `
+        document.getElementById('info').innerHTML = `
        <table class="table" data-name="table2">
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
@@ -255,7 +254,7 @@ function showFun(arg) {
     }
     if (arg === 2) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
-        selectedDiv.innerHTML = `
+        document.getElementById('info').innerHTML = `
 <table class="table" data-name="table3">
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
@@ -393,7 +392,7 @@ function showFun(arg) {
 
     if (arg === 3) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
-        selectedDiv.innerHTML = `
+        document.getElementById('info').innerHTML = `
 <table class="table" data-name="table4">
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
@@ -644,7 +643,7 @@ function showFun(arg) {
 
     if (arg === 4) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
-        selectedDiv.innerHTML = `
+        document.getElementById('info').innerHTML = `
 <table class="table" data-name="table5" >
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
@@ -814,7 +813,7 @@ function showFun(arg) {
     }
     if (arg === 5) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
-        selectedDiv.innerHTML = `
+        document.getElementById('info').innerHTML = `
 \t\t\t\t\t<table class="table" data-name="table" >
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
@@ -967,7 +966,7 @@ function showFun(arg) {
     }
     if (arg === 6) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
-        selectedDiv.innerHTML = ` 
+        document.getElementById('info').innerHTML = ` 
  <table class="table">
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
@@ -1119,6 +1118,7 @@ function showFun(arg) {
 \t\t\t\t</table>
 `
     }
+}
 
     var data = [
         {
@@ -1169,20 +1169,48 @@ function showFun(arg) {
         for (var i = 0; i < data.length; i++) {
             var divs = document.createElement('div');
             var a = document.createElement('a');
-            var images = document.createElement('img')
+            var images = document.createElement('img');
             var h5 = document.createElement(`h5`);
             divs.setAttribute(`class`, `forChangeCol`);
             images.setAttribute('src', `${data[i].src}`);
             images.setAttribute('width', '21px');
             images.setAttribute('height', '21px');
             a.setAttribute('href', '#');
-            h5.innerHTML = `${data[i].name}`
-            a.appendChild(h5)
+            h5.innerHTML = `${data[i].name}`;
+            a.appendChild(h5);
             divs.appendChild(images);
             divs.appendChild(a);
             cont.appendChild(divs);
         }
     });
 
-}
+
+
+$(window).load(function() {
+
+
+    $('<a>', { href: '#', text: 'Гугли!'}).appendTo('.blokInfo');
+// //     // let collapse = [];
+// //     // collapse.push(
+// //     //     {
+// //     //
+// //     //     },
+// //     // );
+// //
+// // // <a href="#demo" data-toggle="collapse" class="demo" onclick="collapse('demo')">+</a><img src="images/files.png" alt="doc" width="20px" height="20px"> Collapse
+// // //     <div id="demo" class="collapse">
+// //
+// //
+// //     // let div1 = $("div").attr({"id":"demo","class":"collapse"});
+// //     // $("<li></li>").appendChild(a);
+//     $(".blockInfo").html("<a href='#' data-toggle='collapse' class='demo'>+</a><img src='images/files.png' alt='doc' width='20px' height='20px'> Collapse");
+// //     // for(let i=0;i < collapse;i++){
+// //     //
+// //     // }
+// //     // ul.appendChild(li);
+// //
+// //     // $("<ul/>").append($("<li/>");
+});
+
+
 
