@@ -9,10 +9,11 @@ function collapse (element) {
     link[0].innerHTML = "+";
 }
 
-function showFun(arg){
-    if (arg ===0){
+function showFun(arg) {
+    var selectedDiv = document.getElementById('info');
+    if (arg === 0) {
         document.querySelector('.forChangeCol').style.backgroundColor = "#DBDBDB";
-        document.getElementById('info').innerHTML = `
+        selectedDiv.innerHTML = `
             \t\t\t\t<div class="home">
 \t\t\t\t\t<div class="col-5 col-md-6 information1">
 \t\t\t\t\t<div  class="blocks">
@@ -81,9 +82,10 @@ function showFun(arg){
         `
     }
 
-    if (arg ===1){
+    if (arg === 1) {
+
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
-        document.getElementById('info').innerHTML = `
+        selectedDiv.innerHTML = `
        <table class="table" data-name="table2">
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
@@ -251,9 +253,9 @@ function showFun(arg){
 \t\t\t\t</table>
         `
     }
-    if (arg===2) {
+    if (arg === 2) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
-        document.getElementById('info').innerHTML = `
+        selectedDiv.innerHTML = `
 <table class="table" data-name="table3">
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
@@ -389,9 +391,9 @@ function showFun(arg){
 \t\t\t\t</table>`
     }
 
-    if (arg===3) {
+    if (arg === 3) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
-        document.getElementById('info').innerHTML = `
+        selectedDiv.innerHTML = `
 <table class="table" data-name="table4">
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
@@ -640,9 +642,9 @@ function showFun(arg){
 `
     }
 
-    if (arg===4) {
+    if (arg === 4) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
-        document.getElementById('info').innerHTML = `
+        selectedDiv.innerHTML = `
 <table class="table" data-name="table5" >
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
@@ -810,9 +812,9 @@ function showFun(arg){
 \t\t\t\t</table>
 `
     }
-    if (arg===5) {
+    if (arg === 5) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
-        document.getElementById('info').innerHTML = `
+        selectedDiv.innerHTML = `
 \t\t\t\t\t<table class="table" data-name="table" >
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
@@ -963,9 +965,9 @@ function showFun(arg){
 \t\t\t\t\t</table>
         `
     }
-    if (arg===6) {
+    if (arg === 6) {
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
-        document.getElementById('info').innerHTML = ` 
+        selectedDiv.innerHTML = ` 
  <table class="table">
 \t\t\t\t\t<tr class="th">
 \t\t\t\t\t\t<th>Table</th>
@@ -1118,126 +1120,69 @@ function showFun(arg){
 `
     }
 
+    var data = [
+        {
+            name: 'Structure',
+            src: "images/structure.png"
+        },
+        {
+            name: 'SQL',
+            src: "images/sql.png"
+        },
+        {
+            name: 'Search',
+            src: "images/loupe.png"
+        },
+        {
+            name: 'Query',
+            src: "images/query.png"
+        },
+        {
+            name: 'Export',
+            src: "images/export.png"
+        },
+        {
+            name: 'Import',
+            src: "images/import.png"
+        },
+        {
+            name: 'Operations',
+            src: "images/wrench2.png"
+        },
+        {
+            name: 'Routines',
+            src: "images/routines.png"
+        },
+        {
+            name: 'Events',
+            src: "images/events.png"
+        },
+        {
+            name: 'Triggers',
+            src: "images/triggers.png"
+        },
+    ];
 
-    // if (document.querySelector("[data-name=" + Name + "]").style.display == "none") {
-    //     document.querySelector("[data-name=" + Name + "]").style.display = "inline-table";
-    //     document.querySelector('.home').style.display = "none";
-    //     document.querySelector('.forChangeCol').style.backgroundColor = "white";
-    // }
+
+    window.addEventListener('load', function () {
+        var cont = document.querySelector('#header');
+        for (var i = 0; i < data.length; i++) {
+            var divs = document.createElement('div');
+            var a = document.createElement('a');
+            var images = document.createElement('img')
+            var h5 = document.createElement(`h5`);
+            divs.setAttribute(`class`, `forChangeCol`);
+            images.setAttribute('src', `${data[i].src}`);
+            images.setAttribute('width', '21px');
+            images.setAttribute('height', '21px');
+            a.setAttribute('href', '#');
+            h5.innerHTML = `${data[i].name}`
+            a.appendChild(h5)
+            divs.appendChild(images);
+            divs.appendChild(a);
+            cont.appendChild(divs);
+        }
+    });
+
 }
 
-
-// function resetFun(Name,Name2,Name3,Name4,Name5,Name6){
-//     if (document.querySelector("[data-name=" + Name||Name2||Name3||Name4||Name5||Name6 + "]").style.display == "inline-table") {
-//         document.querySelector("[data-name=" + Name||Name2||Name3||Name4||Name5||Name6 + "]").style.display = "none";
-//     }
-// }
-//
-
-// function openMain(name,name2,name3,name4,name5,name6){
-//     if(document.querySelector("[data-name=" + name||name2||name3||name4||name5||name6 + "]").style.display == "inline-table"){
-//         document.querySelector("[data-name=" + name||name2||name3||name4||name5||name6 + "]").style.display = "none";
-//         document.querySelector('.home').style.display = "block";
-//         document.querySelector('.forChangeCol').style.backgroundColor = "#DBDBDB";
-//     }
-// }
-
-// <div class="forChangeCol" ><img src="images/structure.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Structure</h5></a></div>
-// <div class="forChangeCol2"><img src="images/sql.png" alt="doc" width="20px" height="20px"><a href="#"><h5>SQL</h5></a></div>
-// <div class="forChangeCol3"><img src="images/loupe.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Search</h5></a></div>
-// <div class="forChangeCol4"><img src="images/query.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Query</h5></a></div>
-// <div class="forChangeCol5"><img src="" alt="doc" width="20px" height="20px"><a href="#"><h5>Export</h5></a></div>
-// <div class="forChangeCol6"><img src="images/import.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Import</h5></a></div>
-// <div class="forChangeCol7"><img src="images/wrench2.png" alt="doc" width="22px" height="22px"><a href="#"><h5>Operations</h5></a></div>
-// <div class="forChangeCol8"><img src="images/routines.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Routines</h5></a></div>
-// <div class="forChangeCol9"><img src="images/events.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Events</h5></a></div>
-// <div class="forChangeCol10"><img src="images/triggers.png" alt="doc" width="20px" height="20px"><a href="#"><h5>Triggers</h5></a></div>
-
-var data = [
-    {
-        name:'Structure',
-        src:"images/structure.png"
-    },
-    {
-        name:'SQL',
-        src:"images/sql.png"
-    },
-    {
-        name:'Search',
-        src:"images/loupe.png"
-    },
-    {
-        name:'Query',
-        src:"images/query.png"
-    },
-    {
-        name:'Export',
-        src:"images/export.png"
-    },
-    {
-        name:'Import',
-        src:"images/import.png"
-    },
-    {
-        name:'Operations',
-        src:"images/wrench2.png"
-    },
-    {
-        name:'Routines',
-        src:"images/routines.png"
-    },
-    {
-        name:'Events',
-        src:"images/events.png"
-    },
-    {
-        name:'Triggers',
-        src:"images/triggers.png"
-    },
-];
-
-
-
-window.addEventListener('load', function(){
-    var cont = document.querySelector('#header');
-    for(var i = 0;i < data.length;i++){
-        var divs = document.createElement('div');
-        var a = document.createElement('a');
-        var images = document.createElement('img')
-        var h5 = document.createElement(`h5`);
-        divs.setAttribute(`class`,`forChangeCol`);
-        images.setAttribute('src', `${data[i].src}`);
-        images.setAttribute('width','21px');
-        images.setAttribute('height','21px');
-        a.setAttribute('href','#');
-        h5.innerHTML = `${data[i].name}`
-        a.appendChild(h5)
-        divs.appendChild(images);
-        divs.appendChild(a);
-        cont.appendChild(divs);
-    }
-});
-
-// function changeBg(class) {
-//     $('class').css('background-color', 'white');
-// }
-// let selectedDiv;
-//
-
-
-// ;(function($D){
-//     var $a    = $D.querySelector('.block-1');
-//         $container = $D.querySelector('.info');
-//
-//     function changeInfo (e){
-//         let data = e.target.dataset,
-//             toggleText = $a.innerHTML,
-//             isVisible = $container.style.display == 'block';
-//
-//         $a.innerHTML = data.toggleText;
-//         data.toggleText = toggleText;
-//
-//         $container.style.display = isVisible ? 'none' : 'block';
-//     };
-// })(document);
-//
