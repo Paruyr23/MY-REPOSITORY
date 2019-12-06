@@ -239,7 +239,7 @@ function showFun(arg) {
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t\t<tr class="th2">
-\t\t\t\t\t\t<th>Tables</th>
+\t\t\t\t\t\t<th>9 tables</th>
 \t\t\t\t\t\t<th>Sum</th>
 \t\t\t\t\t\t<th>1.211313</th>
 \t\t\t\t\t\t<th>InnoDB</th>
@@ -377,7 +377,7 @@ function showFun(arg) {
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t\t<tr class="th2">
-\t\t\t\t\t\t<th>Tables</th>
+\t\t\t\t\t\t<th>7 tables</th>
 \t\t\t\t\t\t<th>Sum</th>
 \t\t\t\t\t\t<th>1.211313</th>
 \t\t\t\t\t\t<th>InnoDB</th>
@@ -627,7 +627,7 @@ function showFun(arg) {
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t\t<tr class="th2">
-\t\t\t\t\t\t<th>Tables</th>
+\t\t\t\t\t\t<th>14 tables</th>
 \t\t\t\t\t\t<th>Sum</th>
 \t\t\t\t\t\t<th>1.211313</th>
 \t\t\t\t\t\t<th>InnoDB</th>
@@ -798,7 +798,7 @@ function showFun(arg) {
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t\t<tr class="th2">
-\t\t\t\t\t\t<th>Tables</th>
+\t\t\t\t\t\t<th>9 tables</th>
 \t\t\t\t\t\t<th>Sum</th>
 \t\t\t\t\t\t<th>1.211313</th>
 \t\t\t\t\t\t<th>InnoDB</th>
@@ -951,7 +951,7 @@ function showFun(arg) {
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t\t<tr class="th2">
-\t\t\t\t\t\t<th>Tables</th>
+\t\t\t\t\t\t<th>8 tables</th>
 \t\t\t\t\t\t<th>Sum</th>
 \t\t\t\t\t\t<th>1.211313</th>
 \t\t\t\t\t\t<th>InnoDB</th>
@@ -1105,7 +1105,7 @@ function showFun(arg) {
 \t\t\t\t\t\t<td>45.23</td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t\t<tr class="th2">
-\t\t\t\t\t\t<th>Tables</th>
+\t\t\t\t\t\t<th>8 tables</th>
 \t\t\t\t\t\t<th>Sum</th>
 \t\t\t\t\t\t<th>1.211313</th>
 \t\t\t\t\t\t<th>InnoDB</th>
