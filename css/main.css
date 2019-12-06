@@ -85,82 +85,10 @@ ul li {
     display : inline-block ;
 }
 
-#demo{
-	margin-left: 20px;
-}	
-
-#demo1 ul{
-	    margin-left: 15px;
-}
-#demo11 {
-		    margin-left: 30px;
+.blockInfo div{
+	padding-left: 20px;
 }
 
-#demo2 ul{
-	    margin-left: 15px;
-}
-#demo12 {
-		    margin-left: 30px;
-}
-
-#demo3 ul{
-	    margin-left: 15px;
-}
-#demo13 {
-		    margin-left: 30px;
-}
-
-#demo4 ul{
-	    margin-left: 15px;
-}
-
-#demo14 {
-		    margin-left: 30px;
-}
-
-#demo5 ul{
-	    margin-left: 15px;
-}
-
-#demo15 {
-		    margin-left: 30px;
-}
-
-#demo6 ul{
-	    margin-left: 15px;
-}
-
-#demo16 {
-		    margin-left: 30px;
-}
-
-#demo7 ul{
-	    margin-left: 15px;
-}
-#demo17 {
-		    margin-left: 30px;
-}
-
-#demo8 ul{
-	    margin-left: 15px;
-}
-#demo18 {
-		    margin-left: 30px;
-}
-
-#demo9 ul{
-	    margin-left: 15px;
-}
-#demo19 {
-		    margin-left: 30px;
-}
-
-#demo10 ul{
-	    margin-left: 15px;
-}
-#demo20 {
-		    margin-left: 30px;
-}
 
 .home{
 	display: flex;

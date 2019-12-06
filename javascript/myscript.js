@@ -3,7 +3,6 @@ function collapse (element) {
     const link = document.getElementsByClassName(element);
     if (!collapse.classList.contains('in')) {
         link[0].innerHTML = "-";
-
         return;
     }
     link[0].innerHTML = "+";
