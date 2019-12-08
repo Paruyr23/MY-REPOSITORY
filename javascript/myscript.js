@@ -81,7 +81,6 @@ function showFun(arg) {
     }
 
     if (arg === 1) {
-
         document.querySelector('.forChangeCol').style.backgroundColor = "white";
         document.getElementById('info').innerHTML = `
        <table class="table" data-name="table2">
