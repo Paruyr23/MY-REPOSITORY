@@ -2,7 +2,7 @@ function collapse (element) {
     const collapse = document.getElementById(element);
     const link = document.getElementsByClassName(element);
     if (!collapse.classList.contains('in')) {
-        link[0].innerHTML = "-";
+        link.innerHTML = "-";
         return;
     }
     link[0].innerHTML = "+";
@@ -1168,14 +1168,14 @@ function showFun(arg) {
             var divs = document.createElement('div');
             var a = document.createElement('a');
             var images = document.createElement('img');
-            var h5 = document.createElement(`h5`);
+            // var h5 = document.createElement(`h5`);
             divs.setAttribute(`class`, `forChangeCol`);
             images.setAttribute('src', `${data[i].src}`);
             images.setAttribute('width', '21px');
             images.setAttribute('height', '21px');
             a.setAttribute('href', '#');
-            h5.innerHTML = `${data[i].name}`;
-            a.appendChild(h5);
+            a.innerHTML = `${data[i].name}`;
+            // a.appendChild(h5);
             divs.appendChild(images);
             divs.appendChild(a);
             cont.appendChild(divs);

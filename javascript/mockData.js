@@ -8,8 +8,12 @@ const items = [
         name: 'collapse',
         children: [
             {
-                name: 'table1',
-                children: 'child1',
+                name: 'table',
+                children2: [
+                    {
+                        name:'child'
+                    }
+                ],
             }
         ],
     },
@@ -17,8 +21,12 @@ const items = [
         name: 'collapse',
         children: [
             {
-                name: 'table2',
-                children: 'child2',
+                name: 'table',
+                children2: [
+                    {
+                        name:'child'
+                    }
+                ],
             },
         ],
     },
@@ -26,8 +34,12 @@ const items = [
         name: 'collapse',
         children: [
             {
-                name: 'table3',
-                children: 'child3',
+                name: 'table',
+                children2: [
+                    {
+                        name:'child'
+                    }
+                ],
             }
         ],
     },
@@ -35,8 +47,12 @@ const items = [
         name: 'collapse',
         children: [
             {
-                name: 'table4',
-                children: 'child4',
+                name: 'table',
+                children2: [
+                    {
+                        name:'child'
+                    }
+                ],
             }
         ],
     },
@@ -44,8 +60,12 @@ const items = [
         name: 'collapse',
         children: [
             {
-                name: 'table5',
-                children: 'child5',
+                name: 'table',
+                children2: [
+                    {
+                        name:'child'
+                    }
+                ],
             }
         ],
     },
@@ -53,8 +73,12 @@ const items = [
         name: 'collapse',
         children: [
             {
-                name: 'table6',
-                children: 'child6',
+                name: 'table',
+                children2: [
+                    {
+                        name:'child'
+                    }
+                ],
             }
         ],
     },
