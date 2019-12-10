@@ -2,7 +2,7 @@ function collapse (element) {
     const collapse = document.getElementById(element);
     const link = document.getElementsByClassName(element);
     if (!collapse.classList.contains('in')) {
-        link.innerHTML = "-";
+        link[0].innerHTML = "-";
         return;
     }
     link[0].innerHTML = "+";
@@ -1116,7 +1116,216 @@ function showFun(arg) {
 \t\t\t\t</table>
 `
     }
+
+    if(arg === 7){
+        document.querySelector('.forChangeCol').style.backgroundColor = "white";
+        document.getElementById('info').innerHTML = `
+\t\t\t\t<div class="mainBlock">
+\t\t\t\t\t<h1>Databases</h1>
+\t\t\t\t\t<div>
+\t\t\t\t\t\t<img src="images/new.png" width="20px" height="20px" alt="New"><span>Create databases</span><img src="images/help.png"  width="20px" height="20px" alt="Help">
+\t\t\t\t\t</div>
+\t\t\t\t\t<div class="tbl">
+\t\t\t\t\t\t<input type="text" name="Database" placeholder="Database name" >
+\t\t\t\t\t\t<select>
+\t\t\t\t\t\t\t<option>utf8mb4_0p00_ai_ci</option>
+\t\t\t\t\t\t\t<option>.........gfj,.....</option>
+\t\t\t\t\t\t\t<option>....................</option>
+\t\t\t\t\t\t\t<option>...........</option>
+\t\t\t\t\t\t\t<option>ssgsgdgdgg</option>
+\t\t\t\t\t\t\t<option>utf8mb4_0ps00_ai_ci</option>
+\t\t\t\t\t\t\t<option>utf8mb4_0p00_ai_ci</option>
+\t\t\t\t\t\t\t<option>utsg0p00_ai_ci</option>
+\t\t\t\t\t\t\t<option>utsgsp00_ai_ci</option>
+\t\t\t\t\t\t\t<option>utf8mb4_0p00_ai_ci</option>
+\t\t\t\t\t\t\t<option>utf8mg.......ssgsb4_0p00_ai_ci</option>
+\t\t\t\t\t\t\t<option>utf8mb4_0p00_ai_ci</option>
+\t\t\t\t\t\t\t<option>utf8mb4_0....p00_ai_ci</option>
+\t\t\t\t\t\t\t<option>utf8mb4_0p00_ai_ci</option>
+\t\t\t\t\t\t\t<option>utf8mb4_0p00_ai_ci</option>
+\t\t\t\t\t\t\t<option>addss</option>
+\t\t\t\t\t\t</select>
+\t\t\t\t\t\t<button onclick="showFun(8)">Create</button>
+\t\t\t\t\t</div>
+\t\t\t\t</div>
+
+
+
+\t\t\t\t<div class="container-fluid block">
+                    <div class="blockSpan">
+                        <div class="filters"><h4>Filters</h4></div>
+\t\t\t\t\t    <span>Containing the word <input type="text"></span>
+                    </div>
+                    <div class="database">
+\t\t\t\t\t\t<table>
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<th>Database</th>
+\t\t\t\t\t\t\t\t<th>Collation</th>
+\t\t\t\t\t\t\t\t<th>Master replication</th>
+\t\t\t\t\t\t\t\t<th>Action</th>
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<td><input type="checkbox">lorem ipsum lordgdgdgem</td>
+\t\t\t\t\t\t\t\t<td>lorem ipsum lorem</td>
+\t\t\t\t\t\t\t\t<td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+\t\t\t\t\t\t\t\t<td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+\t\t\t\t\t\t\t</tr>
+                            <tr>
+                                <td><input type="checkbox">lorem ipsum </td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem ipsum </td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem ipsum </td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem ipsum </td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem ipsum </td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">loum lordgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorum lordgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem idgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem sum lordgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">lorem  lordgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"> ipsum lordgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">dgdgdgem</td>
+                                <td>lorem ipsum lorem</td>
+                                <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
+                                <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                            </tr>
+                            <tr>
+                                <th>Total: 22</th>
+                            </tr>
+\t\t\t\t\t\t</table>
+                        <hr>
+\t\t\t\t\t</div>
+\t\t\t\t</div>`
+    }
+
+    if(arg === 8){
+        document.querySelector('.forChangeCol').style.backgroundColor = "white";
+        document.getElementById('info').innerHTML = `               
+                <div class="create">
+                    <div class="ct">
+                        <h4><img src="images/new.png" width="20px" height="20px" alt="New"> Create table</h4>
+                    </div>
+                    <div class="name">
+                        <span>Name:<input type="text" required="required"></span>
+                        <span>Number o columns: <input type="number" min="1" value="4" required="required"  style="width: 50px;" ></span>
+                    </div>
+                </div>
+                <div class="blue">
+                    <button>Go</button>
+                </div>
+                <hr>
+`
+    }
 }
+
+
 
     var data = [
         {
