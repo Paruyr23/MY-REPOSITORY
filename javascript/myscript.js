@@ -1327,56 +1327,91 @@ function showFun(arg) {
 
 
 
-    var data = [
-        {
-            name: 'Structure',
-            src: "images/structure.png"
-        },
-        {
-            name: 'SQL',
-            src: "images/sql.png"
-        },
-        {
-            name: 'Search',
-            src: "images/loupe.png"
-        },
-        {
-            name: 'Query',
-            src: "images/query.png"
-        },
-        {
-            name: 'Export',
-            src: "images/export.png"
-        },
-        {
-            name: 'Import',
-            src: "images/import.png"
-        },
-        {
-            name: 'Operations',
-            src: "images/wrench2.png"
-        },
-        {
-            name: 'Routines',
-            src: "images/routines.png"
-        },
-        {
-            name: 'Events',
-            src: "images/events.png"
-        },
-        {
-            name: 'Triggers',
-            src: "images/triggers.png"
-        },
-    ];
+// $.ajax({
+//     url: 'jsons/nav.json',
+//     method: 'get',
+//     dataType: 'json',
+//     success: function () {
+//        console.log("nnivinfi")
+//     }
+// });
+
+// var page;
+// req = new XMLHttpRequest(); //Ajax запрос на чистом js
+// req.open("GET", "nav.json", false); //Формируем get запрос и указываем страницу отправки
+// req.send(null);//Отправляем ajax запрос
+// if (req.status === 200) { //Проверяем исход если возвращается 200 запрос выполнен успешно, а если 0 то нет
+//     page =req.responseText;//Получаем содержимое
+// }
+// console.log(JSON.parse(page));
+//
+//
+// $.get('nav.json', function(data) {
+//     console.log(data);
+// });
+//
+//
+
+
+
+
+
+
+
+
+    const data = [
+    {
+        name: "Structure",
+        src: "images/structure.png"
+    },
+    {
+        name: "SQL",
+        src: "images/sql.png"
+    },
+    {
+        name: "Search",
+        src: "images/loupe.png"
+    },
+    {
+        name: "Query",
+        src: "images/query.png"
+    },
+    {
+        name: "Export",
+        src: "images/export.png"
+    },
+    {
+        name: "Import",
+        src: "images/import.png"
+    },
+    {
+        name: "Operations",
+        src: "images/wrench2.png"
+    },
+    {
+        name: "Routines",
+        src: "images/routines.png"
+    },
+    {
+        name: "Events",
+        src: "images/events.png"
+    },
+    {
+        name: "Triggers",
+        src: "images/triggers.png"
+    }
+];
+
+
+
 
 
     window.addEventListener('load', function () {
-        var cont = document.querySelector('#header');
-        for (var i = 0; i < data.length; i++) {
-            var divs = document.createElement('div');
-            var a = document.createElement('a');
-            var images = document.createElement('img');
+        let cont = document.querySelector('#header');
+        for (let i = 0; i < data.length; i++) {
+            const divs = document.createElement('div');
+            const a = document.createElement('a');
+            const images = document.createElement('img');
             // var h5 = document.createElement(`h5`);
             divs.setAttribute(`class`, `forChangeCol`);
             images.setAttribute('src', `${data[i].src}`);
@@ -1390,34 +1425,5 @@ function showFun(arg) {
             cont.appendChild(divs);
         }
     });
-
-
-
-$(window).load(function() {
-
-
-    $('<a>', { href: '#', text: 'Гугли!'}).appendTo('.blokInfo');
-// //     // let collapse = [];
-// //     // collapse.push(
-// //     //     {
-// //     //
-// //     //     },
-// //     // );
-// //
-// // // <a href="#demo" data-toggle="collapse" class="demo" onclick="collapse('demo')">+</a><img src="images/files.png" alt="doc" width="20px" height="20px"> Collapse
-// // //     <div id="demo" class="collapse">
-// //
-// //
-// //     // let div1 = $("div").attr({"id":"demo","class":"collapse"});
-// //     // $("<li></li>").appendChild(a);
-//     $(".blockInfo").html("<a href='#' data-toggle='collapse' class='demo'>+</a><img src='images/files.png' alt='doc' width='20px' height='20px'> Collapse");
-// //     // for(let i=0;i < collapse;i++){
-// //     //
-// //     // }
-// //     // ul.appendChild(li);
-// //
-// //     // $("<ul/>").append($("<li/>");
-});
-
 
 

@@ -1,0 +1,44 @@
+{
+  "nav":[
+    {
+      "name": "Structure",
+      "src": "images/structure.png"
+    },
+    {
+      "name": "SQL",
+      "src": "images/sql.png"
+    },
+    {
+      "name": "Search",
+      "src": "images/loupe.png"
+    },
+    {
+      "name": "Query",
+      "src": "images/query.png"
+    },
+    {
+      "name": "Export",
+      "src": "images/export.png"
+    },
+    {
+      "name": "Import",
+      "src": "images/import.png"
+    },
+    {
+      "name": "Operations",
+      "src": "images/wrench2.png"
+    },
+    {
+      "name": "Routines",
+      "src": "images/routines.png"
+    },
+    {
+      "name": "Events",
+      "src": "images/events.png"
+    },
+    {
+      "name": "Triggers",
+      "src": "images/triggers.png"
+    }
+  ]
+}

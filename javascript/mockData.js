@@ -5,78 +5,78 @@ const image = {
 };
 const items = [
     {
-        name: 'collapse',
+        name: 'collapse1',
         children: [
             {
-                name: 'table',
+                name: 'table1',
                 children2: [
                     {
-                        name:'child'
+                        name:'child1'
                     }
                 ],
             }
         ],
     },
     {
-        name: 'collapse',
+        name: 'collapse2',
         children: [
             {
-                name: 'table',
+                name: 'table2',
                 children2: [
                     {
-                        name:'child'
+                        name:'child2'
                     }
                 ],
             },
         ],
     },
     {
-        name: 'collapse',
+        name: 'collapse3',
         children: [
             {
-                name: 'table',
+                name: 'table3',
                 children2: [
                     {
-                        name:'child'
+                        name:'child3'
                     }
                 ],
             }
         ],
     },
     {
-        name: 'collapse',
+        name: 'collapse4',
         children: [
             {
-                name: 'table',
+                name: 'table4',
                 children2: [
                     {
-                        name:'child'
+                        name:'child4'
                     }
                 ],
             }
         ],
     },
     {
-        name: 'collapse',
+        name: 'collapse5',
         children: [
             {
-                name: 'table',
+                name: 'table5',
                 children2: [
                     {
-                        name:'child'
+                        name:'child5'
                     }
                 ],
             }
         ],
     },
     {
-        name: 'collapse',
+        name: 'collapse6',
         children: [
             {
-                name: 'table',
+                name: 'table6',
                 children2: [
                     {
-                        name:'child'
+                        name:'child6'
                     }
                 ],
             }
