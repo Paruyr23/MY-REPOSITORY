@@ -1351,6 +1351,11 @@ function showFun(arg) {
 // });
 //
 //
+$.getJSON("jsons/nav.json", function (response) {
+    console.log(response.nav);
+});
+
+
 
 
 
