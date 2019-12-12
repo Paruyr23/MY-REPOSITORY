@@ -1326,109 +1326,152 @@ function showFun(arg) {
 }
 
 
+$.ajax({
+    url: 'jsons/nav.json',
+    contentType: "application/json",
+    dataType: 'json',
+    success: function (response) {
+        let cont = document.querySelector('#header');
+        for (let i = 0; i < response.nav.length; i++) {
+            const divs = document.createElement('div');
+            const a = document.createElement('a');
+            const images = document.createElement('img');
+            divs.setAttribute(`class`, `forChangeCol`);
+            images.setAttribute('src', `${response.nav[i].src}`);
+            images.setAttribute('width', '21px');
+            images.setAttribute('height', '21px');
+            a.setAttribute('href', '#');
+            a.innerHTML = `${response.nav[i].name}`;
+            divs.appendChild(images);
+            divs.appendChild(a);
+            cont.appendChild(divs);
+        }
+    }
+});
 
-// $.ajax({
-//     url: 'jsons/nav.json',
-//     method: 'get',
-//     dataType: 'json',
-//     success: function () {
-//        console.log("nnivinfi")
-//     }
-// });
-
-// var page;
-// req = new XMLHttpRequest(); //Ajax запрос на чистом js
-// req.open("GET", "nav.json", false); //Формируем get запрос и указываем страницу отправки
-// req.send(null);//Отправляем ajax запрос
-// if (req.status === 200) { //Проверяем исход если возвращается 200 запрос выполнен успешно, а если 0 то нет
-//     page =req.responseText;//Получаем содержимое
-// }
-// console.log(JSON.parse(page));
-//
-//
-// $.get('nav.json', function(data) {
-//     console.log(data);
-// });
-//
-//
-$.getJSON("jsons/nav.json", function (response) {
-    console.log(response.nav);
+$.ajax({
+    url: 'jsons/tables/table1.json',
+    contentType: "application/json",
+    dataType: 'json',
+    success: function (table) {
+        // console.log(table)
+            let content = document.querySelector('#cont');
+            for (let i = 0; i < table.tr.length; i++) {
+                const tr = document.createElement('tr');
+                const td = document.createElement('td');
+                const img1 = document.createElement('img');
+                img1.setAttribute('src', `${table.tr[i].action.star}`);
+                img1.setAttribute('width', '21px');
+                img1.setAttribute('height', '21px');
+                const img2 = document.createElement('img');
+                img2.setAttribute('src', `${table.tr[i].action.browse}`);
+                img2.setAttribute('width', '21px');
+                img2.setAttribute('height', '21px');
+                const img3 = document.createElement('img');
+                img3.setAttribute('src', `${table.tr[i].action.structure}`);
+                img3.setAttribute('width', '21px');
+                img3.setAttribute('height', '21px');
+                const img4 = document.createElement('img');
+                img4.setAttribute('src', `${table.tr[i].action.search1}`);
+                img4.setAttribute('width', '21px');
+                img4.setAttribute('height', '21px');
+                const img5 = document.createElement('img');
+                img5.setAttribute('src', `${table.tr[i].action.insert}`);
+                img5.setAttribute('width', '21px');
+                img5.setAttribute('height', '21px');
+                const img6 = document.createElement('img');
+                img6.setAttribute('src', `${table.tr[i].action.empty1}`);
+                img6.setAttribute('width', '21px');
+                img6.setAttribute('height', '21px');
+                const img7 = document.createElement('img');
+                img7.setAttribute('src', `${table.tr[i].action.drop}`);
+                img7.setAttribute('width', '21px');
+                img7.setAttribute('height', '21px');
+                td.setAttribute('href', '#');
+                td.innerHTML = `${table.tr[i].name}`;
+                tr
+                    .appendChild(img1)
+                    .appendChild(img2)
+                    .appendChild(img3)
+                    .appendChild(img4)
+                    .appendChild(img5)
+                    .appendChild(img6)
+                    .appendChild(img7);
+                tr.appendChild(td);
+                content.appendChild(tr);
+            }
+    }
 });
 
 
 
 
 
-
-
-
-
-
-    const data = [
-    {
-        name: "Structure",
-        src: "images/structure.png"
-    },
-    {
-        name: "SQL",
-        src: "images/sql.png"
-    },
-    {
-        name: "Search",
-        src: "images/loupe.png"
-    },
-    {
-        name: "Query",
-        src: "images/query.png"
-    },
-    {
-        name: "Export",
-        src: "images/export.png"
-    },
-    {
-        name: "Import",
-        src: "images/import.png"
-    },
-    {
-        name: "Operations",
-        src: "images/wrench2.png"
-    },
-    {
-        name: "Routines",
-        src: "images/routines.png"
-    },
-    {
-        name: "Events",
-        src: "images/events.png"
-    },
-    {
-        name: "Triggers",
-        src: "images/triggers.png"
-    }
-];
-
-
-
-
-
-    window.addEventListener('load', function () {
-        let cont = document.querySelector('#header');
-        for (let i = 0; i < data.length; i++) {
-            const divs = document.createElement('div');
-            const a = document.createElement('a');
-            const images = document.createElement('img');
-            // var h5 = document.createElement(`h5`);
-            divs.setAttribute(`class`, `forChangeCol`);
-            images.setAttribute('src', `${data[i].src}`);
-            images.setAttribute('width', '21px');
-            images.setAttribute('height', '21px');
-            a.setAttribute('href', '#');
-            a.innerHTML = `${data[i].name}`;
-            // a.appendChild(h5);
-            divs.appendChild(images);
-            divs.appendChild(a);
-            cont.appendChild(divs);
-        }
-    });
+//     const data = [
+//     {
+//         name: "Structure",
+//         src: "images/structure.png"
+//     },
+//     {
+//         name: "SQL",
+//         src: "images/sql.png"
+//     },
+//     {
+//         name: "Search",
+//         src: "images/loupe.png"
+//     },
+//     {
+//         name: "Query",
+//         src: "images/query.png"
+//     },
+//     {
+//         name: "Export",
+//         src: "images/export.png"
+//     },
+//     {
+//         name: "Import",
+//         src: "images/import.png"
+//     },
+//     {
+//         name: "Operations",
+//         src: "images/wrench2.png"
+//     },
+//     {
+//         name: "Routines",
+//         src: "images/routines.png"
+//     },
+//     {
+//         name: "Events",
+//         src: "images/events.png"
+//     },
+//     {
+//         name: "Triggers",
+//         src: "images/triggers.png"
+//     }
+// ];
+//
+//
+//
+//
+//
+//     window.addEventListener('load', function () {
+//         let cont = document.querySelector('#header');
+//         for (let i = 0; i < data.length; i++) {
+//             const divs = document.createElement('div');
+//             const a = document.createElement('a');
+//             const images = document.createElement('img');
+//             // var h5 = document.createElement(`h5`);
+//             divs.setAttribute(`class`, `forChangeCol`);
+//             images.setAttribute('src', `${data[i].src}`);
+//             images.setAttribute('width', '21px');
+//             images.setAttribute('height', '21px');
+//             a.setAttribute('href', '#');
+//             a.innerHTML = `${data[i].name}`;
+//             // a.appendChild(h5);
+//             divs.appendChild(images);
+//             divs.appendChild(a);
+//             cont.appendChild(divs);
+//         }
+//     });
 
 

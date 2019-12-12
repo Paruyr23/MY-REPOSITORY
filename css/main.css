@@ -229,6 +229,10 @@ border-color: #888888;
 	box-shadow: inset 0 9px 7px white;
 }
 
+a,button{
+	cursor:pointer;
+}
+
 .filters {
 	background-color: white;
 	border: 1px solid #AAAAAA;
