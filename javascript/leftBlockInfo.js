@@ -96,6 +96,3 @@ $.ajax({
         });
     }
 });
-
-// $.ajaxSetup({ dataType: "jsonp" });
-

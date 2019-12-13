@@ -1349,129 +1349,58 @@ $.ajax({
     }
 });
 
+//
+// $.ajax({
+//     url: 'jsons/tables/table1.json',
+//     contentType: "application/json",
+//     dataType: 'json',
+//     success:
+// });
+
+
 $.ajax({
     url: 'jsons/tables/table1.json',
     contentType: "application/json",
     dataType: 'json',
-    success: function (table) {
-        // console.log(table)
-            let content = document.querySelector('#cont');
-            for (let i = 0; i < table.tr.length; i++) {
-                const tr = document.createElement('tr');
-                const td = document.createElement('td');
-                const img1 = document.createElement('img');
-                img1.setAttribute('src', `${table.tr[i].action.star}`);
-                img1.setAttribute('width', '21px');
-                img1.setAttribute('height', '21px');
-                const img2 = document.createElement('img');
-                img2.setAttribute('src', `${table.tr[i].action.browse}`);
-                img2.setAttribute('width', '21px');
-                img2.setAttribute('height', '21px');
-                const img3 = document.createElement('img');
-                img3.setAttribute('src', `${table.tr[i].action.structure}`);
-                img3.setAttribute('width', '21px');
-                img3.setAttribute('height', '21px');
-                const img4 = document.createElement('img');
-                img4.setAttribute('src', `${table.tr[i].action.search1}`);
-                img4.setAttribute('width', '21px');
-                img4.setAttribute('height', '21px');
-                const img5 = document.createElement('img');
-                img5.setAttribute('src', `${table.tr[i].action.insert}`);
-                img5.setAttribute('width', '21px');
-                img5.setAttribute('height', '21px');
-                const img6 = document.createElement('img');
-                img6.setAttribute('src', `${table.tr[i].action.empty1}`);
-                img6.setAttribute('width', '21px');
-                img6.setAttribute('height', '21px');
-                const img7 = document.createElement('img');
-                img7.setAttribute('src', `${table.tr[i].action.drop}`);
-                img7.setAttribute('width', '21px');
-                img7.setAttribute('height', '21px');
-                td.setAttribute('href', '#');
-                td.innerHTML = `${table.tr[i].name}`;
-                tr
-                    .appendChild(img1)
-                    .appendChild(img2)
-                    .appendChild(img3)
-                    .appendChild(img4)
-                    .appendChild(img5)
-                    .appendChild(img6)
-                    .appendChild(img7);
-                tr.appendChild(td);
-                content.appendChild(tr);
-            }
+    success: function (data) {
+        var content = document.getElementById("cont");
+        var table1 = document.createElement("table");
+        table1.setAttribute("class", "table");
+        var tr1 = document.createElement("tr");
+        tr1.setAttribute("class", "th");
+        tr1.innerHTML = `
+                <th>Table</th>
+                <th>Action</th>
+                <th>Rows</th>
+                <th>Type</th>
+                <th>Collation</th>
+                <th>Size</th>
+                <th>Overhead</th>
+        `;
+        table1.appendChild(tr1);
+        content.appendChild(table1)
+
+        for (let i = 0; i < data.table1.length; i++) {
+            let tr = document.createElement('tr');
+            tr.innerHTML += `
+                        <td><input type="checkbox">${data.table1[i].name}</td>
+                        <td>
+                            ${data.table1[i].action.text}
+                            <img src="images/star.png" width="17px" height="17px">
+                            <img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+                            <img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a>
+                            <img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+                            <img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+                            <img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+                            <img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a>
+                        </td>
+                        <td>${data.table1[i].rows}</td>
+                        <td>${data.table1[i].type}</td>
+                        <td>${data.table1[i].collation}</td>
+                        <td>${data.table1[i].size}</td>
+                        <td>${data.table1[i].overhead}</td>`;
+            table1.appendChild(tr);
+        }
     }
 });
-
-
-
-
-
-//     const data = [
-//     {
-//         name: "Structure",
-//         src: "images/structure.png"
-//     },
-//     {
-//         name: "SQL",
-//         src: "images/sql.png"
-//     },
-//     {
-//         name: "Search",
-//         src: "images/loupe.png"
-//     },
-//     {
-//         name: "Query",
-//         src: "images/query.png"
-//     },
-//     {
-//         name: "Export",
-//         src: "images/export.png"
-//     },
-//     {
-//         name: "Import",
-//         src: "images/import.png"
-//     },
-//     {
-//         name: "Operations",
-//         src: "images/wrench2.png"
-//     },
-//     {
-//         name: "Routines",
-//         src: "images/routines.png"
-//     },
-//     {
-//         name: "Events",
-//         src: "images/events.png"
-//     },
-//     {
-//         name: "Triggers",
-//         src: "images/triggers.png"
-//     }
-// ];
-//
-//
-//
-//
-//
-//     window.addEventListener('load', function () {
-//         let cont = document.querySelector('#header');
-//         for (let i = 0; i < data.length; i++) {
-//             const divs = document.createElement('div');
-//             const a = document.createElement('a');
-//             const images = document.createElement('img');
-//             // var h5 = document.createElement(`h5`);
-//             divs.setAttribute(`class`, `forChangeCol`);
-//             images.setAttribute('src', `${data[i].src}`);
-//             images.setAttribute('width', '21px');
-//             images.setAttribute('height', '21px');
-//             a.setAttribute('href', '#');
-//             a.innerHTML = `${data[i].name}`;
-//             // a.appendChild(h5);
-//             divs.appendChild(images);
-//             divs.appendChild(a);
-//             cont.appendChild(divs);
-//         }
-//     });
-
 
