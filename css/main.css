@@ -30,9 +30,6 @@ text-decoration: none ;
 	justify-content: center;
 }
 
-#ico a{
-margin-right: 20px;
-}
 
 a:hover, a {
 	text-decoration: none !important;
@@ -59,7 +56,7 @@ a:hover, a {
 
 
 .container-fluid a{
-	margin:0 10px;
+	margin:0 4px;
 }
 
 .px-0{
@@ -99,7 +96,7 @@ ul li {
 	border: 1px solid silver;
 	border-radius: 5px;
 	margin-top: 20px;
-
+	box-shadow: 2px 2px 5px #ccc;
 }
 
 tr:nth-child(2n + 1) {
@@ -139,6 +136,10 @@ tr:nth-child(2n + 1) {
 .th2 {
 	height: 37px !important;
 	background-color: #EAEAEB !important;
+}
+
+td,th {
+	padding: 5px !important;
 }
 
 tr th {
