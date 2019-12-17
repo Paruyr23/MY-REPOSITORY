@@ -2,16 +2,8 @@
 	background-color: #F3F3F3;
 }
 
-.forChangeCol.selected {
-	background-color: white;
-}
-
 a:hover {
 text-decoration: none ;
-}
-
-.forChangeCol.selected{
-	background-color: white;
 }
 
 .blockInfo{
@@ -22,7 +14,73 @@ text-decoration: none ;
 
 .logo{
 	 margin-bottom: 10px !important;
+	 margin:-20px auto;
+	 display:block;
+	 cursor: pointer;
  }
+
+.select {
+	margin: auto;
+	display: block;
+	border: 1px solid #3AE2CE;
+	background-color: aliceblue;
+	border-radius: 5px;
+	width: 50%;
+}
+
+.change{
+	margin-right: 5px;
+	margin-left: -15px;
+}
+
+.currentServer{
+	float: left;
+	margin: 1px 5px 12px 7px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.language{
+	float: left;
+	margin: 15px 5px 12px 15px;
+	display:flex;
+	align-items:center;
+	clear:both;
+}
+
+.fa-desktop{
+	color:blue;
+}
+
+.server{
+	color:white;
+}
+
+.txt{
+	color:red;
+}
+
+.theme{
+	float: left;
+	margin: 10px 5px 12px 15px;
+	display:flex;
+	align-items:center;
+	clear:both;
+}
+
+.themes{
+	float: left;
+	margin-top: 14px;
+}
+
+.languages{
+	margin-top: 15px;
+}
+
+.fluid_top{
+	background-color:#888888;
+	display:flex;
+}
 
 #ico {
 	margin:0 0 20px 0 !important;
@@ -38,9 +96,14 @@ a:hover, a {
 .nav {
 	display:flex;
 	justify-content: space-between;
-	height: 40px;
-	background-color:#DBDBDB;
+	height: 35px;
+	/*background-color: #DBDBDB;*/
+	background: linear-gradient(#fff, #dcdcdc);
 	padding: initial;
+}
+
+.nav a{
+	font-weight: bold;
 }
 
 .nav div{
@@ -57,6 +120,7 @@ a:hover, a {
 
 .container-fluid a{
 	margin:0 4px;
+	text-shadow: 0 1px 0 #fff;
 }
 
 .px-0{
@@ -107,11 +171,16 @@ tr:nth-child(2n + 1) {
 	margin-top: -10px;
 	background-color: #F3F3F3;
 	display: flow-root;
+	padding: 15px;
 }
 .info h2{
 	background-color: #B5B5B5;
 	-webkit-margin-top-collapse: discard;
 	color:white;
+}
+
+select[name="MySQL"]{
+	margin-top:14px;
 }
 
 .blocks h2{
@@ -149,7 +218,9 @@ tr th {
 
 .information2 p{
 	display: list-item;
+	line-height: 14px;
 }
+
 
 .lastBlock{
 display: grid;
@@ -223,7 +294,11 @@ border-color: #888888;
 	border-radius:5px 5px 0 0;
 }
 .database table {
-	width: 34%;
+	width: 30%;
+}
+
+.database table td{
+
 }
 
 .database table tr th {

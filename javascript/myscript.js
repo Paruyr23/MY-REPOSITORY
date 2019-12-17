@@ -29,81 +29,8 @@ function showFun(arg) {
                 <th>Overhead</th>
         `;
             tables.appendChild(tr1);
-            content.appendChild(tables);
-
-            if (arg === 0) {
-            document.querySelector('.forChangeCol').style.backgroundColor = "#DBDBDB";
-            document.getElementById('info').innerHTML = `
-    \t\t\t\t\t<div class="home">
-    \t\t\t\t\t<div class="col-5 col-md-6 information1">
-    \t\t\t\t\t<div  class="blocks">
-    \t\t\t\t\t\t<div><h2>General Settings</h2></div>
-    \t\t\t\t\t\t<div class="about">
-    \t\t\t\t\t\t\t<a href="#">Change Password</a>
-    \t\t\t\t\t\t\t<p style="float: left; margin: 1px 5px 12px 7px;display: flex;align-items: flex-end;"><img alt="server" class="img-responsive" src="images/server.png" width="16px" height="16px">Current Server:</p>
-    \t\t\t\t\t\t\t<select name="MySQL">
-    \t\t\t\t\t\t\t\t<option>MySQL</option>
-    \t\t\t\t\t\t\t\t<option>.....</option>
-    \t\t\t\t\t\t\t\t<option>......</option>
-    \t\t\t\t\t\t\t</select>
-    \t\t\t\t\t\t</div>
-    \t\t\t\t\t</div>
-    \t\t\t\t\t<div class="blocks">
-    \t\t\t\t\t\t<div><h2>Appearance Settings</h2></div>
-    \t\t\t\t\t\t<div class="about">
-    \t\t\t\t\t\t\t<p style="float: left;margin: 15px 5px 12px 15px;display:flex; align-items:center; clear:both;"><img alt="server" class="img-responsive" src="images/translation.png" width="15px" height="14px">Language:</p>
-    \t\t\t\t\t\t\t<select name="language" style="margin-top: 15px;">
-    \t\t\t\t\t\t\t\t<option>English</option>
-    \t\t\t\t\t\t\t\t<option>Russian</option>
-    \t\t\t\t\t\t\t\t<option>Armenian</option>
-    \t\t\t\t\t\t\t</select>
-    \t\t\t\t\t\t\t<p style="float: left;margin: 10px 5px 12px 15px;display:flex; align-items:center; clear:both;"><img alt="server" class="img-responsive" src="images/theme1.png" width="16px" height="16px">Theme:</p>
-    \t\t\t\t\t\t\t<select name="theme" style="float: left;margin-top: 10px;">
-    \t\t\t\t\t\t\t\t<option>pmahomme</option>
-    \t\t\t\t\t\t\t\t<option>....</option>
-    \t\t\t\t\t\t\t\t<option>.....</option>
-    \t\t\t\t\t\t\t</select>
-    \t\t\t\t\t\t</div>
-    \t\t\t\t\t</div>
-    \t\t\t\t</div>
-    \t\t\t\t\t<div class="col-7 col-md-6 information2">
-    \t\t\t\t\t\t<div class="blocks">
-    \t\t\t\t\t\t\t<div class="background"><h2>MySQL</h2></div>
-    \t\t\t\t\t\t\t<div class="about">
-    \t\t\t\t\t\t\t\t<p>Font size</p>
-    \t\t\t\t\t\t\t\t<a href="#">More Settings</a>
-    \t\t\t\t\t\t\t</div>
-    \t\t\t\t\t\t</div>
-    \t\t\t\t\t\t<div class="blocks">
-    \t\t\t\t\t\t\t<div><h2>Web server</h2></div>
-    \t\t\t\t\t\t\t<div class="about">
-    \t\t\t\t\t\t\t\t<p>nginx/1.2.1</p>
-    \t\t\t\t\t\t\t\t<p>Database client version:libmysql-5.5.40</p>
-    \t\t\t\t\t\t\t\t<p>Lorem ipsum Lorem ipsum Lorem ipsum</p>
-    \t\t\t\t\t\t\t\t<p>Lorem ipsumLorem ipsum/p>
-    \t\t\t\t\t\t\t\t<p>Lorem ipsum</p>
-    \t\t\t\t\t\t\t</div>
-    \t\t\t\t\t\t</div>
-    \t\t\t\t\t\t<div class="blocks" >
-    \t\t\t\t\t\t\t<div><h2>phpMyAdmin</h2></div>
-    \t\t\t\t\t\t\t<div class="about lastBlock">
-    \t\t\t\t\t\t\t\t<p>Version information</p>
-    \t\t\t\t\t\t\t\t<p>Git version</p>
-    \t\t\t\t\t\t\t\t<a>Documentation</a>
-    \t\t\t\t\t\t\t\t<a>Wiki</a>
-    \t\t\t\t\t\t\t\t<a>Official Homepage</a>
-    \t\t\t\t\t\t\t\t<a>Contribute</a>
-    \t\t\t\t\t\t\t\t<a>Get support</a>
-    \t\t\t\t\t\t\t\t<a>List of changes</a>
-    \t\t\t\t\t\t\t</div>
-    \t\t\t\t\t\t</div>
-    \t\t\t\t\t</div>
-    \t\t\t\t</div>
-            `
-        }
             if (arg === 1) {
-                document.querySelector('.forChangeCol').style.backgroundColor = "white";
-                document.querySelector(".home").style.display =  "none";
+                document.querySelector('.forChangeCol').style.background = "white";
                 for (let i = 0; i < data.table1.length; i++) {
                     let tr = document.createElement('tr');
                     tr.innerHTML += `
@@ -123,12 +50,11 @@ function showFun(arg) {
                         <td>${data.table1[i].collation}</td>
                         <td>${data.table1[i].size}</td>
                         <td>${data.table1[i].overhead}</td>`;
-                    tables.appendChild(tr);
+                    $(tables).append(tr);
                 };
             }
             if (arg === 2) {
-            document.querySelector('.forChangeCol').style.backgroundColor = "white";
-            document.querySelector(".home").style.display =  "none";
+            document.querySelector('.forChangeCol').style.background = "white";
             for (let i = 0; i < data.table2.length; i++) {
                 let tr = document.createElement('tr');
                 tr.innerHTML += `
@@ -148,12 +74,11 @@ function showFun(arg) {
                         <td>${data.table2[i].collation}</td>
                         <td>${data.table2[i].size}</td>
                         <td>${data.table2[i].overhead}</td>`;
-                tables.appendChild(tr);
+                $(tables).append(tr);
             }
-        }
+            }
             if (arg === 3) {
-                document.querySelector('.forChangeCol').style.backgroundColor = "white";
-                document.querySelector(".home").style.display =  "none";
+                document.querySelector('.forChangeCol').style.background = "white";
                 for (let i = 0; i < data.table3.length; i++) {
                     let tr = document.createElement('tr');
                     tr.innerHTML += `
@@ -173,13 +98,11 @@ function showFun(arg) {
                             <td>${data.table3[i].collation}</td>
                             <td>${data.table3[i].size}</td>
                             <td>${data.table3[i].overhead}</td>`;
-                    tables.appendChild(tr);
+                    $(tables).append(tr);
                 }
-
             }
             if (arg === 4) {
-                document.querySelector('.forChangeCol').style.backgroundColor = "white";
-                document.querySelector(".home").style.display =  "none";
+                document.querySelector('.forChangeCol').style.background = "white";
                 for (let i = 0; i < data.table4.length; i++) {
                     let tr = document.createElement('tr');
                     tr.innerHTML += `
@@ -199,13 +122,10 @@ function showFun(arg) {
                             <td>${data.table4[i].collation}</td>
                             <td>${data.table4[i].size}</td>
                             <td>${data.table4[i].overhead}</td>`;
-                    tables.appendChild(tr);
-                }
-
+                    $(tables).append(tr);                }
             }
             if (arg === 5) {
-                document.querySelector('.forChangeCol').style.backgroundColor = "white";
-                document.querySelector(".home").style.display =  "none";
+                document.querySelector('.forChangeCol').style.background = "white";
                 for (let i = 0; i < data.table5.length; i++) {
                     let tr = document.createElement('tr');
                     tr.innerHTML += `
@@ -225,13 +145,10 @@ function showFun(arg) {
                             <td>${data.table5[i].collation}</td>
                             <td>${data.table5[i].size}</td>
                             <td>${data.table5[i].overhead}</td>`;
-                    tables.appendChild(tr);
-                }
-
+                    $(tables).append(tr);                }
             }
             if (arg === 6) {
-                document.querySelector('.forChangeCol').style.backgroundColor = "white";
-                document.querySelector(".home").style.display =  "none";
+                document.querySelector('.forChangeCol').style.background = "white";
                 for (let i = 0; i < data.table6.length; i++) {
                     let tr = document.createElement('tr');
                     tr.innerHTML += `
@@ -239,7 +156,7 @@ function showFun(arg) {
                             <td>
                                 ${data.table6[i].action.text}
                                 <img src="images/star.png" width="17px" height="17px">
-                                <img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>r
+                                <img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
                                 <img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a>
                                 <img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
                                 <img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
@@ -251,12 +168,103 @@ function showFun(arg) {
                             <td>${data.table6[i].collation}</td>
                             <td>${data.table6[i].size}</td>
                             <td>${data.table6[i].overhead}</td>`;
-                    tables.appendChild(tr);
+                    $(tables).append(tr);
                 }
+            }
 
+            var tr2 = document.createElement("tr");
+            tr2.setAttribute("class", "th");
+            tr2.innerHTML = `
+                <th>tables</th>
+                <th>Sum</th>
+                <th>InnoDB</th>
+                <th>utf8_unicode_ci</th>
+                <th>Collation</th>
+                <th>Size</th>
+                <th>0 Kib</th>
+        `;
+            $(tables).append(tr2)
+            $(content).html(tables);
+
+            if (arg === 0) {
+                document.querySelector('.forChangeCol').style.background = "linear-gradient(#fff, #dcdcdc)";
+                document.getElementById('info').innerHTML = `
+                    <div class="home">
+\t\t\t\t\t<div class="col-7 col-md-7 information1">
+\t\t\t\t\t\t<div  class="blocks">
+\t\t\t\t\t\t\t<div><h2>General Settings</h2></div>
+\t\t\t\t\t\t\t<div class="about">
+\t\t\t\t\t\t\t\t<a href="#">Change Password</a>
+\t\t\t\t\t\t\t\t<p class="currentServer"><img alt="server" class="img-responsive" src="images/server.png" width="16px" height="16px">Current Server:</p>
+\t\t\t\t\t\t\t\t<select name="MySQL">
+\t\t\t\t\t\t\t\t\t<option>MySQL</option>
+\t\t\t\t\t\t\t\t\t<option>.....</option>
+\t\t\t\t\t\t\t\t\t<option>......</option>
+\t\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class="blocks">
+\t\t\t\t\t\t\t<div><h2>Appearance Settings</h2></div>
+\t\t\t\t\t\t\t<div class="about">
+\t\t\t\t\t\t\t\t<p class="language"><img alt="server" class="img-responsive" src="images/translation.png" width="15px" height="14px">Language:</p>
+\t\t\t\t\t\t\t\t<select name="language" class="languages">
+\t\t\t\t\t\t\t\t\t<option>English</option>
+\t\t\t\t\t\t\t\t\t<option>Russian</option>
+\t\t\t\t\t\t\t\t\t<option>Armenian</option>
+\t\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t\t<p class="theme"><img alt="server" class="img-responsive" src="images/theme1.png" width="16px" height="16px">Theme:</p>
+\t\t\t\t\t\t\t\t<select name="theme" class="themes">
+\t\t\t\t\t\t\t\t\t<option>pmahomme</option>
+\t\t\t\t\t\t\t\t\t<option>....</option>
+\t\t\t\t\t\t\t\t\t<option>.....</option>
+\t\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</div>
+\t\t\t\t\t<div class="col-5 col-md-5 information2">
+\t\t\t\t\t\t<div class="blocks">
+\t\t\t\t\t\t\t<div class="background"><h2>MySQL</h2></div>
+\t\t\t\t\t\t\t<div class="about">
+\t\t\t\t\t\t\t\t<p>Font size</p>
+\t\t\t\t\t\t\t\t<a href="#">More Settings</a>
+\t\t\t\t\t\t\t\t<p>Server connection:<span class="txt">SSL is not being used</span><img src="images/help.png" alt="help" width="21px" height="21px"></p>
+\t\t\t\t\t\t\t\t<p>Server version: 8.0.18 - MySQL Community Server - GPL</p>
+\t\t\t\t\t\t\t\t<p>Protocol version: 10</p>
+\t\t\t\t\t\t\t\t<p>User: root@192.168.30.20</p>
+\t\t\t\t\t\t\t\t<p>Server charset: UTF-8 Unicode (utf8mb4)</p>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class="blocks">
+\t\t\t\t\t\t\t<div><h2>Web server</h2></div>
+\t\t\t\t\t\t\t<div class="about">
+\t\t\t\t\t\t\t\t<p>nginx/1.2.1</p>
+\t\t\t\t\t\t\t\t<p>Database client version:libmysql-5.5.40</p>
+\t\t\t\t\t\t\t\t<p>Lorem ipsum Lorem ipsum Lorem ipsum</p>
+\t\t\t\t\t\t\t\t<p>PHP extension: mysqli <img src="images/help.png" alt="help" width="21px" height="21px"> curl <img src="images/help.png" alt="help" width="21px" height="21px"> mbstring <img src="images/help.png" alt="help" width="21px" height="21px"></p>
+\t\t\t\t\t\t\t\t<p>Lorem ipsumLorem ipsum</p>
+\t\t\t\t\t\t\t\t<p>Lorem ipsumLorem ipsum</p>
+\t\t\t\t\t\t\t\t<p>Lorem ipsum</p>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class="blocks" >
+\t\t\t\t\t\t\t<div><h2>phpMyAdmin</h2></div>
+\t\t\t\t\t\t\t<div class="about lastBlock">
+\t\t\t\t\t\t\t\t<p>Version information</p>
+\t\t\t\t\t\t\t\t<p>Git version</p>
+\t\t\t\t\t\t\t\t<a>Documentation</a>
+\t\t\t\t\t\t\t\t<a>Wiki</a>
+\t\t\t\t\t\t\t\t<a>Official Homepage</a>
+\t\t\t\t\t\t\t\t<a>Contribute</a>
+\t\t\t\t\t\t\t\t<a>Get support</a>
+\t\t\t\t\t\t\t\t<a>List of changes</a>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</div>
+\t\t\t\t</div>
+            `
             }
             if (arg === 7) {
-                document.querySelector('.forChangeCol').style.backgroundColor = "white";
+                document.querySelector('.forChangeCol').style.background = "white";
                 document.getElementById('info').innerHTML = `
         \t\t\t\t<div class="mainBlock">
         \t\t\t\t\t<h1>Databases</h1>
@@ -305,134 +313,134 @@ function showFun(arg) {
         \t\t\t\t\t\t\t<tr>
         \t\t\t\t\t\t\t\t<td><input type="checkbox">lorem ipsum lordgdgdgem</td>
         \t\t\t\t\t\t\t\t<td>lorem ipsum lorem</td>
-        \t\t\t\t\t\t\t\t<td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-        \t\t\t\t\t\t\t\t<td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+        \t\t\t\t\t\t\t\t<td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+        \t\t\t\t\t\t\t\t<td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
         \t\t\t\t\t\t\t</tr>
                                     <tr>
                                         <td><input type="checkbox">lorem ipsum </td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem ipsum </td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem ipsum </td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem ipsum </td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem ipsum </td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem ipsum lordgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">loum lordgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorum lordgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem idgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem sum lordgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">lorem  lordgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox"> ipsum lordgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox">dgdgdgem</td>
                                         <td>lorem ipsum lorem</td>
-                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">lorem ipsum lorgbggem</td>
-                                        <td><img src="images/check.png" width="20px" height="20px" alt="check">lorem ipsum dgdglorem</td>
+                                        <td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
+                                        <td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
                                     </tr>
                                     <tr>
                                         <th>Total: 22</th>
@@ -443,7 +451,7 @@ function showFun(arg) {
         \t\t\t\t</div>`
             }
             if (arg === 8) {
-                document.querySelector('.forChangeCol').style.backgroundColor = "white";
+                document.querySelector('.forChangeCol').style.background = "white";
                 document.getElementById('info').innerHTML = `
                         <div class="create">
                             <div class="ct">
