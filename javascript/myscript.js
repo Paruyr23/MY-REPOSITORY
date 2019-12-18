@@ -29,14 +29,16 @@ function showFun(arg) {
                 <th>Overhead</th>
         `;
             tables.appendChild(tr1);
-            if (arg === 1) {
-                document.querySelector('.forChangeCol').style.background = "white";
-                for (let i = 0; i < data.table1.length; i++) {
-                    let tr = document.createElement('tr');
-                    tr.innerHTML += `
-                        <td><input type="checkbox">${data.table1[i].name}</td>
+
+            for(let j = 0; j < data.tables.length; j++){
+                if (arg === j + 1) {
+                    document.querySelector('.forChangeCol').style.background = "white";
+                    for (let i = 0; i < data.tables[j].table.length; i++) {
+                        let tr = document.createElement('tr');
+                        tr.innerHTML += `
+                        <td><input type="checkbox">${data.tables[j].table[i].name}</td>
                         <td>
-                            ${data.table1[i].action.text}
+                            ${data.tables[j].table[i].action.text}
                             <img src="images/star.png" width="17px" height="17px">
                             <img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
                             <img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a>
@@ -45,130 +47,13 @@ function showFun(arg) {
                             <img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
                             <img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a>
                         </td>
-                        <td>${data.table1[i].rows}</td>
-                        <td>${data.table1[i].type}</td>
-                        <td>${data.table1[i].collation}</td>
-                        <td>${data.table1[i].size}</td>
-                        <td>${data.table1[i].overhead}</td>`;
-                    $(tables).append(tr);
-                };
-            }
-            if (arg === 2) {
-            document.querySelector('.forChangeCol').style.background = "white";
-            for (let i = 0; i < data.table2.length; i++) {
-                let tr = document.createElement('tr');
-                tr.innerHTML += `
-                        <td><input type="checkbox">${data.table2[i].name}</td>
-                        <td>
-                            ${data.table2[i].action.text}
-                            <img src="images/star.png" width="17px" height="17px">
-                            <img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
-                            <img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a>
-                            <img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
-                            <img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
-                            <img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
-                            <img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a>
-                        </td>
-                        <td>${data.table2[i].rows}</td>
-                        <td>${data.table2[i].type}</td>
-                        <td>${data.table2[i].collation}</td>
-                        <td>${data.table2[i].size}</td>
-                        <td>${data.table2[i].overhead}</td>`;
-                $(tables).append(tr);
-            }
-            }
-            if (arg === 3) {
-                document.querySelector('.forChangeCol').style.background = "white";
-                for (let i = 0; i < data.table3.length; i++) {
-                    let tr = document.createElement('tr');
-                    tr.innerHTML += `
-                            <td><input type="checkbox">${data.table3[i].name}</td>
-                            <td>
-                                ${data.table3[i].action.text}
-                                <img src="images/star.png" width="17px" height="17px">
-                                <img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
-                                <img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a>
-                                <img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
-                                <img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
-                                <img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
-                                <img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a>
-                            </td>
-                            <td>${data.table3[i].rows}</td>
-                            <td>${data.table3[i].type}</td>
-                            <td>${data.table3[i].collation}</td>
-                            <td>${data.table3[i].size}</td>
-                            <td>${data.table3[i].overhead}</td>`;
-                    $(tables).append(tr);
-                }
-            }
-            if (arg === 4) {
-                document.querySelector('.forChangeCol').style.background = "white";
-                for (let i = 0; i < data.table4.length; i++) {
-                    let tr = document.createElement('tr');
-                    tr.innerHTML += `
-                            <td><input type="checkbox">${data.table4[i].name}</td>
-                            <td>
-                                ${data.table4[i].action.text}
-                                <img src="images/star.png" width="17px" height="17px">
-                                <img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
-                                <img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a>
-                                <img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
-                                <img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
-                                <img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
-                                <img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a>
-                            </td>
-                            <td>${data.table4[i].rows}</td>
-                            <td>${data.table4[i].type}</td>
-                            <td>${data.table4[i].collation}</td>
-                            <td>${data.table4[i].size}</td>
-                            <td>${data.table4[i].overhead}</td>`;
-                    $(tables).append(tr);                }
-            }
-            if (arg === 5) {
-                document.querySelector('.forChangeCol').style.background = "white";
-                for (let i = 0; i < data.table5.length; i++) {
-                    let tr = document.createElement('tr');
-                    tr.innerHTML += `
-                            <td><input type="checkbox">${data.table5[i].name}</td>
-                            <td>
-                                ${data.table5[i].action.text}
-                                <img src="images/star.png" width="17px" height="17px">
-                                <img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
-                                <img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a>
-                                <img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
-                                <img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
-                                <img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
-                                <img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a>
-                            </td>
-                            <td>${data.table5[i].rows}</td>
-                            <td>${data.table5[i].type}</td>
-                            <td>${data.table5[i].collation}</td>
-                            <td>${data.table5[i].size}</td>
-                            <td>${data.table5[i].overhead}</td>`;
-                    $(tables).append(tr);                }
-            }
-            if (arg === 6) {
-                document.querySelector('.forChangeCol').style.background = "white";
-                for (let i = 0; i < data.table6.length; i++) {
-                    let tr = document.createElement('tr');
-                    tr.innerHTML += `
-                            <td><input type="checkbox">${data.table6[i].name}</td>
-                            <td>
-                                ${data.table6[i].action.text}
-                                <img src="images/star.png" width="17px" height="17px">
-                                <img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
-                                <img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a>
-                                <img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
-                                <img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
-                                <img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
-                                <img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a>
-                            </td>
-                            <td>${data.table6[i].rows}</td>
-                            <td>${data.table6[i].type}</td>
-                            <td>${data.table6[i].collation}</td>
-                            <td>${data.table6[i].size}</td>
-                            <td>${data.table6[i].overhead}</td>`;
-                    $(tables).append(tr);
+                        <td>${data.tables[j].table[i].rows}</td>
+                        <td>${data.tables[j].table[i].type}</td>
+                        <td>${data.tables[j].table[i].collation}</td>
+                        <td>${data.tables[j].table[i].size}</td>
+                        <td>${data.tables[j].table[i].overhead}</td>`;
+                        $(tables).append(tr);
+                    };
                 }
             }
 
@@ -183,13 +68,13 @@ function showFun(arg) {
                 <th>Size</th>
                 <th>0 Kib</th>
         `;
-            $(tables).append(tr2)
+            $(tables).append(tr2);
             $(content).html(tables);
 
             if (arg === 0) {
                 document.querySelector('.forChangeCol').style.background = "linear-gradient(#fff, #dcdcdc)";
                 document.getElementById('info').innerHTML = `
-                    <div class="home">
+<div class="home">
 \t\t\t\t\t<div class="col-7 col-md-7 information1">
 \t\t\t\t\t\t<div  class="blocks">
 \t\t\t\t\t\t\t<div><h2>General Settings</h2></div>
@@ -261,8 +146,9 @@ function showFun(arg) {
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-            `
+\t\t\t</div>`
             }
+
             if (arg === 7) {
                 document.querySelector('.forChangeCol').style.background = "white";
                 document.getElementById('info').innerHTML = `
@@ -299,7 +185,7 @@ function showFun(arg) {
     
         \t\t\t\t<div class="container-fluid block">
                             <div class="blockSpan">
-                                <div class="filters"><h4>Filters</h4></div>
+                                <div class="container filters"><h4>Filters</h4></div>
         \t\t\t\t\t    <span>Containing the word <input type="text"></span>
                             </div>
                             <div class="database">
@@ -468,10 +354,10 @@ function showFun(arg) {
                         <hr>
         `
             }
+
         }
     });
 }
-
 
 $.ajax({
     url: 'jsons/nav.json',
@@ -503,12 +389,11 @@ function change(click){
     if($(imgChange).attr("src") !== "images/arrow_right.png"){
         leftContent.style.display = 'none';
         mainContent.style.width = '100%';
-        leftContent.style.width = '16.66666667%';
         $(imgChange).attr("src", "images/arrow_right.png");
     }
      else {
         $(imgChange).attr("src", "images/arrow_left.png");
-        leftContent.style.display = 'block';
-        mainContent.style.width = '83.33333333%';
+        mainContent.removeAttribute("style");
+        leftContent.removeAttribute("style");
     }
 }
