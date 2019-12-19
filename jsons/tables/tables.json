@@ -4,10 +4,7 @@
       "table": [
         {
           "name": "lorem ipsum",
-          "action":
-          {
-            "text": "Lorem Ipsumorem Ipsuorem Ipsuorem Ipsuorem Ipsu"
-          }
+          "action": {"text": "Lorem Ipsumorem Ipsuorem Ipsuorem Ipsuorem Ipsu"}
         ,
           "rows": 0,
           "type": "InnoDB",
@@ -30,10 +27,7 @@
         },
         {
           "name": "lorem ipsum",
-          "action":
-          {
-            "text": "Lorem Ipsumorem Ipsuorem Ipsuorem Ipsuorem Ipsu"
-          }
+          "action": {"text": "Lorem Ipsumorem Ipsuorem Ipsuorem Ipsuorem Ipsu"}
         ,
           "rows": 0,
           "type": "InnoDB",

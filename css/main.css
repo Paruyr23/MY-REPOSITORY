@@ -18,7 +18,7 @@
 .select {
 	margin: auto;
 	display: block;
-	border: 1px solid #3AE2CE;
+	border: 1px solid #A6A6A6;
 	background-color: aliceblue;
 	border-radius: 5px;
 	width: 50%;
@@ -227,6 +227,121 @@ display: grid;
 	margin: 7px 0 4px 24px;
 }
 
+.buttons{
+	display: flex;
+	margin: 20px 5px 5px;
+}
+
+.value1 ul li button{
+	padding: .3em;
+	border: 1px solid #ddd;
+	border-radius: .3em;
+	background: #f2f2f2;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.value2 ul li button{
+	padding: .3em;
+	border: 1px solid #ddd;
+	border-radius: .3em;
+	background: #f2f2f2;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.value1 ul{
+	list-style:none;
+}
+
+.value1 ul ul {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	overflow-y: auto;
+	list-style: none;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: .3em;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	box-shadow: 0 0 5px #ccc;
+	top: 100%;
+	left: 3px;
+	right: 0;
+	display: none;
+	z-index: 802;
+}
+
+.value1 ul li button:hover{
+	background-color: #fff;
+}
+
+
+.value1 ul li:hover > ul{
+	display:block;
+}
+
+
+.value2 ul{
+	list-style:none;
+}
+
+.value2 ul ul {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	overflow-y: auto;
+	list-style: none;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: .3em;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	box-shadow: 0 0 5px #ccc;
+	top: 100%;
+	left: 3px;
+	right: 0;
+	display: none;
+	z-index: 802;
+}
+
+.value2 ul li button:hover{
+	background-color: #fff;
+}
+
+.value2 ul li:hover > ul{
+	display:block;
+}
+
+
+.leftInput{
+	margin: 3px 15px 0;
+	font-size: .7em;
+	padding: 3px 1.7em 4px 4px;
+	width: 53%;
+	outline: none;
+	border: 1px solid #A6A6A6;
+	background-color: aliceblue;
+}
+
+.leftInput:hover{
+	box-shadow: 0 0 2px rgba(0,0,0,0.5);
+	border-color: #747474;
+}
+
+.x {
+	position: relative;
+	right: 3.3em;
+	padding: .2em;
+	cursor: pointer;
+	font-weight: bold;
+	color: red;
+	font-size: .7em;
+}
+
 .about a{
 	display: list-item;
 	margin: 8px 0 8px 23px;
@@ -299,6 +414,10 @@ border-color: #888888;
 }
 
 #newTable{
+	display: none;
+}
+
+#new{
 	display: none;
 }
 

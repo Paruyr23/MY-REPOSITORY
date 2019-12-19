@@ -40,6 +40,30 @@
 					<option value="">..............</option>
 					<option value="">......</option>
 				</select>
+				<div class="buttons">
+					<div class="value1">
+						<ul>
+							<li>
+								<button>Recent</button>
+								<ul>
+									<li>There are no recent tables.</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="value2">
+						<ul>
+							<li>
+								<button>Favorites</button>
+								<ul>
+									<li>There are no favorite tables.</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<input type="text" placeholder="Type to filter, Enter to search all" class="leftInput">
+				<span class="x">X</span>
 				<div class="blockInfo"></div>
 			</div>
   		</div>
@@ -51,7 +75,7 @@
   			<div class="container-fluid nav" id="header"></div>
 			<div class="container-fluid info" id="info">
 
-				<div id="newTable">
+				<div id="new">
 					<div class="mainBlock">
 						<h1>Databases</h1>
 						<div>
@@ -233,7 +257,21 @@
 						</div>
 					</div>
 				</div>
-
+				<div id="newTable">
+					<div class="create">
+						<div class="ct">
+							<h4><img src="images/new.png" width="20px" height="20px" alt="New"> Create table</h4>
+						</div>
+						<div class="name">
+							<span>Name:<input type="text" required="required"></span>
+							<span>Number o columns: <input type="number" min="1" value="4" required="required"  style="width: 50px;" ></span>
+						</div>
+					</div>
+					<div class="blue">
+						<button>Go</button>
+					</div>
+					<hr>
+				</div>
 				<div class="home">
 					<div class="col-7 col-md-7 information1">
 						<div  class="blocks">
