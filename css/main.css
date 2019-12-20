@@ -278,11 +278,9 @@ display: grid;
 	background-color: #fff;
 }
 
-
 .value1 ul li:hover > ul{
 	display:block;
 }
-
 
 .value2 ul{
 	list-style:none;
@@ -315,7 +313,6 @@ display: grid;
 .value2 ul li:hover > ul{
 	display:block;
 }
-
 
 .leftInput{
 	margin: 3px 15px 0;

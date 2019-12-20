@@ -1,25 +1,26 @@
 function collapse(element) {
-    const collapse = document.getElementById(element);
-    const link = document.getElementsByClassName(element);
-    if (!collapse.classList.contains('in')) {
-        link[0].innerHTML = "-";
-        return;
+        const collapse = document.getElementById(element);
+        const link = document.getElementsByClassName(element);
+        if (!collapse.classList.contains('in')) {
+            link[0].innerHTML = "-";
+            return;
+        }
+        link[0].innerHTML = "+";
     }
-    link[0].innerHTML = "+";
-}
 
-function showFun(arg) {
-    $.ajax({
-        url: 'jsons/tables/tables.json',
-        contentType: "application/json",
-        dataType: 'json',
-        success: function (data) {
-            var content = document.getElementById("info");
-            var tables = document.createElement("table");
-            tables.setAttribute("class", "table");
-            var tr1 = document.createElement("tr");
-            tr1.setAttribute("class", "th");
-            tr1.innerHTML = `
+
+    function showFun(arg) {
+        $.ajax({
+            url: 'jsons/tables/tables.json',
+            contentType: "application/json",
+            dataType: 'json',
+            success: function (data) {
+                var content = document.getElementById("info");
+                var tables = document.createElement("table");
+                tables.setAttribute("class", "table");
+                var tr1 = document.createElement("tr");
+                tr1.setAttribute("class", "th");
+                tr1.innerHTML = `
                 <th>Table</th>
                 <th>Action</th>
                 <th>Rows</th>
@@ -28,14 +29,15 @@ function showFun(arg) {
                 <th>Size</th>
                 <th>Overhead</th>
         `;
-            tables.appendChild(tr1);
+                tables.appendChild(tr1);
+                var home = document.getElementById("home");
 
-            for (let j = 0; j < data.tables.length; j++) {
-                if (arg === j + 1) {
-                    document.querySelector('.forChangeCol').style.background = "white";
-                    for (let i = 0; i < data.tables[j].table.length; i++) {
-                        let tr = document.createElement('tr');
-                        tr.innerHTML += `
+                for (let j = 0; j < data.tables.length; j++) {
+                    if (arg === j + 1) {
+                        document.querySelector('.forChangeCol').style.background = "white";
+                        for (let i = 0; i < data.tables[j].table.length; i++) {
+                            let tr = document.createElement('tr');
+                            tr.innerHTML += `
                         <td><input type="checkbox">${data.tables[j].table[i].name}</td>
                         <td>
                             ${data.tables[j].table[i].action.text}
@@ -52,14 +54,14 @@ function showFun(arg) {
                         <td>${data.tables[j].table[i].collation}</td>
                         <td>${data.tables[j].table[i].size}</td>
                         <td>${data.tables[j].table[i].overhead}</td>`;
-                        $(tables).append(tr);
-                    };
+                            $(tables).append(tr);
+                        };
+                    }
                 }
-            }
 
-            var tr2 = document.createElement("tr");
-            tr2.setAttribute("class", "th");
-            tr2.innerHTML = `
+                var tr2 = document.createElement("tr");
+                tr2.setAttribute("class", "th");
+                tr2.innerHTML = `
                 <th>tables</th>
                 <th>Sum</th>
                 <th>InnoDB</th>
@@ -68,95 +70,95 @@ function showFun(arg) {
                 <th>Size</th>
                 <th>0 Kib</th>
         `;
-            $(tables).append(tr2);
-            $(content).html(tables);
+                $(tables).append(tr2);
+                $(content).html(tables);
 
-            if (arg === 0) {
-                $(".forChangeCol").css('background', 'linear-gradient(#fff, #dcdcdc)');
-                document.getElementById('info').innerHTML = `
-<div class="home">
-<div class="col-7 col-md-7 information1">
-<div  class="blocks">
-<div><h2>General Settings</h2></div>
-<div class="about">
-<a href="#">Change Password</a>
-<p class="currentServer"><img alt="server" class="img-responsive" src="images/server.png" width="16px" height="16px">Current Server:</p>
-<select name="MySQL">
-<option>MySQL</option>
-<option>.....</option>
-<option>......</option>
-</select>
-</div>
-</div>
-<div class="blocks">
-<div><h2>Appearance Settings</h2></div>
-<div class="about">
-<p class="language"><img alt="server" class="img-responsive" src="images/translation.png" width="15px" height="14px">Language:</p>
-<select name="language" class="languages">
-<option>English</option>
-<option>Russian</option>
-<option>Armenian</option>
-</select>
-<p class="theme"><img alt="server" class="img-responsive" src="images/theme1.png" width="16px" height="16px">Theme:</p>
-<select name="theme" class="themes">
-<option>pmahomme</option>
-<option>....</option>
-<option>.....</option>
-</select>
-</div>
-</div>
-</div>
-<div class="col-5 col-md-5 information2">
-<div class="blocks">
-<div class="background"><h2>MySQL</h2></div>
-<div class="about">
-<p>Font size</p>
-<a href="#">More Settings</a>
-<p>Server connection:<span class="txt">SSL is not being used</span><img src="images/help.png" alt="help" width="21px" height="21px"></p>
-<p>Server version: 8.0.18 - MySQL Community Server - GPL</p>
-<p>Protocol version: 10</p>
-<p>User: root@192.168.30.20</p>
-<p>Server charset: UTF-8 Unicode (utf8mb4)</p>
-</div>
-</div>
-<div class="blocks">
-<div><h2>Web server</h2></div>
-<div class="about">
-<p>nginx/1.2.1</p>
-<p>Database client version:libmysql-5.5.40</p>
-<p>Lorem ipsum Lorem ipsum Lorem ipsum</p>
-<p>PHP extension: mysqli <img src="images/help.png" alt="help" width="21px" height="21px"> curl <img src="images/help.png" alt="help" width="21px" height="21px"> mbstring <img src="images/help.png" alt="help" width="21px" height="21px"></p>
-<p>Lorem ipsumLorem ipsum</p>
-<p>Lorem ipsumLorem ipsum</p>
-<p>Lorem ipsum</p>
-</div>
-</div>
-<div class="blocks" >
-<div><h2>phpMyAdmin</h2></div>
-<div class="about lastBlock">
-<p>Version information</p>
-<p>Git version</p>
-<a>Documentation</a>
-<a>Wiki</a>
-<a>Official Homepage</a>
-<a>Contribute</a>
-<a>Get support</a>
-<a>List of changes</a>
-</div>
-</div>
-</div>
-</div>`
-            }
-            if (arg === 7) {
-                document.querySelector('.forChangeCol').style.background = "white";
-                document.getElementById('info').innerHTML = `
+                if (arg === 0) {
+                    $(".forChangeCol").css('background', 'linear-gradient(#fff, #dcdcdc)');
+                    document.getElementById('info').innerHTML = `<div class="home" id="home">
+\t\t\t\t\t<div class="col-7 col-md-7 information1">
+\t\t\t\t\t\t<div  class="blocks">
+\t\t\t\t\t\t\t<div><h2>General Settings</h2></div>
+\t\t\t\t\t\t\t<div class="about">
+\t\t\t\t\t\t\t\t<a href="#">Change Password</a>
+\t\t\t\t\t\t\t\t<p class="currentServer"><img alt="server" class="img-responsive" src="images/server.png" width="16px" height="16px">Current Server:</p>
+\t\t\t\t\t\t\t\t<select name="MySQL">
+\t\t\t\t\t\t\t\t\t<option>MySQL</option>
+\t\t\t\t\t\t\t\t\t<option>.....</option>
+\t\t\t\t\t\t\t\t\t<option>......</option>
+\t\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class="blocks">
+\t\t\t\t\t\t\t<div><h2>Appearance Settings</h2></div>
+\t\t\t\t\t\t\t<div class="about">
+\t\t\t\t\t\t\t\t<p class="language"><img alt="server" class="img-responsive" src="images/translation.png" width="15px" height="14px">Language:</p>
+\t\t\t\t\t\t\t\t<select name="language" class="languages">
+\t\t\t\t\t\t\t\t\t<option>English</option>
+\t\t\t\t\t\t\t\t\t<option>Russian</option>
+\t\t\t\t\t\t\t\t\t<option>Armenian</option>
+\t\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t\t<p class="theme"><img alt="server" class="img-responsive" src="images/theme1.png" width="16px" height="16px">Theme:</p>
+\t\t\t\t\t\t\t\t<select name="theme" class="themes">
+\t\t\t\t\t\t\t\t\t<option>pmahomme</option>
+\t\t\t\t\t\t\t\t\t<option>....</option>
+\t\t\t\t\t\t\t\t\t<option>.....</option>
+\t\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</div>
+\t\t\t\t\t<div class="col-5 col-md-5 information2">
+\t\t\t\t\t\t<div class="blocks">
+\t\t\t\t\t\t\t<div class="background"><h2>MySQL</h2></div>
+\t\t\t\t\t\t\t<div class="about">
+\t\t\t\t\t\t\t\t<p>Font size</p>
+\t\t\t\t\t\t\t\t<a href="#">More Settings</a>
+\t\t\t\t\t\t\t\t<p>Server connection:<span class="txt">SSL is not being used</span><img src="images/help.png" alt="help" width="21px" height="21px"></p>
+\t\t\t\t\t\t\t\t<p>Server version: 8.0.18 - MySQL Community Server - GPL</p>
+\t\t\t\t\t\t\t\t<p>Protocol version: 10</p>
+\t\t\t\t\t\t\t\t<p>User: root@192.168.30.20</p>
+\t\t\t\t\t\t\t\t<p>Server charset: UTF-8 Unicode (utf8mb4)</p>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class="blocks">
+\t\t\t\t\t\t\t<div><h2>Web server</h2></div>
+\t\t\t\t\t\t\t<div class="about">
+\t\t\t\t\t\t\t\t<p>nginx/1.2.1</p>
+\t\t\t\t\t\t\t\t<p>Database client version:libmysql-5.5.40</p>
+\t\t\t\t\t\t\t\t<p>Lorem ipsum Lorem ipsum Lorem ipsum</p>
+\t\t\t\t\t\t\t\t<p>PHP extension: mysqli <img src="images/help.png" alt="help" width="21px" height="21px"> curl <img src="images/help.png" alt="help" width="21px" height="21px"> mbstring <img src="images/help.png" alt="help" width="21px" height="21px"></p>
+\t\t\t\t\t\t\t\t<p>Lorem ipsumLorem ipsum</p>
+\t\t\t\t\t\t\t\t<p>Lorem ipsumLorem ipsum</p>
+\t\t\t\t\t\t\t\t<p>Lorem ipsum</p>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class="blocks" >
+\t\t\t\t\t\t\t<div><h2>phpMyAdmin</h2></div>
+\t\t\t\t\t\t\t<div class="about lastBlock">
+\t\t\t\t\t\t\t\t<p>Version information</p>
+\t\t\t\t\t\t\t\t<p>Git version</p>
+\t\t\t\t\t\t\t\t<a>Documentation</a>
+\t\t\t\t\t\t\t\t<a>Wiki</a>
+\t\t\t\t\t\t\t\t<a>Official Homepage</a>
+\t\t\t\t\t\t\t\t<a>Contribute</a>
+\t\t\t\t\t\t\t\t<a>Get support</a>
+\t\t\t\t\t\t\t\t<a>List of changes</a>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</div>
+\t\t\t\t</div>`
+
+                }
+                if (arg === 7) {
+                    document.querySelector('.forChangeCol').style.background = "white";
+                    document.getElementById('info').innerHTML = `
 <div class="mainBlock">
 <h1>Databases</h1>
 <div>
 <img src="images/new.png" width="20px" height="20px" alt="New"><span>Create databases</span><img src="images/help.png"  width="20px" height="20px" alt="Help">
 </div>
 <div class="tbl">
-<input type="text" name="Database" placeholder="Database name" >
+<input type="text" name="Database" placeholder="Database name" required>
 <select>
 <option>utf8mb4_0p00_ai_ci</option>
 <option>.........gfj,.....</option>
@@ -331,17 +333,17 @@ function showFun(arg) {
 </div>
 </div>
 `
-            }
-            if (arg === 8) {
-                document.querySelector('.forChangeCol').style.background = "white";
-                document.getElementById('info').innerHTML = `
+                }
+                if (arg === 8) {
+                    document.querySelector('.forChangeCol').style.background = "white";
+                    document.getElementById('info').innerHTML = `
                         <div class="create">
                             <div class="ct">
                                 <h4><img src="images/new.png" width="20px" height="20px" alt="New"> Create table</h4>
                             </div>
                             <div class="name">
-                                <span>Name:<input type="text" required="required"></span>
-                                <span>Number o columns: <input type="number" min="1" value="4" required="required"  style="width: 50px;" ></span>
+                                <span>Name:<input type="text" required></span>
+                                <span>Number o columns: <input type="number" min="1" value="4" required  style="width: 50px;" ></span>
                             </div>
                         </div>
                         <div class="blue">
@@ -349,45 +351,47 @@ function showFun(arg) {
                         </div>
                         <hr>
         `
+                }
+            }
+        });
+    }
+
+    $.ajax({
+        url: 'jsons/nav.json',
+        contentType: "application/json",
+        dataType: 'json',
+        success: function (response) {
+            let cont = document.querySelector('#header');
+            for (let i = 0; i < response.nav.length; i++) {
+                const divs = document.createElement('div');
+                const a = document.createElement('a');
+                const images = document.createElement('img');
+                divs.setAttribute(`class`, `forChangeCol`);
+                images.setAttribute('src', `${response.nav[i].src}`);
+                images.setAttribute('width', '21px');
+                images.setAttribute('height', '21px');
+                a.setAttribute('href', '#');
+                a.innerHTML = `${response.nav[i].name}`;
+                divs.appendChild(images);
+                divs.appendChild(a);
+                cont.appendChild(divs);
             }
         }
     });
-}
 
-$.ajax({
-    url: 'jsons/nav.json',
-    contentType: "application/json",
-    dataType: 'json',
-    success: function (response) {
-        let cont = document.querySelector('#header');
-        for (let i = 0; i < response.nav.length; i++) {
-            const divs = document.createElement('div');
-            const a = document.createElement('a');
-            const images = document.createElement('img');
-            divs.setAttribute(`class`, `forChangeCol`);
-            images.setAttribute('src', `${response.nav[i].src}`);
-            images.setAttribute('width', '21px');
-            images.setAttribute('height', '21px');
-            a.setAttribute('href', '#');
-            a.innerHTML = `${response.nav[i].name}`;
-            divs.appendChild(images);
-            divs.appendChild(a);
-            cont.appendChild(divs);
+    function change(click) {
+        const mainContent = document.getElementById('mainContent');
+        const leftContent = document.getElementById('leftContent');
+        const imgChange = document.getElementById('imgChange');
+        if ($(imgChange).attr("src") !== "images/arrow_right.png") {
+            leftContent.style.display = 'none';
+            mainContent.style.width = '100%';
+            $(imgChange).attr("src", "images/arrow_right.png");
+        } else {
+            $(imgChange).attr("src", "images/arrow_left.png");
+            mainContent.removeAttribute("style");
+            leftContent.removeAttribute("style");
         }
     }
-});
 
-function change(click) {
-    const mainContent = document.getElementById('mainContent');
-    const leftContent = document.getElementById('leftContent');
-    const imgChange = document.getElementById('imgChange');
-    if ($(imgChange).attr("src") !== "images/arrow_right.png") {
-        leftContent.style.display = 'none';
-        mainContent.style.width = '100%';
-        $(imgChange).attr("src", "images/arrow_right.png");
-    } else {
-        $(imgChange).attr("src", "images/arrow_left.png");
-        mainContent.removeAttribute("style");
-        leftContent.removeAttribute("style");
-    }
-}
+
