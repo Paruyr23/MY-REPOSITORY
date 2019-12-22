@@ -413,14 +413,6 @@ border-color: #888888;
 	box-shadow: inset 0 9px 7px white;
 }
 
-#newTable{
-	display: none;
-}
-
-#new{
-	display: none;
-}
-
 a,button{
 	cursor:pointer;
 }
