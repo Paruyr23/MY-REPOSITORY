@@ -1,8 +1,3 @@
-const phpAdmin = $('#home');
-const newCollapse = $('#new');
-const createNewTable = $('#newTable');
-const contentBlock = $('#info');
-
 function collapse(element) {
     const collapse = document.getElementById(element);
     const link = document.getElementsByClassName(element);
@@ -13,6 +8,29 @@ function collapse(element) {
     link[0].innerHTML = "+";
 }
 
+$.ajax({
+    url: 'jsons/nav.json',
+    contentType: "application/json",
+    dataType: 'json',
+    success: function (response) {
+        let cont = document.querySelector('#header');
+        for (let i = 0; i < response.nav.length; i++) {
+            const divs = document.createElement('div');
+            const a = document.createElement('a');
+            const images = document.createElement('img');
+            divs.setAttribute(`class`, `forChangeCol`);
+            images.setAttribute('src', `${response.nav[i].src}`);
+            images.setAttribute('width', '21px');
+            images.setAttribute('height', '21px');
+            a.setAttribute('href', '#');
+            a.innerHTML = `${response.nav[i].name}`;
+            divs.appendChild(images);
+            divs.appendChild(a);
+            cont.appendChild(divs);
+        }
+    }
+});
+
 function showFun(arg) {
     $.ajax({
         url: 'jsons/tables/tables.json',
@@ -20,6 +38,7 @@ function showFun(arg) {
         dataType: 'json',
         success: function (data) {
             var content = document.getElementById("info");
+
             var tables = document.createElement("table");
             tables.setAttribute("class", "table");
             var tr1 = document.createElement("tr");
@@ -34,10 +53,8 @@ function showFun(arg) {
                 <th>Overhead</th>
         `;
             tables.appendChild(tr1);
-
             for (let j = 0; j < data.tables.length; j++) {
                 if (arg === j + 1) {
-                    document.querySelector('.forChangeCol').style.background = "white";
                     for (let i = 0; i < data.tables[j].table.length; i++) {
                         let tr = document.createElement('tr');
                         tr.innerHTML += `
@@ -79,6 +96,12 @@ function showFun(arg) {
     });
 }
 
+const phpAdmin = $('#home');
+const newCollapse = $('#new');
+const createNewTable = $('#newTable');
+const contentBlock = $('#info');
+
+
 function staticHtml(param) {
     switch (param) {
         case 'home':
@@ -94,29 +117,6 @@ function staticHtml(param) {
             break;
     }
 }
-
-$.ajax({
-    url: 'jsons/nav.json',
-    contentType: "application/json",
-    dataType: 'json',
-    success: function (response) {
-        let cont = document.querySelector('#header');
-        for (let i = 0; i < response.nav.length; i++) {
-            const divs = document.createElement('div');
-            const a = document.createElement('a');
-            const images = document.createElement('img');
-            divs.setAttribute(`class`, `forChangeCol`);
-            images.setAttribute('src', `${response.nav[i].src}`);
-            images.setAttribute('width', '21px');
-            images.setAttribute('height', '21px');
-            a.setAttribute('href', '#');
-            a.innerHTML = `${response.nav[i].name}`;
-            divs.appendChild(images);
-            divs.appendChild(a);
-            cont.appendChild(divs);
-        }
-    }
-});
 
 function change(click) {
     const mainContent = document.getElementById('mainContent');
