@@ -20,7 +20,7 @@ $.ajax({
             mainText.css({'color': '#646464','cursor': 'auto'});
             const imgMain = $('<img>', {src:'images/files.png', width:'21px',height:'21px'});
             const divMain = $('<div/>',{id:'demo', class:'collapse'});
-            const newLink =  $('<a>', { href:`#`, text: `New`, onclick:`showFun(${7})`});
+            const newLink =  $('<a>', { href:`#`, text: `New`, onclick:`staticHtml('new')`});
             newLink.css('color', '#646464');
             const newImg = $('<img>', {src:'images/new.png', width:'21px',height:'21px'});
             newImg.css('margin-left','30px');
