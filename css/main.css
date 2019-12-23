@@ -200,6 +200,11 @@ margin:10px;
 	margin: 0 !important;
 }
 
+.collation{
+	font-family: monospace;
+	text-align: right;
+}
+
 .blocks{
 	border: 1px solid silver;
 	border-radius: 5px;
