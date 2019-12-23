@@ -19,6 +19,10 @@
 	display: none;
 }
 
+ a:hover{
+	text-decoration: #747474 !important;
+}
+
 .select {
 	margin: auto;
 	display: block;
@@ -88,12 +92,6 @@
 	justify-content: center;
 }
 
-
-a{
-	text-decoration: none !important;
-}
-
-
 .nav {
 	display:flex;
 	justify-content: space-between;
@@ -102,8 +100,17 @@ a{
 	padding: initial;
 }
 
+.m-0{
+	margin: 30px 0 0 !important;
+}
+
+.first_alert{
+	margin: 1px 0 0!important;
+}
+
 .nav a{
 	font-weight: bold;
+	text-decoration: none !important;
 }
 
 .nav div{
@@ -121,6 +128,7 @@ a{
 .container-fluid a{
 	margin:0 4px;
 	text-shadow: 0 1px 0 #fff;
+	text-decoration: none !important;
 }
 
 .px-0{
@@ -133,6 +141,13 @@ a{
 
 li{
 	list-style-type: none;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #235a81;
+	cursor: pointer;
+	outline: none;
 }
 
 ul {
@@ -156,6 +171,34 @@ ul li {
 	justify-content: space-between;
 }
 
+.number{
+	width: 50px;
+}
+
+.selectAll *{
+margin:10px;
+}
+
+.up{
+	margin-left: 25px;
+}
+
+
+
+.selectAll button{
+	margin:0 !important;
+	border:none;
+	padding:0 !important;
+}
+
+.selectAll span img{
+	margin: 0 !important;
+}
+
+.drop {
+	margin: 0 !important;
+}
+
 .blocks{
 	border: 1px solid silver;
 	border-radius: 5px;
@@ -165,6 +208,32 @@ ul li {
 
 tr:nth-child(2n + 1) {
 	background-color: #DDDDDD;
+}
+
+.alert-primary{
+	color: #000;
+	background-color: #e8eef1;
+	background-image: none;
+	border:1px solid #3a6c7e;
+	border-radius: 5px;
+}
+
+.rowAlert{
+	display: flex;
+	margin: 0;
+}
+
+.total{
+	background: none !important;
+}
+
+.rowLink{
+	display: list-item;
+	margin-left: 55px;
+}
+
+.alert-primary img {
+	margin-right: 0;
 }
 
 .about{
@@ -229,6 +298,7 @@ display: grid;
 .lastBlock a{
 	display: list-item;
 	margin: 7px 0 4px 24px;
+	text-decoration: none !important;
 }
 
 .buttons{
@@ -423,6 +493,7 @@ a,button{
 	border: 1px solid #AAAAAA;
 	text-align: center;
 	margin: -41px 0 30px;
+	box-shadow: 3px 3px 15px #bbb;
 }
 
 .blockSpan .filters {
@@ -431,8 +502,8 @@ a,button{
 	margin: -40px 0 20px;
 }
 
-a:active{
-	text-decoration: #AAA !important;
+tr:hover{
+	background-color: #d1dce3;
 }
 
  span input {
@@ -452,6 +523,7 @@ a:active{
 	 width: 7%;
 	 margin: -20px 12px 28px;
 	 text-align: center;
+	 box-shadow: 3px 3px 15px #bbb;
  }
 
  .name {

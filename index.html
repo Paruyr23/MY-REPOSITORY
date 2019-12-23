@@ -81,7 +81,7 @@
 							<img src="images/new.png" width="20px" height="20px" alt="New"><span>Create databases</span><img src="images/help.png"  width="20px" height="20px" alt="Help">
 						</div>
 						<div class="tbl">
-							<input type="text" name="Database" placeholder="Database name" >
+							<input type="text" name="Database" placeholder="Database name" id="database">
 							<select>
 								<option>utf8mb4_0p00_ai_ci</option>
 								<option>.........gfj,.....</option>
@@ -100,7 +100,7 @@
 								<option>utf8mb4_0p00_ai_ci</option>
 								<option>addss</option>
 							</select>
-							<button onclick="staticHtml('newTable')">Create</button>
+							<button id="create" onclick="staticHtml('newTable')">Create</button>
 						</div>
 					</div>
 					<div class="container-fluid block">
@@ -206,71 +206,67 @@
 									<td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
 									<td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
 								</tr>
-								<tr>
-									<td><input type="checkbox">lorum lordgdgdgem</td>
-									<td>lorem ipsum lorem</td>
-									<td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
-									<td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
-								</tr>
-								<tr>
-									<td><input type="checkbox">lorem idgdgem</td>
-									<td>lorem ipsum lorem</td>
-									<td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
-									<td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
-								</tr>
-								<tr>
-									<td><input type="checkbox">lorem sum lordgdgdgem</td>
-									<td>lorem ipsum lorem</td>
-									<td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
-									<td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
-								</tr>
-								<tr>
-									<td><input type="checkbox">lorgem</td>
-									<td>lorem ipsum lorem</td>
-									<td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
-									<td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
-								</tr>
-								<tr>
-									<td><input type="checkbox">lorem  lordgdgdgem</td>
-									<td>lorem ipsum lorem</td>
-									<td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
-									<td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
-								</tr>
-								<tr>
-									<td><input type="checkbox"> ipsum lordgdgdgem</td>
-									<td>lorem ipsum lorem</td>
-									<td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
-									<td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
-								</tr>
-								<tr>
-									<td><input type="checkbox">dgdgdgem</td>
-									<td>lorem ipsum lorem</td>
-									<td><img src="images/redx.png" width="20px" height="20px" alt="redx">Not replicated</td>
-									<td><img src="images/check.png" width="20px" height="20px" alt="check"><a href="#">Check privileges</a></td>
-								</tr>
-								<tr>
-									<th>Total: 22</th>
+								<tr class="total">
+									<th>Total: 15</th>
 								</tr>
 							</table>
+							<div class="selectAll">
+								<img src="images/up_arrow.png" width="30px" height="30px" class="up">
+								<input type="checkbox">
+								<span  id="select_all">Check All</span>
+								<span>With selected: </span>
+								<button>
+								<span>
+									<img src="images/drop.png" width="20px" height="20px">
+									<span class="drop">Drop</span>
+								</span>
+								</button>
+								<div class="rowAlert">
+									<div class="alert-primary" role="alert">
+										<img src="images/triangle.png" width="20px" height="20px"> Note: Enabling the database statistics here might cause heavy traffic between the web server and the MySQL server.
+									</div>
+								</div>
+							</div>
+							<div class="rowLink">
+								<a href="#">
+									<strong>Enable statistics</strong>
+								</a>
+							</div>
 							<hr>
+							<div class="selectAll">
+								<div class="alert-primary m-0">
+									<img src="images/triangle.png" width="20px" height="20px" class="lastAlert"><a href="#">phpMyAdmin Demo Server</a>: Currently running Git revision <a target="_blank" rel="noopener noreferrer" href="#">RELEASE_5_0_0RC1-712-g073418a7ec</a> from the <a href="#">master</a>branch.
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div id="newTable" class="hidden">
+					<div class="selectAll">
+						<div class="alert-primary first_alert">
+							<img src="images/triangle.png" width="20px" height="20px"><span>No tables found in database.</span>
+						</div>
+					</div>
 					<div class="create">
 						<div class="ct">
 							<h4><img src="images/new.png" width="20px" height="20px" alt="New"> Create table</h4>
 						</div>
 						<div class="name">
 							<span>Name:<input type="text" required="required"></span>
-							<span>Number o columns: <input type="number" min="1" value="4" required="required"  style="width: 50px;" ></span>
+							<span>Number o columns: <input type="number" min="1" value="4" required="required" class="number"></span>
 						</div>
 					</div>
 					<div class="blue">
 						<button>Go</button>
 					</div>
 					<hr>
+					<div class="selectAll">
+						<div class="alert-primary m-0">
+							<img src="images/triangle.png" width="20px" height="20px" class="lastAlert"><a href="#">phpMyAdmin Demo Server</a>: Currently running Git revision <a target="_blank" rel="noopener noreferrer" href="#">RELEASE_5_0_0RC1-712-g073418a7ec</a> from the <a href="#">master</a>branch.
+						</div>
+					</div>
 				</div>
+
 				<div class="home" id="home">
 					<div class="col-7 col-md-7 information1">
 						<div  class="blocks">
