@@ -37,8 +37,8 @@ $.ajax({
                 });
                 const img = $('<img>', {src: image.src, width: image.width, height: image.height});
                 const div = $('<div/>',{id:`${data.items[i].name}`, class:'collapse'});
-                const text = $('<a>', { href:`#`, text: `${data.items[i].name}`, class:`demo${i + 1}`});
-                text.css({'color': '#646464','cursor': 'auto'});
+                const text = $('<a>', { href:`#`, text: `${data.items[i].name}`, class:`demo${i + 1}`,onclick:`dynamicCollapsesTable(${i+1}),staticHtml('divForCollapse')`});
+                text.css({'color': '#646464'});
                 li
                     .append(a)
                     .append(img)
@@ -58,6 +58,7 @@ $.ajax({
                     const img2 = $('<img>', {src:image.src ,width: image.width, height: image.height});
                     const div2 = $('<div/>',{id:`${data.items[i].children[j].name}`, class:'collapse'});
                     const afortbl = $('<a>', { href:`#`, text: data.items[i].children[j].name, onclick:`showFun(${i+1})`});
+                    afortbl.css({'color': '#646464'});
                     li2
                         .append(a2)
                         .append(img2)

@@ -19,6 +19,14 @@
 	display: none;
 }
 
+.table td input{
+	margin-right: 5px;
+}
+
+.database table td input{
+	margin-right: 5px;
+}
+
  a:hover{
 	text-decoration: #747474 !important;
 }
@@ -165,6 +173,9 @@ ul li {
 	padding-left: 20px;
 }
 
+label {
+	cursor: pointer;
+}
 
 .home{
 	display: flex;
@@ -180,10 +191,8 @@ margin:10px;
 }
 
 .up{
-	margin-left: 25px;
+	margin-left: 8px;
 }
-
-
 
 .selectAll button{
 	margin:0 !important;
@@ -254,8 +263,21 @@ tr:nth-child(2n + 1) {
 	color:white;
 }
 
+.first_tables {
+	width: fit-content;
+	float: left;
+}
+
 select[name="MySQL"]{
 	margin-top:14px;
+}
+
+.blockWithTable hr{
+	clear: both;
+	color: #444444;
+	background-color: #444444;
+	height: 1px;
+	width: 98%;
 }
 
 .blocks h2{
@@ -343,9 +365,7 @@ display: grid;
 	list-style: none;
 	background: #fff;
 	border: 1px solid #ddd;
-	border-radius: .3em;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
+	border-radius: .3em 0;
 	box-shadow: 0 0 5px #ccc;
 	top: 100%;
 	left: 3px;
@@ -375,9 +395,7 @@ display: grid;
 	list-style: none;
 	background: #fff;
 	border: 1px solid #ddd;
-	border-radius: .3em;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
+	border-radius: .3em 0;
 	box-shadow: 0 0 5px #ccc;
 	top: 100%;
 	left: 3px;
@@ -529,6 +547,10 @@ tr:hover{
 	 margin: -20px 12px 28px;
 	 text-align: center;
 	 box-shadow: 3px 3px 15px #bbb;
+ }
+
+ .ct h4{
+	 margin-right: 5px;
  }
 
  .name {

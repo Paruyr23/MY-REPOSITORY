@@ -8,6 +8,7 @@ function collapse(element) {
     link[0].innerHTML = "+";
 }
 
+
 $.ajax({
     url: 'jsons/nav.json',
     contentType: "application/json",
@@ -31,6 +32,7 @@ $.ajax({
     }
 });
 
+
 function showFun(arg) {
     $.ajax({
         url: 'jsons/tables/tables.json',
@@ -51,7 +53,7 @@ function showFun(arg) {
                 <th>Collation</th>
                 <th>Size</th>
                 <th>Overhead</th>
-        `;
+            `;
             tables.appendChild(tr1);
             for (let j = 0; j < data.tables.length; j++) {
                 if (arg === j + 1) {
@@ -89,16 +91,18 @@ function showFun(arg) {
                 <th>Collation</th>
                 <th>Size</th>
                 <th>0 Kib</th>
-        `;
+            `;
             $(tables).append(tr2);
             $(content).html(tables);
         }
     });
 }
 
+
 const phpAdmin = $('#home');
 const newCollapse = $('#new');
 const createNewTable = $('#newTable');
+const collaspeTable =$('#divForCollapse');
 const contentBlock = $('#info');
 
 
@@ -115,8 +119,13 @@ function staticHtml(param) {
             createNewTable.removeClass("hidden");
             contentBlock.html(createNewTable);
             break;
+        case 'divForCollapse':
+            collaspeTable.removeClass("hidden");
+            contentBlock.html(collaspeTable);
+            break;
     }
 }
+
 
 function change(click) {
     const mainContent = document.getElementById('mainContent');
@@ -131,4 +140,70 @@ function change(click) {
         mainContent.removeAttribute("style");
         leftContent.removeAttribute("style");
     }
+}
+
+
+
+function dynamicCollapsesTable(arg) {
+    $.ajax({
+        url: 'jsons/tables/collapsesTable.json',
+        contentType: "application/json",
+        dataType: 'json',
+        success: function (data) {
+            var placeForTables = document.getElementById("collapsesTable");
+
+            var tables = document.createElement("table");
+            tables.setAttribute("class", "table");
+            var tr3 = document.createElement("tr");
+            tr3.setAttribute("class", "th");
+            tr3.innerHTML = `
+                <th>Table</th>
+                <th>Action</th>
+                <th>Rows</th>
+                <th>Type</th>
+                <th>Collation</th>
+                <th>Size</th>
+                <th>Overhead</th>
+            `;
+            tables.appendChild(tr3);
+            for (let j = 0; j < data.tables.length; j++) {
+                if (arg === j + 1) {
+                    for (let i = 0; i < data.tables[j].table.length; i++) {
+                        let tr = document.createElement('tr');
+                        tr.innerHTML += `
+                        <td><input type="checkbox">${data.tables[j].table[i].name}</td>
+                        <td>
+                            <img src="images/star.png" width="17px" height="17px">
+                            <img src="images/browse.png" width="17px" height="17px"><a href="#">Browse</a>
+                            <img src="images/structure.png" width="17px" height="17px"><a href="#">Structure</a>
+                            <img src="images/search_plus.png" width="17px" height="17px"><a href="#">Search</a>
+                            <img src="images/insert.png" width="17px" height="17px"><a href="#">Insert</a>
+                            <img src="images/empty.png" width="17px" height="17px"><a href="#">Empty</a>
+                            <img src="images/minus.png" width="17px" height="17px"><a href="#">Drop</a>
+                        </td>
+                        <td>${data.tables[j].table[i].rows}</td>
+                        <td>${data.tables[j].table[i].type}</td>
+                        <td>${data.tables[j].table[i].collation}</td>
+                        <td>${data.tables[j].table[i].size}</td>
+                        <td>${data.tables[j].table[i].overhead}</td>`;
+                        $(tables).append(tr);
+                    };
+                }
+            }
+
+            var tr4 = document.createElement("tr");
+            tr4.setAttribute("class", "th");
+            tr4.innerHTML = `
+                <th>tables</th>
+                <th>Sum</th>
+                <th>InnoDB</th>
+                <th>utf8_unicode_ci</th>
+                <th>Collation</th>
+                <th>Size</th>
+                <th>0 Kib</th>
+            `;
+            $(tables).append(tr4);
+            $(placeForTables).html(tables);
+        }
+    });
 }

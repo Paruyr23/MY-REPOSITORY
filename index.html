@@ -158,8 +158,10 @@
 							</table>
 							<div class="selectAll">
 								<img src="images/up_arrow.png" width="30px" height="30px" class="up">
-								<input type="checkbox">
-								<span  id="select_all">Check All</span>
+								<label>
+									<input type="checkbox">
+									<span  id="select_all">Check All</span>
+								</label>
 								<span>With selected: </span>
 								<button>
 								<span>
@@ -280,6 +282,57 @@
 								<a>Contribute</a>
 								<a>Get support</a>
 								<a>List of changes</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="divForCollapse" class="hidden">
+					<div class="blockSpan">
+					<div class="container filters"><h4>Filters</h4></div>
+					<span>Containing the word <input type="text"></span>
+				</div>
+					<div class="blockWithTable">
+						<div class="container-fluid first_tables">
+							<div id="collapsesTable"></div>
+							<div class="selectAll">
+								<img src="images/up_arrow.png" width="30px" height="30px" class="up">
+								<label>
+									<input type="checkbox" id="checkAll">
+									<span  id="select_all_checkbox">Check All</span>
+								</label>
+								<select name="select">
+									<option value="value1" selected>With selected:</option>
+									<option value="value2">select1:</option>
+									<option value="value3">select2:</option>
+									<option value="value4">select3:</option>
+									<option value="value5">select4:</option>
+								</select>
+							</div>
+						</div>
+						<hr>
+						<div>
+							<img src="images/print-21.png">
+							<a href="#" style="margin-right: 15px">Print</a>
+
+							<img src="images/dictionary-21.png">
+							<a href="#">Data dictionary</a>
+						</div>
+						<div class="create">
+							<div class="ct">
+								<h4><img src="images/new.png" width="20px" height="20px" alt="New"> Create table</h4>
+							</div>
+							<div class="name">
+								<span>Name:<input type="text" required="required"></span>
+								<span>Number o columns: <input type="number" min="1" value="4" required="required" class="number"></span>
+							</div>
+						</div>
+						<div class="blue">
+							<button>Go</button>
+						</div>
+						<hr>
+						<div class="selectAll">
+							<div class="alert-primary m-0">
+								<img src="images/triangle.png" width="20px" height="20px" class="lastAlert"><a href="#">phpMyAdmin Demo Server</a>: Currently running Git revision <a target="_blank" rel="noopener noreferrer" href="#">RELEASE_5_0_0RC1-712-g073418a7ec</a> from the <a href="#">master</a>branch.
 							</div>
 						</div>
 					</div>

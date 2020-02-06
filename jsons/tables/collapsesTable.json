@@ -1,0 +1,540 @@
+{
+  "tables":[
+    {
+      "table": [
+        {
+          "name": "lorem ipsum",
+          "rows": 0,
+          "type": "InnoDB",
+          "collation": "utf8_bin",
+          "size": "16.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "lorem ipsum",
+          "rows": 0,
+          "type": "InnoDB",
+          "collation": "utf8_bin",
+          "size": "16.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "lorem ipsum",
+          "rows": 0,
+          "type": "InnoDB",
+          "collation": "utf8_bin",
+          "size": "16.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "lorem ipsum",
+          "rows": 0,
+          "type": "InnoDB",
+          "collation": "utf8_bin",
+          "size": "16.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "lorem ipsum",
+          "rows": 0,
+          "type": "InnoDB",
+          "collation": "utf8_bin",
+          "size": "16.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "lorem ipsum",
+          "rows": 0,
+          "type": "InnoDB",
+          "collation": "utf8_bin",
+          "size": "16.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "lorem ipsum",
+          "rows": 0,
+          "type": "InnoDB",
+          "collation": "utf8_bin",
+          "size": "16.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "lorem ipsum",
+          "rows": 0,
+          "type": "InnoDB",
+          "collation": "utf8_bin",
+          "size": "16.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "lorem ipsum",
+          "rows": 0,
+          "type": "InnoDB",
+          "collation": "utf8_bin",
+          "size": "16.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "lorem ipsum",
+          "rows": 0,
+          "type": "InnoDB",
+          "collation": "utf8_bin",
+          "size": "16.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "lorem ipsum",
+          "rows": 0,
+          "type": "InnoDB",
+          "collation": "utf8_bin",
+          "size": "16.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "lorem ipsum",
+          "rows": 0,
+          "type": "InnoDB",
+          "collation": "utf8_bin",
+          "size": "16.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "lorem ipsum",
+          "rows": 0,
+          "type": "InnoDB",
+          "collation": "utf8_bin",
+          "size": "16.0 KiB",
+          "overhead": "-"
+        }
+      ]
+    },
+    {
+      "table": [
+        {
+          "name": "IPSUM LOREM",
+          "rows": 1,
+          "type": "InnoDBDB",
+          "collation": "utf8_bin_fin",
+          "size": "32.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "IPSUM LOREM",
+          "rows": 1,
+          "type": "InnoDBDB",
+          "collation": "utf8_bin_fin",
+          "size": "32.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "IPSUM LOREM",
+          "rows": 1,
+          "type": "InnoDBDB",
+          "collation": "utf8_bin_fin",
+          "size": "32.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "IPSUM LOREM",
+          "rows": 1,
+          "type": "InnoDBDB",
+          "collation": "utf8_bin_fin",
+          "size": "32.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "IPSUM LOREM",
+          "rows": 1,
+          "type": "InnoDBDB",
+          "collation": "utf8_bin_fin",
+          "size": "32.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "IPSUM LOREM",
+          "rows": 1,
+          "type": "InnoDBDB",
+          "collation": "utf8_bin_fin",
+          "size": "32.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "IPSUM LOREM",
+          "rows": 1,
+          "type": "InnoDBDB",
+          "collation": "utf8_bin_fin",
+          "size": "32.0 KiB",
+          "overhead": "-"
+        }
+      ]
+    },
+    {
+      "table": [
+        {
+          "name": "LOREM",
+          "rows": "0-1",
+          "type": "InnB",
+          "collation": "utf8_fin",
+          "size": "12.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "LOREM",
+          "rows": "0-1",
+          "type": "InnB",
+          "collation": "utf8_fin",
+          "size": "12.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "LOREM",
+          "rows": "0-1",
+          "type": "InnB",
+          "collation": "utf8_fin",
+          "size": "12.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "LOREM",
+          "rows": "0-1",
+          "type": "InnB",
+          "collation": "utf8_fin",
+          "size": "12.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "LOREM",
+          "rows": "0-1",
+          "type": "InnB",
+          "collation": "utf8_fin",
+          "size": "12.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "LOREM",
+          "rows": "0-1",
+          "type": "InnB",
+          "collation": "utf8_fin",
+          "size": "12.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "LOREM",
+          "rows": "0-1",
+          "type": "InnB",
+          "collation": "utf8_fin",
+          "size": "12.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "LOREM",
+          "rows": "0-1",
+          "type": "InnB",
+          "collation": "utf8_fin",
+          "size": "12.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "LOREM",
+          "rows": "0-1",
+          "type": "InnB",
+          "collation": "utf8_fin",
+          "size": "12.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "LOREM",
+          "rows": "0-1",
+          "type": "InnB",
+          "collation": "utf8_fin",
+          "size": "12.0 KiB",
+          "overhead": "-"
+        }
+      ]
+    },
+    {
+      "table": [
+        {
+          "name": "IPum IPSUM_LOREM",
+          "rows": "0-2",
+          "type": "InnBad",
+          "collation": "utf8_gin",
+          "size": "6.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "IPum IPSUM_LOREM",
+          "rows": "0-2",
+          "type": "InnBad",
+          "collation": "utf8_gin",
+          "size": "6.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "IPum IPSUM_LOREM",
+          "rows": "0-2",
+          "type": "InnBad",
+          "collation": "utf8_gin",
+          "size": "6.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "IPum IPSUM_LOREM",
+          "rows": "0-2",
+          "type": "InnBad",
+          "collation": "utf8_gin",
+          "size": "6.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "IPum IPSUM_LOREM",
+          "rows": "0-2",
+          "type": "InnBad",
+          "collation": "utf8_gin",
+          "size": "6.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "IPum IPSUM_LOREM",
+          "rows": "0-2",
+          "type": "InnBad",
+          "collation": "utf8_gin",
+          "size": "6.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "IPum IPSUM_LOREM",
+          "rows": "0-2",
+          "type": "InnBad",
+          "collation": "utf8_gin",
+          "size": "6.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "IPum IPSUM_LOREM",
+          "rows": "0-2",
+          "type": "InnBad",
+          "collation": "utf8_gin",
+          "size": "6.0 KiB",
+          "overhead": "-"
+        }
+      ]
+    },
+    {
+      "table": [
+        {
+          "name": "___IPSUM_LOREM____",
+          "rows": "0-3",
+          "type": "innoda",
+          "collation": "utf8_gin",
+          "size": "4.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "___IPSUM_LOREM____",
+          "rows": "0-3",
+          "type": "innoda",
+          "collation": "utf8_gin",
+          "size": "4.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "___IPSUM_LOREM____",
+          "rows": "0-3",
+          "type": "innoda",
+          "collation": "utf8_gin",
+          "size": "4.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "___IPSUM_LOREM____",
+          "rows": "0-3",
+          "type": "innoda",
+          "collation": "utf8_gin",
+          "size": "4.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "___IPSUM_LOREM____",
+          "rows": "0-3",
+          "type": "innoda",
+          "collation": "utf8_gin",
+          "size": "4.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "___IPSUM_LOREM____",
+          "rows": "0-3",
+          "type": "innoda",
+          "collation": "utf8_gin",
+          "size": "4.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "___IPSUM_LOREM____",
+          "rows": "0-3",
+          "type": "innoda",
+          "collation": "utf8_gin",
+          "size": "4.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "___IPSUM_LOREM____",
+          "rows": "0-3",
+          "type": "innoda",
+          "collation": "utf8_gin",
+          "size": "4.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "___IPSUM_LOREM____",
+          "rows": "0-3",
+          "type": "innoda",
+          "collation": "utf8_gin",
+          "size": "4.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "___IPSUM_LOREM____",
+          "rows": "0-3",
+          "type": "innoda",
+          "collation": "utf8_gin",
+          "size": "4.0 KiB",
+          "overhead": "-"
+        }
+      ]
+    },
+    {
+      "table": [
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        },
+        {
+          "name": "........IPSUM_LOREM____",
+          "rows": "0-5",
+          "type": "innodbada",
+          "collation": "utf8_bingo",
+          "size": "24.0 KiB",
+          "overhead": "-"
+        }
+      ]
+    }
+  ]
+}
