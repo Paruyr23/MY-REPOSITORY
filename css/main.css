@@ -550,11 +550,15 @@ tr:hover{
  }
 
  .ct h4{
-	 margin-right: 5px;
+	 margin: 10px 5px;
  }
 
  .name {
 	 margin: 15px;
+ }
+
+ .ml li{
+	 margin-left: 20px;
  }
 
  .blue {

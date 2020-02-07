@@ -5,13 +5,14 @@ $.ajax({
     success: function (data) {
         $(document).ready(function() {
             const image = {
-                src: 'images/document.png',
+                src: 'images/s_db.png',
+                src2: 'images/b_props.png',
                 width: '21px',
                 height: '21px',
             };
             const ulMain = $('<ul/>');
             const liMain = $('<li/>');
-            const aMain = $('<a/>',{ href: '#demo', text: '+', class:'demo'});
+            const aMain = $('<a/>',{ href: '#demo',text:'+', class:'demo'});
             aMain.attr({
                 'data-toggle': "collapse",
                 'onclick': "collapse('demo')"
@@ -22,15 +23,15 @@ $.ajax({
             const divMain = $('<div/>',{id:'demo', class:'collapse'});
             const newLink =  $('<a>', { href:`#`, text: `New`, onclick:`staticHtml('new')`});
             newLink.css('color', '#646464');
-            const newImg = $('<img>', {src:'images/new.png', width:'21px',height:'21px'});
-            newImg.css('margin-left','30px');
+            const newImg = $('<img>', {src:'images/b_newdb.png', width:'21px',height:'21px'});
+            newImg.css('margin-left','18px');
             divMain
                 .append(newImg)
                 .append(newLink);
             for(let i = 0;i < data.items.length ;i++){                                                  // first loop
                 const ul = $('<ul/>');
                 const li = $('<li/>');
-                const a = $('<a>', { href:`#${data.items[i].name}`, text: '+', class:`${data.items[i].name}`});
+                const a = $('<a>', { href:`#${data.items[i].name}`,text:'+', class:`${data.items[i].name}`});
                 a.attr({
                     'data-toggle': "collapse",
                     'onclick': `collapse('${data.items[i].name}')`
@@ -48,44 +49,20 @@ $.ajax({
                 ul
                     .appendTo(divMain);
                 for(let j = 0;j < data.items[i].children.length; j++){                                  // second loop
-                    const ul2 = $('<ul/>');
+                    const ul2 = $('<ul/>',{class:"ml"});
                     const li2 = $('<li/>');
-                    const a2 = $('<a>', { href: `#${data.items[i].children[j].name}`, text: '+', class:`${data.items[i].children[j].name}`});
-                    a2.attr({
-                        'data-toggle': "collapse",
-                        'onclick': `collapse('${data.items[i].children[j].name}')`
-                    });
-                    const img2 = $('<img>', {src:image.src ,width: image.width, height: image.height});
+                    const img2 = $('<img>', {src:image.src2 ,width: image.width, height: image.height});
                     const div2 = $('<div/>',{id:`${data.items[i].children[j].name}`, class:'collapse'});
                     const afortbl = $('<a>', { href:`#`, text: data.items[i].children[j].name, onclick:`showFun(${i+1})`});
                     afortbl.css({'color': '#646464'});
                     li2
-                        .append(a2)
                         .append(img2)
                         .append(afortbl)
                         .append(div2)
                         .appendTo(ul2);
                     ul2.appendTo(div);
-                    for(let k = 0;k < data.items[i].children[j].children2.length;k++){                  //  third loop
-                        const ul3 = $('<ul/>');
-                        const li3 = $('<li/>');
-                        const a3 = $('<a>', { href: `#`, text: data.items[i].children[j].children2[k].name});
-                        a3.css({'color': '#646464','cursor': 'auto'});
-                        a3.attr({
-                            'data-toggle': "collapse",
-                            'onclick': `collapse('${data.items[i].children[j].children2[k].name}')`
-                        });
-                        const img3 = $('<img>', {src:image.src ,width: image.width, height: image.height});
-                        const div3 = $('<div/>',{id:`${data.items[i].children[j].children2[k].name}`, class:'collapse'});
-                        li3
-                            .append(img3)
-                            .append(a3)
-                            .append(div3)
-                            .appendTo(ul3);
-                        ul3.appendTo(div2);
                     }
                 }
-            }
 
             liMain
                 .append(aMain)

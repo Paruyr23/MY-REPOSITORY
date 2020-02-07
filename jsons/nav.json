@@ -2,11 +2,11 @@
   "nav": [
     {
       "name": "Structure",
-      "src": "images/structure.png"
+      "src": "images/b_props.png"
     },
     {
       "name": "SQL",
-      "src": "images/sql.png"
+      "src": "images/b_sql.png"
     },
     {
       "name": "Search",
@@ -14,7 +14,7 @@
     },
     {
       "name": "Query",
-      "src": "images/query.png"
+      "src": "images/s_db.png"
     },
     {
       "name": "Export",
@@ -30,7 +30,7 @@
     },
     {
       "name": "Routines",
-      "src": "images/routines.png"
+      "src": "images/b_routines.png"
     },
     {
       "name": "Events",

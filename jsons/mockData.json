@@ -4,12 +4,7 @@
             "name": "collapse1",
             "children": [
                 {
-                    "name": "table1",
-                    "children2": [
-                        {
-                            "name":"child1"
-                        }
-                    ]
+                    "name": "table1"
                 }
             ]
         },
@@ -43,12 +38,7 @@
             "name": "collapse4",
             "children": [
                 {
-                    "name": "table4",
-                    "children2": [
-                        {
-                            "name":"child4"
-                        }
-                    ]
+                    "name": "table4"
                 }
             ]
         },
@@ -56,12 +46,7 @@
             "name": "collapse5",
             "children": [
                 {
-                    "name": "table5",
-                    "children2": [
-                        {
-                            "name":"child5"
-                        }
-                    ]
+                    "name": "table5"
                 }
             ]
         },
