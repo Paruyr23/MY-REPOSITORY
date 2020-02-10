@@ -16,7 +16,7 @@
   	<div class="row">
   		<div class="col-10 col-md-2 bg no-margin" id="leftContent">
   			<div class="split left">
-				<img alt="Logo" width="240px" height="65px" class="img-responsive logo" src="images/logo.png" onclick="staticHtml('home')">
+				<img alt="Logo" width="240px" height="65px" class="img-responsive logo" src="images/logo.png" onclick="staticHtml('mainHomeDiv')">
   				<div id="ico">
 			      <a href="#">
 			        <img alt="Brand" class="img-responsive" src="images/home.png" width="18" height="18">
@@ -181,6 +181,7 @@
 								</a>
 							</div>
 							<hr>
+							<div class="new_window"><img src="images/window-new.png" title="Open new phpMyAdmin window" onclick="Open()"></div>
 							<div class="selectAll">
 								<div class="alert-primary m-0">
 									<img src="images/triangle.png" width="20px" height="20px" class="lastAlert"><a href="#">phpMyAdmin Demo Server</a>: Currently running Git revision <a target="_blank" rel="noopener noreferrer" href="#">RELEASE_5_0_0RC1-712-g073418a7ec</a> from the <a href="#">master</a>branch.
@@ -208,81 +209,228 @@
 						<button>Go</button>
 					</div>
 					<hr>
+					<div class="new_window"><img src="images/window-new.png" title="Open new phpMyAdmin window" onclick="Open()"></div>
 					<div class="selectAll">
 						<div class="alert-primary m-0">
 							<img src="images/triangle.png" width="20px" height="20px" class="lastAlert"><a href="#">phpMyAdmin Demo Server</a>: Currently running Git revision <a target="_blank" rel="noopener noreferrer" href="#">RELEASE_5_0_0RC1-712-g073418a7ec</a> from the <a href="#">master</a>branch.
 						</div>
 					</div>
 				</div>
-				<div class="home" id="home">
-					<div class="col-7 col-md-7 information1">
-						<div  class="blocks">
-							<div><h2>General Settings</h2></div>
-							<div class="about">
-								<a href="#">Change Password</a>
-								<p class="currentServer"><img alt="server" class="img-responsive" src="images/server.png" width="16px" height="16px">Current Server:</p>
-								<select name="MySQL">
-									<option>MySQL</option>
-									<option>.....</option>
-									<option>......</option>
-								</select>
+				<div id="mainHomeDiv">
+					<div class="home" id="home">
+						<div class="col-7 col-md-7 information1">
+							<div  class="blocks">
+								<div><h2>General Settings</h2></div>
+								<div class="about">
+									<a href="#">Change Password</a>
+									<p class="currentServer"><img alt="server" class="img-responsive" src="images/server.png" width="16px" height="16px">Current Server:</p>
+									<select name="MySQL">
+										<option>MySQL</option>
+										<option>.....</option>
+										<option>......</option>
+									</select>
+								</div>
+							</div>
+							<div class="blocks">
+								<div><h2>Appearance Settings</h2></div>
+								<div class="about">
+									<p class="language"><img alt="server" class="img-responsive" src="images/translation.png" width="15px" height="14px">Language:</p>
+									<select name="language" class="languages">
+										<option>English</option>
+										<option>Russian</option>
+										<option>Armenian</option>
+									</select>
+									<p class="theme"><img alt="server" class="img-responsive" src="images/theme1.png" width="16px" height="16px">Theme:</p>
+									<select name="theme" class="themes">
+										<option>pmahomme</option>
+										<option>....</option>
+										<option>.....</option>
+									</select>
+								</div>
 							</div>
 						</div>
-						<div class="blocks">
-							<div><h2>Appearance Settings</h2></div>
-							<div class="about">
-								<p class="language"><img alt="server" class="img-responsive" src="images/translation.png" width="15px" height="14px">Language:</p>
-								<select name="language" class="languages">
-									<option>English</option>
-									<option>Russian</option>
-									<option>Armenian</option>
-								</select>
-								<p class="theme"><img alt="server" class="img-responsive" src="images/theme1.png" width="16px" height="16px">Theme:</p>
-								<select name="theme" class="themes">
-									<option>pmahomme</option>
-									<option>....</option>
-									<option>.....</option>
-								</select>
+						<div class="col-5 col-md-5 information2">
+							<div class="blocks">
+								<div class="background"><h2>MySQL</h2></div>
+								<div class="about">
+									<p>Font size</p>
+									<a href="#">More Settings</a>
+									<p>Server connection:<span class="txt">SSL is not being used</span><img src="images/help.png" alt="help" width="21px" height="21px"></p>
+									<p>Server version: 8.0.18 - MySQL Community Server - GPL</p>
+									<p>Protocol version: 10</p>
+									<p>User: root@192.168.30.20</p>
+									<p>Server charset: UTF-8 Unicode (utf8mb4)</p>
+								</div>
+							</div>
+							<div class="blocks">
+								<div><h2>Web server</h2></div>
+								<div class="about">
+									<p>nginx/1.2.1</p>
+									<p>Database client version:libmysql-5.5.40</p>
+									<p>Lorem ipsum Lorem ipsum Lorem ipsum</p>
+									<p>PHP extension: mysqli <img src="images/help.png" alt="help" width="21px" height="21px"> curl <img src="images/help.png" alt="help" width="21px" height="21px"> mbstring <img src="images/help.png" alt="help" width="21px" height="21px"></p>
+									<p>Lorem ipsumLorem ipsum</p>
+									<p>Lorem ipsumLorem ipsum</p>
+									<p>Lorem ipsum</p>
+								</div>
+							</div>
+							<div class="blocks" >
+								<div><h2>phpMyAdmin</h2></div>
+								<div class="about lastBlock">
+									<p>Version information</p>
+									<p>Git version</p>
+									<a>Documentation</a>
+									<a>Wiki</a>
+									<a>Official Homepage</a>
+									<a>Contribute</a>
+									<a>Get support</a>
+									<a>List of changes</a>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-5 col-md-5 information2">
-						<div class="blocks">
-							<div class="background"><h2>MySQL</h2></div>
-							<div class="about">
-								<p>Font size</p>
-								<a href="#">More Settings</a>
-								<p>Server connection:<span class="txt">SSL is not being used</span><img src="images/help.png" alt="help" width="21px" height="21px"></p>
-								<p>Server version: 8.0.18 - MySQL Community Server - GPL</p>
-								<p>Protocol version: 10</p>
-								<p>User: root@192.168.30.20</p>
-								<p>Server charset: UTF-8 Unicode (utf8mb4)</p>
-							</div>
+					<hr>
+					<div class="new_window"><img src="images/window-new.png" title="Open new phpMyAdmin window" onclick="Open()"></div>
+					<div class="selectAll">
+						<div class="alert-primary m-0">
+							<img src="images/triangle.png" width="20px" height="20px" class="lastAlert"><a href="#">phpMyAdmin Demo Server</a>: Currently running Git revision <a target="_blank" rel="noopener noreferrer" href="#">RELEASE_5_0_0RC1-712-g073418a7ec</a> from the <a href="#">master</a>branch.
 						</div>
-						<div class="blocks">
-							<div><h2>Web server</h2></div>
-							<div class="about">
-								<p>nginx/1.2.1</p>
-								<p>Database client version:libmysql-5.5.40</p>
-								<p>Lorem ipsum Lorem ipsum Lorem ipsum</p>
-								<p>PHP extension: mysqli <img src="images/help.png" alt="help" width="21px" height="21px"> curl <img src="images/help.png" alt="help" width="21px" height="21px"> mbstring <img src="images/help.png" alt="help" width="21px" height="21px"></p>
-								<p>Lorem ipsumLorem ipsum</p>
-								<p>Lorem ipsumLorem ipsum</p>
-								<p>Lorem ipsum</p>
-							</div>
+					</div>
+				</div>
+				<div id="structuresTable" class="hidden">
+					<div class="selectAll">
+						<div class="alert-primary m-0">
+							<img src="images/triangle.png" width="20px" height="20px" class="lastAlert">Current selection does not contain a unique column. Grid edit, checkbox, Edit, Copy and Delete features are not available.<a href="#"><img src="images/b_docs.png"></a>
 						</div>
-						<div class="blocks" >
-							<div><h2>phpMyAdmin</h2></div>
-							<div class="about lastBlock">
-								<p>Version information</p>
-								<p>Git version</p>
-								<a>Documentation</a>
-								<a>Wiki</a>
-								<a>Official Homepage</a>
-								<a>Contribute</a>
-								<a>Get support</a>
-								<a>List of changes</a>
-							</div>
+					</div>
+					<div class="alerts">
+						<div class="successAlert">
+							<img src="images/s_success.png">Showing rows 0 - 9 (10 total, Query took 0.0014 seconds.)
+						</div>
+						<div class="grayDiv">
+							<p><a href="https://dev.mysql.com/doc/refman/8.0/en/select.html" target="_blank">SELECT</a><span class="rose">*</span><span class="linksColor"> FROM </span><span class="pLastChild">`CHECK_CONSTRAINTS`</span></p>
+						</div>
+						<div class="linksDiv">
+							<input type="checkbox" id="profiling">
+							<label for="profiling">Profiling</label>
+							<p>[<a href="#"> Edit inline </a>] [<a href="#"> Edit inline </a>] [<a href="#"> Edit </a>] [<a href="#"> Explain SQL </a>] [<a href="#"> Create PHP code </a>] [<a href="#"> Refresh </a>]</p>
+						</div>
+					</div>
+					<div class="showAll">
+						<input type="checkbox" id="showAll">
+						<label for="showAll">Show All</label>
+						|
+						<span>Number of rows:</span>
+						<select id="filters">
+							<option value="number1">23</option>
+							<option value="number2">24</option>
+							<option value="number3" selected>25</option>
+							<option value="number4">26</option>
+						</select>
+						<span>Filter rows: </span>
+						<input type="text" placeholder="Search this table">
+						<span>Sort by key:</span>
+						<select id="sorts">
+							<option value="number1">.....</option>
+							<option value="number2">select</option>
+							<option value="number3" selected>none</option>
+							<option value="number4">....</option>
+						</select>
+					</div>
+
+					<div id="childTable"></div>
+
+					<div class="selectAll">
+						<img src="images/up_arrow.png" width="30px" height="30px" class="up">
+						<label>
+							<input type="checkbox">
+							<span>Check All</span>
+						</label>
+						<span>With selected: </span>
+						<button>
+								<span>
+									<img src="images/b_edit.png" width="20px" height="20px">
+									<span class="drop">Edit</span>
+								</span>
+						</button>
+						<button>
+								<span>
+									<img src="images/b_insrow.png" width="20px" height="20px">
+									<span class="drop">Copy</span>
+								</span>
+						</button>
+						<button>
+								<span>
+									<img src="images/b_drop.png" width="20px" height="20px">
+									<span class="drop">Delete</span>
+								</span>
+						</button>
+						<button>
+								<span>
+									<img src="images/b_export.png" width="20px" height="20px">
+									<span class="drop">Export</span>
+								</span>
+						</button>
+					</div>
+					<div class="showAll">
+						<input type="checkbox" id="showAll2">
+						<label for="showAll">Show All</label>
+						|
+						<span>Number of rows:</span>
+						<select id="filters2">
+							<option value="number1">23</option>
+							<option value="number2">24</option>
+							<option value="number3" selected>25</option>
+							<option value="number4">26</option>
+						</select>
+						<span>Filter rows: </span>
+						<input type="text" placeholder="Search this table">
+						<span>Sort by key:</span>
+						<select id="sorts2">
+							<option value="number1">.....</option>
+							<option value="number2">select</option>
+							<option value="number3" selected>none</option>
+							<option value="number4">....</option>
+						</select>
+					</div>
+					<div class="blockSpan selectAll querySelectAll">
+						<div class="container filters"><h5>Query results operations</h5></div>
+						<button>
+								<span>
+									<img src="images/b_print.png" width="20px" height="20px">
+									<span class="drop">Export</span>
+								</span>
+						</button>
+						<button>
+								<span>
+									<img src="images/b_insrow.png" width="20px" height="20px">
+									<span class="drop">Export</span>
+								</span>
+						</button>
+						<button>
+								<span>
+									<img src="images/b_export.png" width="20px" height="20px">
+									<span class="drop">Export</span>
+								</span>
+						</button>
+						<button>
+								<span>
+									<img src="images/b_chart.png" width="20px" height="20px">
+									<span class="drop">Export</span>
+								</span>
+						</button>
+						<button>
+								<span>
+									<img src="images/b_view_add.png" width="20px" height="20px">
+									<span class="drop">Export</span>
+								</span>
+						</button>
+					</div>
+					<hr>
+					<div class="new_window"><img src="images/window-new.png" title="Open new phpMyAdmin window" onclick="Open()"></div>
+					<div class="selectAll">
+						<div class="alert-primary m-0">
+							<img src="images/triangle.png" width="20px" height="20px" class="lastAlert"><a href="#">phpMyAdmin Demo Server</a>: Currently running Git revision <a target="_blank" rel="noopener noreferrer" href="#">RELEASE_5_0_0RC1-712-g073418a7ec</a> from the <a href="#">master</a>branch.
 						</div>
 					</div>
 				</div>
@@ -330,6 +478,7 @@
 							<button>Go</button>
 						</div>
 						<hr>
+						<div class="new_window"><img src="images/window-new.png" title="Open new phpMyAdmin window" onclick="Open()"></div>
 						<div class="selectAll">
 							<div class="alert-primary m-0">
 								<img src="images/triangle.png" width="20px" height="20px" class="lastAlert"><a href="#">phpMyAdmin Demo Server</a>: Currently running Git revision <a target="_blank" rel="noopener noreferrer" href="#">RELEASE_5_0_0RC1-712-g073418a7ec</a> from the <a href="#">master</a>branch.

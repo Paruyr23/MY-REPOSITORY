@@ -53,7 +53,7 @@ $.ajax({
                     const li2 = $('<li/>');
                     const img2 = $('<img>', {src:image.src2 ,width: image.width, height: image.height});
                     const div2 = $('<div/>',{id:`${data.items[i].children[j].name}`, class:'collapse'});
-                    const afortbl = $('<a>', { href:`#`, text: data.items[i].children[j].name, onclick:`showFun(${i+1})`});
+                    const afortbl = $('<a>', { href:`#`, text: data.items[i].children[j].name, onclick:`showFun(${i+1}),staticHtml('structuresTable')`});
                     afortbl.css({'color': '#646464'});
                     li2
                         .append(img2)
