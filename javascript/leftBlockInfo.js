@@ -37,9 +37,11 @@ $.ajax({
                     'onclick': `collapse('${data.items[i].name}')`
                 });
                 const img = $('<img>', {src: image.src, width: image.width, height: image.height});
-                const div = $('<div/>',{id:`${data.items[i].name}`, class:'collapse'});
-                const text = $('<a>', { href:`#`, text: `${data.items[i].name}`, class:`demo${i + 1}`,onclick:`dynamicCollapsesTable(${i+1}),staticHtml('divForCollapse')`});
-                text.css({'color': '#646464'});
+                var div = $('<div/>',{id:`${data.items[i].name}`, class:'collapse'});
+                const text = $('<a>', { href:`#`, text: `${data.items[i].name}`, class:`demo${i + 1}`,onclick:`dynamicCollapsesTable(${i+1}),staticHtml('divForCollapse'),takeId('${data.items[i].id}')`});
+                text.css({
+                    'color': '#646464',
+                });
                 li
                     .append(a)
                     .append(img)
@@ -48,21 +50,34 @@ $.ajax({
                     .appendTo(ul);
                 ul
                     .appendTo(divMain);
-                for(let j = 0;j < data.items[i].children.length; j++){                                  // second loop
-                    const ul2 = $('<ul/>',{class:"ml"});
-                    const li2 = $('<li/>');
-                    const img2 = $('<img>', {src:image.src2 ,width: image.width, height: image.height});
-                    const div2 = $('<div/>',{id:`${data.items[i].children[j].name}`, class:'collapse'});
-                    const afortbl = $('<a>', { href:`#`, text: data.items[i].children[j].name, onclick:`showFun(${i+1}),staticHtml('structuresTable')`});
-                    afortbl.css({'color': '#646464'});
-                    li2
-                        .append(img2)
-                        .append(afortbl)
-                        .append(div2)
-                        .appendTo(ul2);
-                    ul2.appendTo(div);
+            }
+
+            function takeId(id) {
+                $.ajax({
+                    url: 'jsons/mockData2.json',
+                    contentType: "application/json",
+                    dataType: 'json',
+                    success: function (data) {
+                        if(id == data.items.id){
+                            console.log(111)
+                            for(let j = 0;j < data.items.length; j++){                                   //second loop
+                                const ul2 = $('<ul/>',{class:"ml"});
+                                const li2 = $('<li/>');
+                                const img2 = $('<img>', {src:image.src2 ,width: image.width, height: image.height});
+                                const div2 = $('<div/>', {id:`${data.items.name}`, class:'collapse'});
+                                const afortbl = $('<a>', { href:`#`, text: data.items.name, onclick:`showFun(${j+1}),staticHtml('structuresTable')`});
+                                afortbl.css({'color': '#646464'});
+                                li2
+                                    .append(img2)
+                                    .append(afortbl)
+                                    .append(div2)
+                                    .appendTo(ul2);
+                                ul2.appendTo(div);
+                            }
+                        }
                     }
-                }
+                });
+            }
 
             liMain
                 .append(aMain)
@@ -74,3 +89,4 @@ $.ajax({
         });
     }
 });
+

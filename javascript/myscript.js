@@ -174,8 +174,6 @@ function dynamicCollapsesTable(arg) {
     });
 }
 
-
-
 function change(click) {
     const mainContent = document.getElementById('mainContent');
     const leftContent = document.getElementById('leftContent');

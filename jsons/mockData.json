@@ -2,51 +2,27 @@
     "items":[
         {
             "name": "collapse1",
-            "children": [
-                {
-                    "name": "table1"
-                }
-            ]
+            "id": "1"
         },
         {
             "name": "collapse2",
-            "children": [
-                {
-                    "name": "table2"
-                }
-            ]
+            "id": "2"
         },
         {
             "name": "collapse3",
-            "children": [
-                {
-                    "name": "table3"
-                }
-            ]
+            "id": "3"
         },
         {
             "name": "collapse4",
-            "children": [
-                {
-                    "name": "table4"
-                }
-            ]
+            "id": "4"
         },
         {
             "name": "collapse5",
-            "children": [
-                {
-                    "name": "table5"
-                }
-            ]
+            "id": "5"
         },
         {
             "name": "collapse6",
-            "children": [
-                {
-                    "name": "table6"
-                }
-            ]
+            "id": "6"
         }
     ]
 }

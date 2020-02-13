@@ -1,0 +1,28 @@
+{
+  "items":[
+    {
+      "name": "table1",
+      "id": "1"
+    },
+    {
+      "name": "table2",
+      "id": "2"
+    },
+    {
+      "name": "table3",
+      "id": "3"
+    },
+    {
+      "name": "table4",
+      "id": "4"
+    },
+    {
+      "name": "table5",
+      "id": "5"
+    },
+    {
+      "name": "table6",
+      "id": "6"
+    }
+  ]
+}

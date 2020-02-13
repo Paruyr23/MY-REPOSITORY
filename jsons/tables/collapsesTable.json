@@ -1,6 +1,7 @@
 {
   "tables":[
     {
+      "bd_id": 1,
       "table": [
         {
           "name": "lorem ipsum",
@@ -109,6 +110,7 @@
       ]
     },
     {
+      "bd_id": 2,
       "table": [
         {
           "name": "IPSUM LOREM",
@@ -169,6 +171,7 @@
       ]
     },
     {
+      "bd_id": 3,
       "table": [
         {
           "name": "LOREM",
@@ -253,6 +256,7 @@
       ]
     },
     {
+      "bd_id": 4,
       "table": [
         {
           "name": "IPum IPSUM_LOREM",
@@ -321,6 +325,7 @@
       ]
     },
     {
+      "bd_id": 5,
       "table": [
         {
           "name": "___IPSUM_LOREM____",
@@ -405,6 +410,7 @@
       ]
     },
     {
+      "bd_id": 6,
       "table": [
         {
           "name": "........IPSUM_LOREM____",
