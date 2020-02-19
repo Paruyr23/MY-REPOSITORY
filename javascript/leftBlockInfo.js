@@ -1,15 +1,16 @@
+const image = {
+    src: 'images/s_db.png',
+    src2: 'images/b_props.png',
+    width: '21px',
+    height: '21px',
+};
+
 $.ajax({
     url: 'jsons/mockData.json',
     contentType: "application/json",
     dataType: 'json',
     success: function (data) {
         $(document).ready(function() {
-            const image = {
-                src: 'images/s_db.png',
-                src2: 'images/b_props.png',
-                width: '21px',
-                height: '21px',
-            };
             const ulMain = $('<ul/>');
             const liMain = $('<li/>');
             const aMain = $('<a/>',{ href: '#demo',text:'+', class:'demo'});
@@ -31,52 +32,25 @@ $.ajax({
             for(let i = 0;i < data.items.length ;i++){                                                  // first loop
                 const ul = $('<ul/>');
                 const li = $('<li/>');
-                const a = $('<a>', { href:`#${data.items[i].name}`,text:'+', class:`${data.items[i].name}`});
+                const a = $('<a>', { href:`#${data.items[i].name}`,text:'+', class:`${data.items[i].name}`, onclick:`getTable('${data.items[i].id}', '${data.items[i].name}')`});
                 a.attr({
                     'data-toggle': "collapse",
                     'onclick': `collapse('${data.items[i].name}')`
-                });
-                const img = $('<img>', {src: image.src, width: image.width, height: image.height});
-                var div = $('<div/>',{id:`${data.items[i].name}`, class:'collapse'});
-                const text = $('<a>', { href:`#`, text: `${data.items[i].name}`, class:`demo${i + 1}`,onclick:`dynamicCollapsesTable(${i+1}),staticHtml('divForCollapse'),takeId('${data.items[i].id}')`});
-                text.css({
-                    'color': '#646464',
-                });
-                li
-                    .append(a)
-                    .append(img)
-                    .append(text)
-                    .append(div)
-                    .appendTo(ul);
-                ul
-                    .appendTo(divMain);
-            }
-
-            function takeId(id) {
-                $.ajax({
-                    url: 'jsons/mockData2.json',
-                    contentType: "application/json",
-                    dataType: 'json',
-                    success: function (data) {
-                        if(id == data.items.id){
-                            console.log(111)
-                            for(let j = 0;j < data.items.length; j++){                                   //second loop
-                                const ul2 = $('<ul/>',{class:"ml"});
-                                const li2 = $('<li/>');
-                                const img2 = $('<img>', {src:image.src2 ,width: image.width, height: image.height});
-                                const div2 = $('<div/>', {id:`${data.items.name}`, class:'collapse'});
-                                const afortbl = $('<a>', { href:`#`, text: data.items.name, onclick:`showFun(${j+1}),staticHtml('structuresTable')`});
-                                afortbl.css({'color': '#646464'});
-                                li2
-                                    .append(img2)
-                                    .append(afortbl)
-                                    .append(div2)
-                                    .appendTo(ul2);
-                                ul2.appendTo(div);
-                            }
-                        }
-                    }
-                });
+            });
+        const img = $('<img>', {src: image.src, width: image.width, height: image.height});
+        var div = $('<div/>',{id:`${data.items[i].name}`, class:'collapse'});
+        const text = $('<a>', { href:`#`, text: `${data.items[i].name}`, class:`demo${i + 1}`,onclick:`dynamicCollapsesTable(${i+1}),staticHtml('divForCollapse'),getTable('${data.items[i].id}', '${data.items[i].name}')`});
+        text.css({
+            'color': '#646464',
+        });
+        li
+            .append(a)
+            .append(img)
+            .append(text)
+            .append(div)
+            .appendTo(ul);
+        ul
+            .appendTo(divMain);
             }
 
             liMain
@@ -89,4 +63,33 @@ $.ajax({
         });
     }
 });
+
+function getTable(id, name) {
+    $.ajax({
+        url: 'jsons/mockData2.json',
+        contentType: "application/json",
+        dataType: 'json',
+        success: function (data) {
+            for(let j = 0;j < data.items.length; j++){                                   //second loop
+                if(id === data.items[j].id){
+                    const ul2 = $('<ul/>',{class:"ml"});
+                    const li2 = $('<li/>');
+                    const img2 = $('<img>', {src:image.src2 ,width: image.width, height: image.height});
+                    const div2 = $('<div/>', {id:`${data.items.name}`, class:'collapse'});
+                    const linkForTbl = $('<a>', { href:`#`, text: data.items[j].name, onclick:`showFun(${j+1}),staticHtml('structuresTable')`});
+                    linkForTbl.css({'color': '#646464'});
+                    const div = $(`#${name}`);
+                    li2
+                        .append(img2)
+                        .append(linkForTbl)
+                        .append(div2)
+                        .appendTo(ul2);
+                    div.html(ul2);
+                }
+            }
+
+
+        }
+    });
+}
 
